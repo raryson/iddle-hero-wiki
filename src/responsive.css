@@ -84,3 +84,23 @@ footer small { color: #777481; font: 600 10px 'Barlow Condensed'; letter-spacing
 @media (max-width: 720px) {
   footer a, footer small { display: block; margin: 8px 0 0; }
 }
+
+.hunt-name-cell, .route-name-row, .modal-title-row { display: flex; align-items: center; gap: 7px; min-width: 0; }
+.route-name-row { justify-content: space-between; }
+.copy-hunt { flex: 0 0 auto; width: 25px; height: 25px; padding: 0; border: 1px solid #4a3c28; border-radius: 3px; background: #211b16; color: var(--gold2); font: 600 14px Rajdhani; line-height: 1; cursor: pointer; }
+.copy-hunt:hover { background: #3a2d1c; }
+.copy-hunt.copied { border-color: var(--green); color: var(--green); background: #17251e; }
+.copy-toast { position: fixed; right: 22px; bottom: 22px; z-index: 40; padding: 11px 15px; border: 1px solid #496d57; border-radius: 4px; background: #16231c; color: #a7e0ba; box-shadow: 0 8px 30px #0009; font: 600 12px Rajdhani; letter-spacing: .2px; pointer-events: none; animation: copy-toast-in .18s ease-out; }
+@keyframes copy-toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.modal-title-row h2 { margin-right: auto; }
+.modal-title-row .copy-hunt { margin-top: 7px; }
+
+@media (max-width: 720px) {
+  .hunt-name-cell { gap: 5px; }
+  .hunt-name-cell .copy-hunt { width: 23px; height: 23px; }
+  .route-name-row { gap: 6px; }
+  .route-name-row .route-name { flex: 1; }
+  .modal-title-row { padding-right: 18px; }
+  .modal-title-row h2 { min-width: 0; }
+  .copy-toast { right: 12px; bottom: 14px; max-width: calc(100vw - 24px); }
+}
