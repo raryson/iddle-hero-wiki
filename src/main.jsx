@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import './recommendations.css';
 import './routes.css';
+import './responsive.css';
 import { GOLD_ROUTES, XP_ROUTES, routesAroundLevel } from './routes';
 
 const ELEMENTS = ['fire', 'ice', 'earth', 'energy', 'holy', 'death', 'physical'];
@@ -20,6 +21,7 @@ function App() {
   const [level, setLevel] = useState('');
   const [levelDraft, setLevelDraft] = useState('');
   const [levelEditorOpen, setLevelEditorOpen] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const pageSize = 12;
 
   useEffect(() => { fetch('/data/hunts.json').then((r) => r.json()).then(setPayload); }, []);
@@ -57,15 +59,15 @@ function App() {
   if (!payload) return <div className="loading-screen"><div className="sigil">✦</div><p>CARREGANDO BESTIÁRIO...</p></div>;
 
   return <div className="wiki-app">
-    <header className="mobile-header"><Logo /><button className="mobile-menu">☰</button></header>
-    <aside className="sidebar">
+    <header className="mobile-header"><Logo /><button className="mobile-menu" aria-label="Abrir menu" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen((open) => !open)}>{mobileNavOpen ? '×' : '☰'}</button></header>
+    <aside className={`sidebar ${mobileNavOpen ? 'mobile-open' : ''}`}>
       <Logo />
       <div className="server-status"><span /> BESTIÁRIO ONLINE</div>
       <nav className="main-nav">
-        <NavButton active={activeSection === 'hunts'} icon="⚔" label="Hunts recomendadas" onClick={() => setActiveSection('hunts')} />
-        <NavButton active={activeSection === 'bestiary'} icon="♜" label="Bestiário" onClick={() => setActiveSection('bestiary')} soon />
-        <NavButton active={activeSection === 'items'} icon="◈" label="Itens e loot" onClick={() => setActiveSection('items')} soon />
-        <NavButton active={activeSection === 'mechanics'} icon="◌" label="Mecânicas" onClick={() => setActiveSection('mechanics')} soon />
+        <NavButton active={activeSection === 'hunts'} icon="⚔" label="Hunts recomendadas" onClick={() => { setActiveSection('hunts'); setMobileNavOpen(false); }} />
+        <NavButton active={activeSection === 'bestiary'} icon="♜" label="Bestiário" onClick={() => { setActiveSection('bestiary'); setMobileNavOpen(false); }} soon />
+        <NavButton active={activeSection === 'items'} icon="◈" label="Itens e loot" onClick={() => { setActiveSection('items'); setMobileNavOpen(false); }} soon />
+        <NavButton active={activeSection === 'mechanics'} icon="◌" label="Mecânicas" onClick={() => { setActiveSection('mechanics'); setMobileNavOpen(false); }} soon />
       </nav>
       <div className="sidebar-bottom"><div className="version">IDLE HERO WIKI <b>v0.1</b></div><p>Uma referência feita pela comunidade.</p></div>
     </aside>
