@@ -46,3 +46,4 @@ data/
 !public/
 !public/data/
 !public/data/hunts.json
+!public/data/*.json

@@ -1,0 +1,3006 @@
+{
+  "metadata": {
+    "game": "Idle Hero / Idle Expedition",
+    "source": "https://idlehero.online/game",
+    "package_schema_version": "1.0.0",
+    "client_map_extracted_at": "2026-08-04T14:20:35.914Z",
+    "dynamic_data_extracted_at": "2026-08-04T14:29:52.280Z",
+    "calculated_tables_extracted_at": "2026-08-04T14:08:44.045Z",
+    "privacy": "Dados pessoais da conta, personagem, inventário, saldos, tokens, cookies, CSRF e sessão foram removidos.",
+    "category": 3,
+    "slug": "spells-runes"
+  },
+  "summary": {
+    "total_spells": 75,
+    "total_runes": 14,
+    "spell_groups": {
+      "attack": 50,
+      "healing": 19,
+      "support": 6
+    },
+    "spell_vocation_counts": {
+      "Druid": 30,
+      "Elder Druid": 30,
+      "Elite Knight": 17,
+      "Knight": 17,
+      "Master Sorcerer": 30,
+      "None": 2,
+      "Paladin": 15,
+      "Royal Paladin": 15,
+      "Sorcerer": 30
+    }
+  },
+  "spells": [
+    {
+      "words": "exana flam",
+      "name": "Cure Burning",
+      "level": 30,
+      "mana": 30,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "healing/cure_burning.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exana kor",
+      "name": "Cure Bleeding",
+      "level": 45,
+      "mana": 30,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Druid",
+        "Knight",
+        "Elder Druid",
+        "Elite Knight"
+      ],
+      "script": "healing/cure_bleeding.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exana mort",
+      "name": "Cure Curse",
+      "level": 80,
+      "mana": 40,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "healing/cure_curse.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exana pox",
+      "name": "Cure Poison",
+      "level": 10,
+      "mana": 30,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Paladin",
+        "Knight",
+        "Master Sorcerer",
+        "Elder Druid",
+        "Royal Paladin",
+        "Elite Knight"
+      ],
+      "script": "healing/cure_poison.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exana vis",
+      "name": "Cure Electrification",
+      "level": 22,
+      "mana": 30,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "healing/cure_electrification.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exevo dis flam hur",
+      "name": "Practice Fire Wave",
+      "level": 1,
+      "mana": 5,
+      "cooldown": 4000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "None"
+      ],
+      "script": "attack/practice_fire_wave.lua",
+      "formula": {
+        "type": "constant",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 11
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_HITBYFIRE",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo flam hur",
+      "name": "Fire Wave",
+      "level": 18,
+      "mana": 50,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/fire_wave.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 7
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 12
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_HITBYFIRE",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo frigo hur",
+      "name": "Ice Wave",
+      "level": 18,
+      "mana": 125,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/ice_wave.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 5
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 12
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICEAREA",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo gran flam hur",
+      "name": "Big Fire Wave",
+      "level": 50,
+      "mana": 250,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/fire_wave2.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 20
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.6,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 48
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_HITBYFIRE",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo gran frigo hur",
+      "name": "Big Ice Wave",
+      "level": 18,
+      "mana": 350,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/ice_wave2.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 20
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.6,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 48
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICEAREA",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo gran mas flam",
+      "name": "Hell's Core",
+      "level": 60,
+      "mana": 1500,
+      "cooldown": 15000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/hell's_core.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 50
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 12,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 75
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_FIREAREA",
+        "distance": "",
+        "area": "AREA_CIRCLE5X5"
+      }
+    },
+    {
+      "words": "exevo gran mas frigo",
+      "name": "Eternal Winter",
+      "level": 60,
+      "mana": 1500,
+      "cooldown": 15000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/eternal_winter.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 5.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 25
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 11,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 50
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICETORNADO",
+        "distance": "",
+        "area": "AREA_CIRCLE5X5"
+      }
+    },
+    {
+      "words": "exevo gran mas tera",
+      "name": "Wrath of Nature",
+      "level": 55,
+      "mana": 1500,
+      "cooldown": 15000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/wrath_of_nature.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 32
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 9,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 40
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_SMALLPLANTS",
+        "distance": "",
+        "area": "AREA_CIRCLE6X6"
+      }
+    },
+    {
+      "words": "exevo gran mas vis",
+      "name": "Rage of the Skies",
+      "level": 55,
+      "mana": 1500,
+      "cooldown": 15000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/rage_of_the_skies.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 75
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 10,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 150
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_BIGCLOUDS",
+        "distance": "",
+        "area": "AREA_CIRCLE6X6"
+      }
+    },
+    {
+      "words": "exevo gran vis lux",
+      "name": "Great Energy Beam",
+      "level": 29,
+      "mana": 150,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/great_energy_beam.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 3.6,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 22
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 6,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 37
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "",
+        "area": "AREA_BEAM8"
+      }
+    },
+    {
+      "words": "exevo infir flam hur",
+      "name": "Scorch",
+      "level": 1,
+      "mana": 8,
+      "cooldown": 4000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/scorch.lua",
+      "formula": {
+        "type": "custom",
+        "levelCap": 20,
+        "magicLevelCap": 20,
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0.3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0.45,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 3
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_HITBYFIRE",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo infir frigo hur",
+      "name": "Chill Out",
+      "level": 1,
+      "mana": 8,
+      "cooldown": 4000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/chill_out.lua",
+      "formula": {
+        "type": "custom",
+        "levelCap": 20,
+        "magicLevelCap": 20,
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0.3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0.45,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 3
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICEAREA",
+        "distance": "",
+        "area": "AREA_WAVE4"
+      }
+    },
+    {
+      "words": "exevo mas san",
+      "name": "Divine Caldera",
+      "level": 50,
+      "mana": 160,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "attack/divine_caldera.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 0
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 6.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 0
+        }
+      },
+      "visual": {
+        "combat": "holy",
+        "effect": "CONST_ME_HOLYAREA",
+        "distance": "",
+        "area": "AREA_CIRCLE3X3"
+      }
+    },
+    {
+      "words": "exevo tera hur",
+      "name": "Terra Wave",
+      "level": 38,
+      "mana": 210,
+      "cooldown": 4000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/terra_wave.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 3.25,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 5
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 6.75,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 30
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_SMALLPLANTS",
+        "distance": "",
+        "area": "AREA_SQUAREWAVE5"
+      }
+    },
+    {
+      "words": "exevo vis hur",
+      "name": "Energy Wave",
+      "level": 38,
+      "mana": 300,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/energy_wave.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 20
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.6,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 48
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": "AREA_SQUAREWAVE5"
+      }
+    },
+    {
+      "words": "exevo vis lux",
+      "name": "Energy Beam",
+      "level": 23,
+      "mana": 40,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/energy_beam.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 11
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 19
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYHIT",
+        "distance": "",
+        "area": "AREA_BEAM5"
+      }
+    },
+    {
+      "words": "exori",
+      "name": "Berserk",
+      "level": 35,
+      "mana": 115,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/berserk.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.03,
+          "distanceSkill": 0,
+          "constant": 7
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.05,
+          "distanceSkill": 0,
+          "constant": 11
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "",
+        "area": "AREA_SQUARE1X1"
+      }
+    },
+    {
+      "words": "exori amp vis",
+      "name": "Lightning",
+      "level": 55,
+      "mana": 60,
+      "cooldown": 8000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/lightning.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 2.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 12
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 3.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 21
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori con",
+      "name": "Ethereal Spear",
+      "level": 23,
+      "mana": 25,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "attack/ethereal_spear.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0.7,
+          "constant": 0
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 1,
+          "constant": 5
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "CONST_ANI_ETHEREALSPEAR",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori flam",
+      "name": "Flame Strike",
+      "level": 14,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Master Sorcerer",
+        "Elder Druid"
+      ],
+      "script": "attack/flame_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_FIREATTACK",
+        "distance": "CONST_ANI_FIRE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori frigo",
+      "name": "Ice Strike",
+      "level": 15,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer",
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/ice_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICEATTACK",
+        "distance": "CONST_ANI_SMALLICE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori gran",
+      "name": "Fierce Berserk",
+      "level": 90,
+      "mana": 340,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/fierce_berserk.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.06,
+          "distanceSkill": 0,
+          "constant": 13
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.11,
+          "distanceSkill": 0,
+          "constant": 27
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "",
+        "area": "AREA_SQUARE1X1"
+      }
+    },
+    {
+      "words": "exori gran con",
+      "name": "Strong Ethereal Spear",
+      "level": 90,
+      "mana": 55,
+      "cooldown": 8000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "attack/strong_ethereal_spear.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 5,
+          "constant": 0
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 8,
+          "constant": 0
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "CONST_ANI_ETHEREALSPEAR",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori gran flam",
+      "name": "Strong Flame Strike",
+      "level": 70,
+      "mana": 60,
+      "cooldown": 8000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/strong_flame_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 2.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 16
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 4.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 28
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_FIREATTACK",
+        "distance": "CONST_ANI_FIRE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori gran frigo",
+      "name": "Strong Ice Strike",
+      "level": 80,
+      "mana": 60,
+      "cooldown": 8000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/strong_ice_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 2.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 16
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 4.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 28
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICEATTACK",
+        "distance": "CONST_ANI_SMALLICE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori gran ico",
+      "name": "Annihilation",
+      "level": 110,
+      "mana": 300,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/annihilation.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.06,
+          "distanceSkill": 0,
+          "constant": 13
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.14,
+          "distanceSkill": 0,
+          "constant": 34
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "CONST_ANI_WEAPONTYPE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori gran tera",
+      "name": "Strong Terra Strike",
+      "level": 70,
+      "mana": 60,
+      "cooldown": 8000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/strong_terra_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 2.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 16
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 4.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 28
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_CARNIPHILA",
+        "distance": "CONST_ANI_SMALLEARTH",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori gran vis",
+      "name": "Strong Energy Strike",
+      "level": 80,
+      "mana": 60,
+      "cooldown": 8000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/strong_energy_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 2.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 16
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 4.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 28
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori hur",
+      "name": "Whirlwind Throw",
+      "level": 28,
+      "mana": 40,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/whirlwind_throw.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.01,
+          "distanceSkill": 0,
+          "constant": 1
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.03,
+          "distanceSkill": 0,
+          "constant": 6
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "CONST_ANI_WEAPONTYPE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori ico",
+      "name": "Brutal Strike",
+      "level": 16,
+      "mana": 30,
+      "cooldown": 6000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/brutal_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.02,
+          "distanceSkill": 0,
+          "constant": 4
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.04,
+          "distanceSkill": 0,
+          "constant": 9
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "CONST_ANI_WEAPONTYPE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori infir tera",
+      "name": "Mud Attack",
+      "level": 1,
+      "mana": 6,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/mud_attack.lua",
+      "formula": {
+        "type": "custom",
+        "levelCap": 20,
+        "magicLevelCap": 20,
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 5
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_CARNIPHILA",
+        "distance": "CONST_ANI_SMALLEARTH",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori infir vis",
+      "name": "Buzz",
+      "level": 1,
+      "mana": 6,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/buzz.lua",
+      "formula": {
+        "type": "custom",
+        "levelCap": 20,
+        "magicLevelCap": 20,
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0.8,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 5
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori mas",
+      "name": "Groundshaker",
+      "level": 33,
+      "mana": 160,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/groundshaker.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.02,
+          "distanceSkill": 0,
+          "constant": 4
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.03,
+          "distanceSkill": 0,
+          "constant": 6
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_GROUNDSHAKER",
+        "distance": "",
+        "area": "AREA_CIRCLE3X3"
+      }
+    },
+    {
+      "words": "exori max flam",
+      "name": "Ultimate Flame Strike",
+      "level": 90,
+      "mana": 100,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/ultimate_flame_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 35
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 55
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_FIREATTACK",
+        "distance": "CONST_ANI_FIRE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori max frigo",
+      "name": "Ultimate Ice Strike",
+      "level": 100,
+      "mana": 100,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/ultimate_ice_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 35
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 55
+        }
+      },
+      "visual": {
+        "combat": "ice",
+        "effect": "CONST_ME_ICEATTACK",
+        "distance": "CONST_ANI_SMALLICE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori max tera",
+      "name": "Ultimate Terra Strike",
+      "level": 90,
+      "mana": 100,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/ultimate_terra_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 35
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 55
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_CARNIPHILA",
+        "distance": "CONST_ANI_SMALLEARTH",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori max vis",
+      "name": "Ultimate Energy Strike",
+      "level": 100,
+      "mana": 100,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/ultimate_energy_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 4.5,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 35
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 7.3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 55
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori min",
+      "name": "Front Sweep",
+      "level": 70,
+      "mana": 200,
+      "cooldown": 3000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/front_sweep.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.04,
+          "distanceSkill": 0,
+          "constant": 11
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 0,
+          "skillAttack": 0.08,
+          "distanceSkill": 0,
+          "constant": 21
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_HITAREA",
+        "distance": "",
+        "area": "AREA_WAVE6"
+      }
+    },
+    {
+      "words": "exori min flam",
+      "name": "Apprentice's Strike",
+      "level": 8,
+      "mana": 6,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Master Sorcerer",
+        "Elder Druid"
+      ],
+      "script": "attack/apprentice's_strike.lua",
+      "formula": {
+        "type": "constant",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 10
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 20
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_FIREATTACK",
+        "distance": "CONST_ANI_FIRE",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori moe ico",
+      "name": "Physical Strike",
+      "level": 16,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/physical_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.6,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 9
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_EXPLOSIONAREA",
+        "distance": "CONST_ANI_EXPLOSION",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori mort",
+      "name": "Death Strike",
+      "level": 16,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/death_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "death",
+        "effect": "CONST_ME_MORTAREA",
+        "distance": "CONST_ANI_DEATH",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori san",
+      "name": "Divine Missile",
+      "level": 40,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "attack/divine_missile.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.9,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 3,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 18
+        }
+      },
+      "visual": {
+        "combat": "holy",
+        "effect": "CONST_ME_HOLYDAMAGE",
+        "distance": "CONST_ANI_SMALLHOLY",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori tera",
+      "name": "Terra Strike",
+      "level": 13,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer",
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/terra_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_CARNIPHILA",
+        "distance": "CONST_ANI_SMALLEARTH",
+        "area": ""
+      }
+    },
+    {
+      "words": "exori vis",
+      "name": "Energy Strike",
+      "level": 12,
+      "mana": 20,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Master Sorcerer",
+        "Elder Druid"
+      ],
+      "script": "attack/energy_strike.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 5,
+          "magicLevel": 1.4,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        },
+        "max": {
+          "levelDivisor": 5,
+          "magicLevel": 2.2,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 14
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura",
+      "name": "Light Healing",
+      "level": 8,
+      "mana": 20,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Paladin",
+        "Master Sorcerer",
+        "Elder Druid",
+        "Royal Paladin"
+      ],
+      "script": "healing/light_healing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura dis",
+      "name": "Practice Healing",
+      "level": 1,
+      "mana": 5,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "None"
+      ],
+      "script": "healing/practice_healing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura gran",
+      "name": "Intense Healing",
+      "level": 20,
+      "mana": 70,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Paladin",
+        "Master Sorcerer",
+        "Elder Druid",
+        "Royal Paladin"
+      ],
+      "script": "healing/intense_healing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura gran ico",
+      "name": "Intense Wound Cleansing",
+      "level": 80,
+      "mana": 200,
+      "cooldown": 600000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "healing/intense_wound_cleansing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura gran mas res",
+      "name": "Mass Healing",
+      "level": 36,
+      "mana": 150,
+      "cooldown": 2000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "healing/mass_healing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": "AREA_CIRCLE3X3"
+      }
+    },
+    {
+      "words": "exura gran san",
+      "name": "Salvation",
+      "level": 60,
+      "mana": 210,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "healing/salvation.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura ico",
+      "name": "Wound Cleansing",
+      "level": 8,
+      "mana": 40,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "healing/wound_cleansing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura infir",
+      "name": "Magic Patch",
+      "level": 1,
+      "mana": 6,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Paladin",
+        "Master Sorcerer",
+        "Elder Druid",
+        "Royal Paladin"
+      ],
+      "script": "healing/magic_patch.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura infir ico",
+      "name": "Bruise Bane",
+      "level": 1,
+      "mana": 10,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "healing/bruise_bane.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura san",
+      "name": "Divine Healing",
+      "level": 35,
+      "mana": 160,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "healing/divine_healing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura sio",
+      "name": "Heal Friend",
+      "level": 18,
+      "mana": 140,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "healing/heal_friend.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_GREEN",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "exura vita",
+      "name": "Ultimate Healing",
+      "level": 30,
+      "mana": 160,
+      "cooldown": 1000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Master Sorcerer",
+        "Elder Druid"
+      ],
+      "script": "healing/ultimate_healing.lua",
+      "formula": null,
+      "visual": {
+        "combat": "healing",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "utamo tempo",
+      "name": "Protector",
+      "level": 55,
+      "mana": 200,
+      "cooldown": 2000,
+      "duration": 600000,
+      "group": "support",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "support/protector.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_GREEN",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "utamo vita",
+      "name": "Magic Shield",
+      "level": 14,
+      "mana": 50,
+      "cooldown": 2000,
+      "duration": 200000,
+      "group": "support",
+      "vocations": [
+        "Sorcerer",
+        "Druid",
+        "Master Sorcerer",
+        "Elder Druid"
+      ],
+      "script": "support/magic_shield.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_BLUE",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "utito arcanum",
+      "name": "Arcane Exposure",
+      "level": 60,
+      "mana": 60,
+      "cooldown": 2000,
+      "duration": 600000,
+      "group": "support",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ]
+    },
+    {
+      "words": "utito tempo",
+      "name": "Blood Rage",
+      "level": 60,
+      "mana": 290,
+      "cooldown": 2000,
+      "duration": 600000,
+      "group": "support",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "support/blood_rage.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_GREEN",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "utito tempo san",
+      "name": "Sharpshooter",
+      "level": 60,
+      "mana": 450,
+      "cooldown": 2000,
+      "duration": 600000,
+      "group": "support",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "support/sharpshooter.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_GREEN",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "utori arcanum",
+      "name": "Primal Exposure",
+      "level": 60,
+      "mana": 60,
+      "cooldown": 2000,
+      "duration": 600000,
+      "group": "support",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ]
+    },
+    {
+      "words": "utori flam",
+      "name": "Ignite",
+      "level": 26,
+      "mana": 30,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/ignite.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 4
+        }
+      },
+      "visual": {
+        "combat": "fire",
+        "effect": "CONST_ME_HITBYFIRE",
+        "distance": "CONST_ANI_FIRE",
+        "area": ""
+      }
+    },
+    {
+      "words": "utori kor",
+      "name": "Inflict Wound",
+      "level": 40,
+      "mana": 30,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Knight",
+        "Elite Knight"
+      ],
+      "script": "attack/inflict_wound.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        }
+      },
+      "visual": {
+        "combat": "physical",
+        "effect": "CONST_ME_DRAWBLOOD",
+        "distance": "CONST_ANI_WEAPONTYPE",
+        "area": ""
+      }
+    },
+    {
+      "words": "utori mort",
+      "name": "Curse",
+      "level": 75,
+      "mana": 30,
+      "cooldown": 40000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/curse.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 7
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 8
+        }
+      },
+      "visual": {
+        "combat": "death",
+        "effect": "CONST_ME_MORTAREA",
+        "distance": "CONST_ANI_DEATH",
+        "area": ""
+      }
+    },
+    {
+      "words": "utori pox",
+      "name": "Envenom",
+      "level": 50,
+      "mana": 30,
+      "cooldown": 40000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Druid",
+        "Elder Druid"
+      ],
+      "script": "attack/envenom.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 6
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 7
+        }
+      },
+      "visual": {
+        "combat": "earth",
+        "effect": "CONST_ME_CARNIPHILA",
+        "distance": "CONST_ANI_EARTH",
+        "area": ""
+      }
+    },
+    {
+      "words": "utori san",
+      "name": "Holy Flash",
+      "level": 70,
+      "mana": 30,
+      "cooldown": 40000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Paladin",
+        "Royal Paladin"
+      ],
+      "script": "attack/holy_flash.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 2
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 3
+        }
+      },
+      "visual": {
+        "combat": "holy",
+        "effect": "CONST_ME_HOLYDAMAGE",
+        "distance": "CONST_ANI_SMALLHOLY",
+        "area": ""
+      }
+    },
+    {
+      "words": "utori vis",
+      "name": "Electrify",
+      "level": 34,
+      "mana": 30,
+      "cooldown": 30000,
+      "duration": 0,
+      "group": "attack",
+      "vocations": [
+        "Sorcerer",
+        "Master Sorcerer"
+      ],
+      "script": "attack/electrify.lua",
+      "formula": {
+        "type": "custom",
+        "min": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 1
+        },
+        "max": {
+          "levelDivisor": 0,
+          "magicLevel": 0,
+          "skillAttack": 0,
+          "distanceSkill": 0,
+          "constant": 1
+        }
+      },
+      "visual": {
+        "combat": "energy",
+        "effect": "CONST_ME_ENERGYAREA",
+        "distance": "CONST_ANI_ENERGY",
+        "area": ""
+      }
+    },
+    {
+      "words": "utura",
+      "name": "Recovery",
+      "level": 50,
+      "mana": 75,
+      "cooldown": 60000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Paladin",
+        "Knight",
+        "Royal Paladin",
+        "Elite Knight"
+      ],
+      "script": "healing/recovery.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_GREEN",
+        "distance": "",
+        "area": ""
+      }
+    },
+    {
+      "words": "utura gran",
+      "name": "Intense Recovery",
+      "level": 100,
+      "mana": 165,
+      "cooldown": 60000,
+      "duration": 0,
+      "group": "healing",
+      "vocations": [
+        "Paladin",
+        "Knight",
+        "Royal Paladin",
+        "Elite Knight"
+      ],
+      "script": "healing/intense_recovery.lua",
+      "formula": null,
+      "visual": {
+        "combat": "",
+        "effect": "CONST_ME_MAGIC_GREEN",
+        "distance": "",
+        "area": ""
+      }
+    }
+  ],
+  "runes": [
+    {
+      "id": 2260,
+      "availability": {
+        "name": "Blank Rune",
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "blank"
+      },
+      "npc_catalog": {
+        "name": "Blank Rune",
+        "cost": 1000,
+        "charges": 100,
+        "level": 1,
+        "ml": 0,
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "blank"
+      }
+    },
+    {
+      "id": 2265,
+      "availability": {
+        "name": "Intense Healing Rune",
+        "vocs": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "healing"
+      },
+      "npc_catalog": {
+        "name": "Intense Healing Rune",
+        "cost": 9500,
+        "charges": 100,
+        "level": 15,
+        "ml": 1,
+        "vocs": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "healing"
+      },
+      "conjuration": {
+        "name": "Intense Healing Rune",
+        "mana": 120,
+        "charges": 1,
+        "level": 15,
+        "ml": 1,
+        "baseVocations": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": 2268,
+      "availability": {
+        "name": "Sudden Death Rune",
+        "vocs": [
+          1,
+          2
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Sudden Death Rune",
+        "cost": 11666,
+        "charges": 100,
+        "level": 45,
+        "ml": 15,
+        "vocs": [
+          1,
+          2
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Sudden Death Rune",
+        "mana": 220,
+        "charges": 3,
+        "level": 45,
+        "ml": 15,
+        "baseVocations": [
+          1,
+          2
+        ]
+      },
+      "damage_formula": {
+        "name": "Sudden Death Rune",
+        "element": "death",
+        "area": "single",
+        "min": "level / 5 + magic_level * 4.3 + 32",
+        "max": "level / 5 + magic_level * 7.4 + 48"
+      }
+    },
+    {
+      "id": 2271,
+      "availability": {
+        "name": "Icicle Rune",
+        "vocs": [
+          2
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Icicle Rune",
+        "mana": 120,
+        "charges": 5,
+        "level": 28,
+        "ml": 4,
+        "baseVocations": [
+          2
+        ]
+      },
+      "damage_formula": {
+        "name": "Icicle Rune",
+        "element": "ice",
+        "area": "single",
+        "min": "level / 5 + magic_level * 1.5 + 8",
+        "max": "level / 5 + magic_level * 3.0 + 18"
+      }
+    },
+    {
+      "id": 2273,
+      "availability": {
+        "name": "Ultimate Healing Rune",
+        "vocs": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "healing"
+      },
+      "npc_catalog": {
+        "name": "Ultimate Healing Rune",
+        "cost": 17500,
+        "charges": 100,
+        "level": 24,
+        "ml": 4,
+        "vocs": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "healing"
+      },
+      "conjuration": {
+        "name": "Ultimate Healing Rune",
+        "mana": 400,
+        "charges": 1,
+        "level": 24,
+        "ml": 4,
+        "baseVocations": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": 2274,
+      "availability": {
+        "name": "Avalanche Rune",
+        "vocs": [
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Avalanche Rune",
+        "mana": 200,
+        "charges": 3,
+        "level": 30,
+        "ml": 4,
+        "baseVocations": [
+          2
+        ]
+      },
+      "damage_formula": {
+        "name": "Avalanche Rune",
+        "element": "ice",
+        "area": "area",
+        "min": "level / 5 + magic_level * 1.2 + 7",
+        "max": "level / 5 + magic_level * 2.85 + 16"
+      }
+    },
+    {
+      "id": 2287,
+      "availability": {
+        "name": "Light Magic Missile Rune",
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Light Magic Missile Rune",
+        "cost": 400,
+        "charges": 100,
+        "level": 15,
+        "ml": 0,
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Light Magic Missile Rune",
+        "mana": 40,
+        "charges": 10,
+        "level": 15,
+        "ml": 0,
+        "baseVocations": [
+          1,
+          2,
+          3
+        ]
+      },
+      "damage_formula": {
+        "name": "Light Magic Missile Rune",
+        "element": "energy",
+        "area": "single",
+        "min": "level / 5 + magic_level * 0.4 + 3",
+        "max": "level / 5 + magic_level * 0.8 + 5"
+      }
+    },
+    {
+      "id": 2288,
+      "availability": {
+        "name": "Stone Shower Rune",
+        "vocs": [
+          2
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Stone Shower Rune",
+        "mana": 115,
+        "charges": 4,
+        "level": 28,
+        "ml": 4,
+        "baseVocations": [
+          2
+        ]
+      },
+      "damage_formula": {
+        "name": "Stone Shower Rune",
+        "element": "earth",
+        "area": "area",
+        "min": "level / 5 + magic_level * 1.1 + 6",
+        "max": "level / 5 + magic_level * 2.6 + 14"
+      }
+    },
+    {
+      "id": 2295,
+      "availability": {
+        "name": "Holy Missile Rune",
+        "vocs": [
+          3
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Holy Missile Rune",
+        "mana": 110,
+        "charges": 5,
+        "level": 27,
+        "ml": 4,
+        "baseVocations": [
+          3
+        ]
+      },
+      "damage_formula": {
+        "name": "Holy Missile Rune",
+        "element": "holy",
+        "area": "single",
+        "min": "level / 5 + magic_level * 1.5 + 8",
+        "max": "level / 5 + magic_level * 3.0 + 18"
+      }
+    },
+    {
+      "id": 2302,
+      "availability": {
+        "name": "Fireball Rune",
+        "vocs": [
+          1
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Fireball Rune",
+        "cost": 2500,
+        "charges": 100,
+        "level": 27,
+        "ml": 4,
+        "vocs": [
+          1
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Fireball Rune",
+        "mana": 100,
+        "charges": 5,
+        "level": 27,
+        "ml": 4,
+        "baseVocations": [
+          1
+        ]
+      },
+      "damage_formula": {
+        "name": "Fireball Rune",
+        "element": "fire",
+        "area": "area",
+        "min": "level / 5 + magic_level * 0.9 + 5",
+        "max": "level / 5 + magic_level * 2.1 + 12"
+      }
+    },
+    {
+      "id": 2304,
+      "availability": {
+        "name": "Great Fireball Rune",
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Great Fireball Rune",
+        "cost": 4500,
+        "charges": 100,
+        "level": 30,
+        "ml": 4,
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Great Fireball Rune",
+        "mana": 120,
+        "charges": 4,
+        "level": 30,
+        "ml": 4,
+        "baseVocations": [
+          1,
+          2
+        ]
+      },
+      "damage_formula": {
+        "name": "Great Fireball Rune",
+        "element": "fire",
+        "area": "area",
+        "min": "level / 5 + magic_level * 1.2 + 7",
+        "max": "level / 5 + magic_level * 2.85 + 16"
+      }
+    },
+    {
+      "id": 2311,
+      "availability": {
+        "name": "Heavy Magic Missile Rune",
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Heavy Magic Missile Rune",
+        "cost": 1200,
+        "charges": 100,
+        "level": 25,
+        "ml": 3,
+        "vocs": [
+          1,
+          2,
+          3
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Heavy Magic Missile Rune",
+        "mana": 70,
+        "charges": 10,
+        "level": 25,
+        "ml": 3,
+        "baseVocations": [
+          1,
+          2,
+          3
+        ]
+      },
+      "damage_formula": {
+        "name": "Heavy Magic Missile Rune",
+        "element": "energy",
+        "area": "single",
+        "min": "level / 5 + magic_level * 0.8 + 5",
+        "max": "level / 5 + magic_level * 1.6 + 10"
+      }
+    },
+    {
+      "id": 2313,
+      "availability": {
+        "name": "Explosion Rune",
+        "vocs": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Explosion Rune",
+        "cost": 4166,
+        "charges": 100,
+        "level": 31,
+        "ml": 6,
+        "vocs": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Explosion Rune",
+        "mana": 180,
+        "charges": 6,
+        "level": 31,
+        "ml": 6,
+        "baseVocations": [
+          1,
+          2,
+          3
+        ]
+      },
+      "damage_formula": {
+        "name": "Explosion Rune",
+        "element": "physical_or_explosion",
+        "area": "area",
+        "min": "level / 5 + magic_level * 1.6 + 9",
+        "max": "level / 5 + magic_level * 3.2 + 19"
+      }
+    },
+    {
+      "id": 2315,
+      "availability": {
+        "name": "Thunderstorm Rune",
+        "vocs": [
+          1
+        ],
+        "type": "attack"
+      },
+      "npc_catalog": {
+        "name": "Thunderstorm Rune",
+        "cost": 3500,
+        "charges": 100,
+        "level": 28,
+        "ml": 4,
+        "vocs": [
+          1
+        ],
+        "type": "attack"
+      },
+      "conjuration": {
+        "name": "Thunderstorm Rune",
+        "mana": 115,
+        "charges": 4,
+        "level": 28,
+        "ml": 4,
+        "baseVocations": [
+          1
+        ]
+      },
+      "damage_formula": {
+        "name": "Thunderstorm Rune",
+        "element": "energy",
+        "area": "area",
+        "min": "level / 5 + magic_level * 1.1 + 6",
+        "max": "level / 5 + magic_level * 2.6 + 14"
+      }
+    }
+  ],
+  "maestria_spell_maps": {
+    "sorcerer": {
+      "fire": {
+        "1": "exevo flam hur",
+        "2": "exevo gran flam hur",
+        "3": "exevo gran mas flam"
+      },
+      "energy": {
+        "1": "exevo vis lux",
+        "2": "exevo vis hur",
+        "3": "exevo gran mas vis"
+      }
+    },
+    "druid": {
+      "ice": {
+        "1": "exevo frigo hur",
+        "2": "exevo gran frigo hur",
+        "3": "exevo gran mas frigo"
+      },
+      "earth": {
+        "1": "exori gran tera",
+        "2": "exevo tera hur",
+        "3": "exevo gran mas tera"
+      }
+    },
+    "paladin": {
+      "default": {
+        "1": "exori con",
+        "2": "exori gran con",
+        "3": "exevo mas san"
+      }
+    },
+    "knight": {
+      "default": {
+        "1": "exori",
+        "2": "exori min",
+        "3": "exori gran"
+      }
+    }
+  },
+  "conventions": {
+    "cooldown": "Milissegundos, conforme o banco de magias.",
+    "vocation_ids": {
+      "1": "Sorcerer",
+      "2": "Druid",
+      "3": "Paladin",
+      "4": "Knight",
+      "5": "Master Sorcerer",
+      "6": "Elder Druid",
+      "7": "Royal Paladin",
+      "8": "Elite Knight"
+    },
+    "damage_formula": "Fórmula bruta antes de postura de combate, tuning de vocação, Roda e outros modificadores, salvo quando indicado no código-fonte."
+  },
+  "formula_sources": {
+    "getSpellOrRuneDamage": "function getSpellOrRuneDamage(idOrWords, isRune) {\n                    const level = playerState.level;\n                    const magicLevel = getEffectiveSkill('magic');\n                    let min = 0;\n                    let max = 0;\n                    \n                    if (isRune) {\n                        const runeId = parseInt(idOrWords);\n                        if (runeId === 2268) { // SD\n                            min = (level / 5) + (magicLevel * 4.3) + 32;\n                            max = (level / 5) + (magicLevel * 7.4) + 48;\n                        } else if (runeId === 2304) { // GFB\n                            min = (level / 5) + (magicLevel * 1.2) + 7;\n                            max = (level / 5) + (magicLevel * 2.85) + 16;\n                        } else if (runeId === 2313) { // Explosion\n                            min = (level / 5) + (magicLevel * 1.6) + 9;\n                            max = (level / 5) + (magicLevel * 3.2) + 19;\n                        } else if (runeId === 2311) { // HMM\n                            min = (level / 5) + (magicLevel * 0.8) + 5;\n                            max = (level / 5) + (magicLevel * 1.6) + 10;\n                        } else if (runeId === 2287) { // LMM\n                            min = (level / 5) + (magicLevel * 0.4) + 3;\n                            max = (level / 5) + (magicLevel * 0.8) + 5;\n                        // Runas elementais — espelho exato de idleRollRuneAttackDamage() no PHP\n                        } else if (runeId === 2274) { // Avalanche (gelo, área)\n                            min = (level / 5) + (magicLevel * 1.2) + 7;\n                            max = (level / 5) + (magicLevel * 2.85) + 16;\n                        } else if (runeId === 2288) { // Stone Shower (terra, área)\n                            min = (level / 5) + (magicLevel * 1.1) + 6;\n                            max = (level / 5) + (magicLevel * 2.6) + 14;\n                        } else if (runeId === 2315) { // Thunderstorm (energia, área)\n                            min = (level / 5) + (magicLevel * 1.1) + 6;\n                            max = (level / 5) + (magicLevel * 2.6) + 14;\n                        } else if (runeId === 2302) { // Fireball (fogo, área)\n                            min = (level / 5) + (magicLevel * 0.9) + 5;\n                            max = (level / 5) + (magicLevel * 2.1) + 12;\n                        } else if (runeId === 2271) { // Icicle (gelo, alvo único)\n                            min = (level / 5) + (magicLevel * 1.5) + 8;\n                            max = (level / 5) + (magicLevel * 3.0) + 18;\n                        } else if (runeId === 2295) { // Holy Missile (sagrado, alvo único)\n                            min = (level / 5) + (magicLevel * 1.5) + 8;\n                            max = (level / 5) + (magicLevel * 3.0) + 18;\n                        }\n                    } else {\n                        const words = idOrWords.toLowerCase().trim();\n                        const spellMeta = spellsDb[words] || {};\n                        const formula = spellMeta.formula || null;\n\n                        const formulaTermValue = (term) => {\n                            if (!term) return 0;\n                            const formulaLevel = formula && formula.levelCap ? Math.min(level, parseInt(formula.levelCap, 10) || level) : level;\n                            const formulaMagicLevel = formula && formula.magicLevelCap ? Math.min(magicLevel, parseInt(formula.magicLevelCap, 10) || magicLevel) : magicLevel;\n                            let value = parseFloat(term.constant || 0) || 0;\n                            const divisor = parseFloat(term.levelDivisor || 0) || 0;\n                            if (divisor > 0) value += formulaLevel / divisor;\n                            value += formulaMagicLevel * (parseFloat(term.magicLevel || 0) || 0);\n                            value += getEffectiveSkill('distance') * (parseFloat(term.distanceSkill || 0) || 0);\n\n                            const skillAttackFactor = parseFloat(term.skillAttack || 0) || 0;\n                            if (skillAttackFactor > 0) {\n                                const skillKey = getEquippedWeaponSkillKey() || 'sword_tries';\n                                const weaponSkill = Math.max(10, getEffectiveSkill(skillKey.replace('_tries', '')));\n                                const weaponId = playerEquip.weapon ? playerEquip.weapon.id : 0;\n                                const weaponMeta = weaponId ? getItemInstanceMeta(playerEquip.weapon) : {};\n                                \n                                let weaponAttack = getItemAttackValue(weaponMeta);\n                                if (weaponUsesAmmunition(weaponMeta) && getVocationBase(playerState.vocation) === 'paladin') {\n                                    const requiredAmmoType = getRequiredAmmoTypeForWeapon(weaponMeta);\n                                    const ammoId = playerEquip.ammo ? playerEquip.ammo.id : 0;\n                                    const ammoMeta = ammoId ? getItemInstanceMeta(playerEquip.ammo) : null;\n                                    if (ammoMeta && requiredAmmoType && getAmmoItemType(ammoMeta) === requiredAmmoType) {\n                                        weaponAttack += getItemAttackValue(ammoMeta);\n                                    }\n                                }\n                                if (weaponAttack <= 0) weaponAttack = 25;\n                                value += weaponSkill * weaponAttack * skillAttackFactor;\n                            }\n\n                            return Math.max(0, value);\n                        };\n\n                        if (formula && formula.min && formula.max) {\n                            min = formulaTermValue(formula.min);\n                            max = formulaTermValue(formula.max);\n                        } else if (['exori', 'exori ico', 'exori gran'].includes(words)) {\n                            // Knight spells scale on Melee Skill and Weapon Attack\n                            const meleeSkill = Math.max(10, getEffectiveSkill((getEquippedWeaponSkillKey() || 'sword_tries').replace('_tries', '')));\n                            \n                            const weaponId = playerEquip.weapon ? playerEquip.weapon.id : 0;\n                            const weaponMeta = weaponId ? getItemInstanceMeta(playerEquip.weapon) : {};\n                            let weaponAttack = 0;\n                            if (weaponMeta.attributes) {\n                                weaponAttack = parseInt(weaponMeta.attributes.attack || 0);\n                            } else {\n                                weaponAttack = parseInt(weaponMeta.attack || 0);\n                            }\n                            if (weaponAttack <= 0) weaponAttack = 5;\n                            \n                            if (words === 'exori') {\n                                min = (level / 5) + (meleeSkill * weaponAttack * 0.03) + 7;\n                                max = (level / 5) + (meleeSkill * weaponAttack * 0.05) + 11;\n                            } else if (words === 'exori ico') {\n                                min = (level / 5) + (meleeSkill * weaponAttack * 0.02) + 4;\n                                max = (level / 5) + (meleeSkill * weaponAttack * 0.04) + 9;\n                            } else if (words === 'exori gran') {\n                                min = (level / 5) + (meleeSkill * weaponAttack * 0.06) + 13;\n                                max = (level / 5) + (meleeSkill * weaponAttack * 0.11) + 27;\n                            }\n                        } else if (words === 'exori san') {\n                            min = (level / 5) + (magicLevel * 1.9) + 8;\n                            max = (level / 5) + (magicLevel * 3.0) + 18;\n                        } else if (['exori con', 'exori gran con'].includes(words)) {\n                            // Paladin physical spear spells scale on Distance Skill, total weapon/ammo attack, and Magic Level\n                            const distSkill = Math.max(10, getEffectiveSkill('distance_tries'));\n                            const weaponId = playerEquip.weapon ? playerEquip.weapon.id : 0;\n                            const weaponMeta = weaponId ? getItemInstanceMeta(playerEquip.weapon) : {};\n                            \n                            let weaponAttack = getItemAttackValue(weaponMeta);\n                            if (weaponUsesAmmunition(weaponMeta) && getVocationBase(playerState.vocation) === 'paladin') {\n                                const requiredAmmoType = getRequiredAmmoTypeForWeapon(weaponMeta);\n                                const ammoId = playerEquip.ammo ? playerEquip.ammo.id : 0;\n                                const ammoMeta = ammoId ? getItemInstanceMeta(playerEquip.ammo) : null;\n                                if (ammoMeta && requiredAmmoType && getAmmoItemType(ammoMeta) === requiredAmmoType) {\n                                    weaponAttack += getItemAttackValue(ammoMeta);\n                                }\n                            }\n                            if (weaponAttack <= 0) weaponAttack = 25;\n\n                            if (words === 'exori con') {\n                                min = (level / 5) + (distSkill * weaponAttack * 0.04) + (magicLevel * 1.2) + 15;\n                                max = (level / 5) + (distSkill * weaponAttack * 0.08) + (magicLevel * 2.2) + 30;\n                            } else if (words === 'exori gran con') {\n                                // Exori Gran Con: Magia pesadíssima de dano único do Paladin (Lvl 90, 8s cd, ~3x do dano base)\n                                min = (level / 5) + (distSkill * 5.5) + (magicLevel * 4.0) + 120;\n                                max = (level / 5) + (distSkill * 9.5) + (magicLevel * 8.0) + 220;\n                            }\n                        } else if (words === 'exevo mas san') {\n                            min = (level / 5) + (magicLevel * 5.0) + 25;\n                            max = (level / 5) + (magicLevel * 6.2) + 45;\n                        } else if (['exori flam', 'exori vis', 'exori frigo', 'exori mort'].includes(words)) {\n                            min = (level / 5) + (magicLevel * 1.4) + 8;\n                            max = (level / 5) + (magicLevel * 2.2) + 14;\n                        } else if (words === 'exevo gran mas vis') {\n                            min = (level / 5) + (magicLevel * 4.0) + 75;\n                            max = (level / 5) + (magicLevel * 10.0) + 150;\n                        } else if (words === 'exevo gran mas frigo') {\n                            min = (level / 5) + (magicLevel * 5.5) + 25;\n                            max = (level / 5) + (magicLevel * 11.0) + 50;\n                        } else if (words === 'exevo flam hur' || words === 'exevo frigo hur') {\n                            // Fire Wave / Ice Wave (ticket #0127): magias de ONDA em área. Antes NÃO\n                            // tinham fórmula e caíam no fallback físico (por causa do 'hur'), escalando\n                            // com ataque de arma (5 numa varinha) = dano ridículo, abaixo da GFB. Agora\n                            // escalam com Magic Level, ACIMA da GFB (que é ML*1.2..2.85), como convém a\n                            // uma magia de maestria da Roda. Espelho em idleEstimateSpellDamageRange (PHP).\n                            min = (level / 5) + (magicLevel * 1.6) + 10;\n                            max = (level / 5) + (magicLevel * 3.2) + 22;\n                        } else if (words === 'exevo vis hur' || words === 'exevo tera hur') {\n                            // Energy Wave / Earth Wave: nível 38, mais mana e cooldown maior — escala\n                            // mais forte que Fire/Ice Wave. Também espelhado no servidor.\n                            min = (level / 5) + (magicLevel * 2.2) + 15;\n                            max = (level / 5) + (magicLevel * 4.4) + 30;\n                        }\n\n                        if (min <= 0 || max <= 0) {\n                            const baseVoc = playerState.vocation > 4 ? playerState.vocation - 4 : playerState.vocation;\n                            const spellLevel = parseInt(spellMeta.level || 1, 10) || 1;\n                            const spellMana = parseInt(spellMeta.mana || 0, 10) || 0;\n                            const spellName = (spellMeta.name || '').toLowerCase();\n                            const isPhysical = baseVoc === 4\n                                || words.includes('ico')\n                                || words.includes('mas')\n                                || words.includes('hur')\n                                || words.includes('con')\n                                || spellName.includes('spear')\n                                || spellName.includes('sweep')\n                                || spellName.includes('berserk')\n                                || spellName.includes('throw')\n                                || spellName.includes('wound');\n\n                            if (isPhysical && baseVoc !== 1 && baseVoc !== 2) {\n                                const skillKey = getEquippedWeaponSkillKey() || 'sword_tries';\n                                const weaponSkill = Math.max(10, getEffectiveSkill(skillKey.replace('_tries', '')));\n                                const weaponId = playerEquip.weapon ? playerEquip.weapon.id : 0;\n                                const weaponMeta = weaponId ? getItemInstanceMeta(playerEquip.weapon) : {};\n                                const attrs = weaponMeta.attributes || {};\n                                const weaponAttack = Math.max(5, parseInt(weaponMeta.attack ?? attrs.attack ?? 0, 10) || 0);\n                                let physicalScale = 0.025;\n                                if (words.includes('gran')) physicalScale = 0.05;\n                                if (words.includes('mas')) physicalScale = 0.045;\n                                if (words.includes('max')) physicalScale = 0.075;\n                                min = (level / 5) + (weaponSkill * weaponAttack * physicalScale) + Math.max(4, spellLevel * 0.25);\n                                max = (level / 5) + (weaponSkill * weaponAttack * (physicalScale * 1.8)) + Math.max(8, spellMana * 0.12);\n                            } else {\n                                let spellScale = 1.15;\n                                if (words.includes('infir')) spellScale = 0.65;\n                                if (words.includes('gran')) spellScale += 0.75;\n                                if (words.includes('max')) spellScale += 1.4;\n                                if (words.includes('mas')) spellScale += 1.0;\n                                if (words.includes('hur')) spellScale += 0.55;\n                                if (words.includes('lux')) spellScale += 0.6;\n                                if (words.startsWith('utori')) spellScale = 0.9;\n                                min = (level / 5) + (magicLevel * spellScale) + Math.max(3, spellLevel * 0.3);\n                                max = (level / 5) + (magicLevel * (spellScale * 1.75)) + Math.max(6, spellMana * 0.18);\n                            }\n                        }\n                    }\n                    \n                    if (min <= 0) min = 1;\n                    if (max < min) max = min + 1;\n                    \n                    // Scale damage based on combat posture / mode (FIGHTMODE multipliers on getAttackFactor)\n                    const mode = playerState.combatMode || 'balanced';\n                    let attackFactor = 1.0;\n                    if (mode === 'balanced') attackFactor = 1.2;\n                    else if (mode === 'defense') attackFactor = 2.0;\n                    \n                    // Attack factor is the denominator in the OTServ formula, so divide by it\n                    min = min / attackFactor;\n                    max = max / attackFactor;\n\n                    // Sorcerer/Druid causam ~25% de dano a mais no geral (espelha o mesmo bônus\n                    // aplicado no dps de equipamento server-side, calculateEquipmentStats) —\n                    // runas e magias de ataque/cura entram aqui também, não só o dps genérico.\n                    // Ajuste de balanceamento (2026-07-30): desbalanceado entre as duas classes —\n                    // Sorcerer +10% em cima da base (1.25*1.10=1.375), Druid +20% em cima da base\n                    // (1.25*1.20=1.50). Espelho de calculateEquipmentStats() no PHP; os dois têm\n                    // que mudar juntos.\n                    // ⚠️ 2026-08-01: os dois voltaram para 1.25 (base histórica). Motivo completo\n                    // no espelho em calculateEquipmentStats() no PHP — medição de produção com os\n                    // nerfs de Knight/Paladin já revertidos deu knight/paladino ~110kk/h contra\n                    // ~330kk/h do sorcerer. Trocar os DOIS lados sempre juntos.\n                    const dmgBaseVoc = playerState.vocation > 4 ? playerState.vocation - 4 : playerState.vocation;\n                    if (dmgBaseVoc === 1 || dmgBaseVoc === 2) {\n                        min *= 1.25;\n                        max *= 1.25;\n                    }\n\n                    // ── CORTE DAS MAGIAS DE ÁREA DA MAESTRIA (2026-08-01) ──────────────────\n                    // Medição de produção, tudo em RAW e já com os nerfs de Knight/Paladin\n                    // revertidos: knight/paladino bem upados ~110kk/h, sorcerer ~330kk/h.\n                    // O multiplicador geral acima explica pouco disso — o que explodiu foi o DPS\n                    // de ÁREA da Maestria, que saiu de 28 para 379 (13,5x) quando os cooldowns\n                    // de 40s viraram 3s. Esta é a alavanca certa: o DANO dessas magias.\n                    //\n                    // ⚠️ NUNCA subir o cooldown de volta para corrigir isso. 4000ms já é DOWNGRADE\n                    // em relação à Maestria II — voltaria a armadilha em que evoluir a Maestria\n                    // deixava o mago mais fraco, que foi o bug que essa correção resolveu.\n                    //\n                    // Aplicado no VALOR FINAL, depois de qualquer caminho de fórmula (script Lua\n                    // parseado ou o fallback de spellScale), justamente para não depender de qual\n                    // dos dois produziu o número. Espelho no PHP: IDLE_MAESTRIA_AREA_DMG_MULT.\n                    // Alvo: 330kk -> faixa de 150-180kk (pedido do dono).\n                    // ⚠️ 2026-08-01: aqui a variável é `idOrWords` (o parâmetro da função), NÃO\n                    // `words` — usei `words` na primeira versão e quebrou o combate em produção\n                    // com \"ReferenceError: words is not defined\". Em runa o parâmetro é um id\n                    // numérico, por isso o `isRune` no gate: só magia entra neste corte.\n                    const palavrasMagia = (!isRune) ? String(idOrWords || '').toLowerCase() : '';\n                    if ((dmgBaseVoc === 1 || dmgBaseVoc === 2) && palavrasMagia.includes('gran mas')) {\n                        min *= 0.55;\n                        max *= 0.55;\n                    }\n\n                    return Math.max(1, min + Math.random() * (max - min));\n                }",
+    "isSpellAoe": "function isSpellAoe(words) {\n                    const meta = spellsDb[words];\n                    return !!(meta && meta.visual && meta.visual.area);\n                }",
+    "getVocationRunesList": "function getVocationRunesList() {\n                    const voc = playerState.vocation;\n                    const baseVoc = voc > 4 ? voc - 4 : voc;\n                    const allRunes = {\n                        2260: { name: 'Blank Rune', vocs: [1, 2, 3], type: 'blank' },\n                        2268: { name: 'Sudden Death Rune', vocs: [1, 2], type: 'attack' },\n                        2273: { name: 'Ultimate Healing Rune', vocs: [1, 2, 3, 4], type: 'healing' },\n                        2265: { name: 'Intense Healing Rune', vocs: [1, 2, 3, 4], type: 'healing' },\n                        2304: { name: 'Great Fireball Rune', vocs: [1, 2, 3], type: 'attack' },\n                        2311: { name: 'Heavy Magic Missile Rune', vocs: [1, 2, 3], type: 'attack' },\n                        2287: { name: 'Light Magic Missile Rune', vocs: [1, 2, 3], type: 'attack' },\n                        2313: { name: 'Explosion Rune', vocs: [1, 2, 3, 4], type: 'attack' },\n                        // Runas elementais — espelho de getVocationRunes() no PHP\n                        2274: { name: 'Avalanche Rune', vocs: [2, 3], type: 'attack' }, // Paladin liberado\n                        2271: { name: 'Icicle Rune', vocs: [2], type: 'attack' },\n                        2288: { name: 'Stone Shower Rune', vocs: [2], type: 'attack' },\n                        2315: { name: 'Thunderstorm Rune', vocs: [1], type: 'attack' },\n                        2302: { name: 'Fireball Rune', vocs: [1], type: 'attack' },\n                        2295: { name: 'Holy Missile Rune', vocs: [3], type: 'attack' }\n                    };\n                    const compatible = {};\n                    for (let id in allRunes) {\n                        if (allRunes[id].vocs.includes(baseVoc)) {\n                            compatible[id] = allRunes[id];\n                        }\n                    }\n                    return compatible;\n                }",
+    "getMaestriaSpellMap": "function getMaestriaSpellMap() {\n                    const voc = playerState.vocation > 4 ? playerState.vocation - 4 : playerState.vocation;\n                    const el = (playerState.maestriaElement || '').toLowerCase();\n                    switch (voc) {\n                        case 1:\n                            // ALTERADO (2026-07-29): ver idleMaestriaSpellMap() no PHP — Fire Wave\n                            // \"gran\" nova preenche o degrau do meio.\n                            return el === 'energy'\n                                ? { '1': 'exevo vis lux', '2': 'exevo vis hur', '3': 'exevo gran mas vis' }\n                                : { '1': 'exevo flam hur', '2': 'exevo gran flam hur', '3': 'exevo gran mas flam' };\n                        case 2:\n                            // ALTERADO (2026-07-29): mesma mudança, espelhada pro gelo com a Ice\n                            // Wave \"gran\" nova.\n                            return el === 'earth'\n                                ? { '1': 'exori gran tera', '2': 'exevo tera hur', '3': 'exevo gran mas tera' }\n                                : { '1': 'exevo frigo hur', '2': 'exevo gran frigo hur', '3': 'exevo gran mas frigo' };\n                        case 3: return { '1': 'exori con', '2': 'exori gran con', '3': 'exevo mas san' };\n                        // ALTERADO (2026-07-28): nó 2 do Knight trocou de Exori Mas para Exori Min\n                        // (Front Sweep) — ver idleMaestriaSpellMap() no PHP e o changelog \"AJUSTE\n                        // NO KNIGHT + MUDANÇA NA RODA DO DESTINO\".\n                        case 4: return { '1': 'exori', '2': 'exori min', '3': 'exori gran' };\n                    }\n                    return { '1': 'exori', '2': 'exori min', '3': 'exori gran' };\n                }"
+  }
+}

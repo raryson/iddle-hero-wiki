@@ -1,0 +1,2266 @@
+{
+  "metadata": {
+    "game": "Idle Hero / Idle Expedition",
+    "source": "https://idlehero.online/game",
+    "package_schema_version": "1.0.0",
+    "client_map_extracted_at": "2026-08-04T14:20:35.914Z",
+    "dynamic_data_extracted_at": "2026-08-04T14:29:52.280Z",
+    "calculated_tables_extracted_at": "2026-08-04T14:08:44.045Z",
+    "privacy": "Dados pessoais da conta, personagem, inventário, saldos, tokens, cookies, CSRF e sessão foram removidos.",
+    "category": 5,
+    "slug": "wheel-specialties"
+  },
+  "summary": {
+    "wheel_node_count": 19,
+    "wheel_path_count": 4,
+    "maestria_node_count": 3,
+    "specialty_count": 7
+  },
+  "wheel": {
+    "minimum_level": 100,
+    "maximum_active_paths": 2,
+    "reset_cost": {
+      "gold": 5000000,
+      "points": 50
+    },
+    "path_metadata": {
+      "furia": {
+        "color": "#c62828",
+        "light": "#ff8a8a",
+        "angle": -45,
+        "label": "FÚRIA",
+        "desc": "ataque básico (arma e varinha)"
+      },
+      "arcano": {
+        "color": "#7b3fbf",
+        "light": "#b085e0",
+        "angle": 45,
+        "label": "ARCANO",
+        "desc": "magia e cooldown"
+      },
+      "protecao": {
+        "color": "#1e6fb8",
+        "light": "#6ab0e8",
+        "angle": 135,
+        "label": "PROTEÇÃO",
+        "desc": "sobrevivência"
+      },
+      "precisao": {
+        "color": "#2e9e5b",
+        "light": "#6ae0a0",
+        "angle": -135,
+        "label": "PRECISÃO",
+        "desc": "crítico e roubo"
+      }
+    },
+    "effect_labels": {
+      "weapon_dmg_pct": "Dano de ataque básico",
+      "spell_dmg_pct": "Dano de magia",
+      "spell_cd_pct": "Cooldown de magia",
+      "max_hp_pct": "HP máximo",
+      "max_mana_pct": "Mana máxima",
+      "all_resist_pct": "Resistência a todos os elementos",
+      "physical_reduction_pct": "Redução de dano físico",
+      "crit_chance_pct": "Chance de crítico",
+      "crit_damage_pct": "Dano crítico",
+      "life_leech_pct": "Vampirismo",
+      "mana_leech_pct": "Mana Leech",
+      "fatal_impeto_pct": "Chance de golpe de arma duplo",
+      "fatal_eco_pct": "Chance de magia dupla",
+      "fatal_baluarte_pct": "Chance de anular um golpe",
+      "fatal_execucao_pct": "Dano contra alvo abaixo de 25% de vida"
+    },
+    "cost_curve_by_ring": {
+      "1": {
+        "base": 900000,
+        "growth": 1.42
+      },
+      "2": {
+        "base": 4500000,
+        "growth": 1.45
+      },
+      "3": {
+        "base": 18000000,
+        "growth": 1.46
+      },
+      "4": {
+        "base": 90000000,
+        "growth": 1.75
+      }
+    },
+    "vocation_path_multipliers": {
+      "1": {
+        "furia": 0.8,
+        "arcano": 1.3,
+        "protecao": 0.85,
+        "precisao": 1.1
+      },
+      "2": {
+        "furia": 0.8,
+        "arcano": 1.25,
+        "protecao": 1.15,
+        "precisao": 0.95
+      },
+      "3": {
+        "furia": 1.1,
+        "arcano": 0.85,
+        "protecao": 1,
+        "precisao": 1.25
+      },
+      "4": {
+        "furia": 1.25,
+        "arcano": 0.7,
+        "protecao": 1.25,
+        "precisao": 1
+      }
+    },
+    "maestria_cost_multiplier": 2.5,
+    "knight_furia_weapon_damage_cap_pct": 65,
+    "nodes": [
+      {
+        "key": "furia_1",
+        "path": "furia",
+        "ring": 1,
+        "max": 10,
+        "name": "Força Bruta",
+        "effects": {
+          "weapon_dmg_pct": 1.5
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 900000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 1300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 1800000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 2600000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 3700000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 5200000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 7400000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 10500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 14900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 21100000
+          }
+        ],
+        "total_gold_to_max": 69400000
+      },
+      {
+        "key": "furia_2",
+        "path": "furia",
+        "ring": 2,
+        "max": 10,
+        "name": "Golpe Devastador",
+        "effects": {
+          "weapon_dmg_pct": 2
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 4500000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 6500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 9500000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 13700000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 19900000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 28800000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 41800000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 60600000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 87900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 127500000
+          }
+        ],
+        "total_gold_to_max": 400700000
+      },
+      {
+        "key": "furia_3",
+        "path": "furia",
+        "ring": 3,
+        "max": 10,
+        "name": "Ira Crescente",
+        "effects": {
+          "weapon_dmg_pct": 2.5
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 18000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 26300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 38400000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 56000000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 81800000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 119400000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 174300000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 254500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 371600000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 542600000
+          }
+        ],
+        "total_gold_to_max": 1682900000
+      },
+      {
+        "key": "furia_gem",
+        "path": "furia",
+        "ring": 4,
+        "max": 5,
+        "name": "FATAL: Ímpeto",
+        "effects": {
+          "fatal_impeto_pct": 3
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 90000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 157500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 275600000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 482300000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 844100000
+          }
+        ],
+        "total_gold_to_max": 1849500000
+      },
+      {
+        "key": "arcano_1",
+        "path": "arcano",
+        "ring": 1,
+        "max": 10,
+        "name": "Fluxo Arcano",
+        "effects": {
+          "spell_cd_pct": 2
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 900000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 1300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 1800000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 2600000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 3700000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 5200000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 7400000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 10500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 14900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 21100000
+          }
+        ],
+        "total_gold_to_max": 69400000
+      },
+      {
+        "key": "arcano_2",
+        "path": "arcano",
+        "ring": 2,
+        "max": 10,
+        "name": "Poder Arcano",
+        "effects": {
+          "spell_dmg_pct": 2.5
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 4500000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 6500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 9500000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 13700000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 19900000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 28800000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 41800000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 60600000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 87900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 127500000
+          }
+        ],
+        "total_gold_to_max": 400700000
+      },
+      {
+        "key": "arcano_3",
+        "path": "arcano",
+        "ring": 3,
+        "max": 10,
+        "name": "Mente Vasta",
+        "effects": {
+          "max_mana_pct": 2,
+          "spell_dmg_pct": 1.5
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 18000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 26300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 38400000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 56000000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 81800000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 119400000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 174300000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 254500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 371600000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 542600000
+          }
+        ],
+        "total_gold_to_max": 1682900000
+      },
+      {
+        "key": "arcano_gem",
+        "path": "arcano",
+        "ring": 4,
+        "max": 5,
+        "name": "FATAL: Eco",
+        "effects": {
+          "fatal_eco_pct": 3
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 90000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 157500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 275600000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 482300000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 844100000
+          }
+        ],
+        "total_gold_to_max": 1849500000
+      },
+      {
+        "key": "protecao_1",
+        "path": "protecao",
+        "ring": 1,
+        "max": 10,
+        "name": "Pele de Pedra",
+        "effects": {
+          "max_hp_pct": 2
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 900000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 1300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 1800000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 2600000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 3700000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 5200000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 7400000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 10500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 14900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 21100000
+          }
+        ],
+        "total_gold_to_max": 69400000
+      },
+      {
+        "key": "protecao_2",
+        "path": "protecao",
+        "ring": 2,
+        "max": 10,
+        "name": "Guarda Elemental",
+        "effects": {
+          "all_resist_pct": 1.5
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 4500000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 6500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 9500000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 13700000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 19900000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 28800000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 41800000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 60600000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 87900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 127500000
+          }
+        ],
+        "total_gold_to_max": 400700000
+      },
+      {
+        "key": "protecao_3",
+        "path": "protecao",
+        "ring": 3,
+        "max": 10,
+        "name": "Muralha",
+        "effects": {
+          "max_hp_pct": 2,
+          "physical_reduction_pct": 1
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 18000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 26300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 38400000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 56000000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 81800000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 119400000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 174300000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 254500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 371600000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 542600000
+          }
+        ],
+        "total_gold_to_max": 1682900000
+      },
+      {
+        "key": "protecao_gem",
+        "path": "protecao",
+        "ring": 4,
+        "max": 5,
+        "name": "FATAL: Baluarte",
+        "effects": {
+          "fatal_baluarte_pct": 2
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 90000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 157500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 275600000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 482300000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 844100000
+          }
+        ],
+        "total_gold_to_max": 1849500000
+      },
+      {
+        "key": "precisao_1",
+        "path": "precisao",
+        "ring": 1,
+        "max": 10,
+        "name": "Olho Aguçado",
+        "effects": {
+          "crit_chance_pct": 1
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 900000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 1300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 1800000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 2600000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 3700000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 5200000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 7400000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 10500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 14900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 21100000
+          }
+        ],
+        "total_gold_to_max": 69400000
+      },
+      {
+        "key": "precisao_2",
+        "path": "precisao",
+        "ring": 2,
+        "max": 10,
+        "name": "Lâmina Cruel",
+        "effects": {
+          "crit_damage_pct": 3
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 4500000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 6500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 9500000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 13700000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 19900000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 28800000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 41800000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 60600000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 87900000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 127500000
+          }
+        ],
+        "total_gold_to_max": 400700000
+      },
+      {
+        "key": "precisao_3",
+        "path": "precisao",
+        "ring": 3,
+        "max": 10,
+        "name": "Sede",
+        "effects": {
+          "life_leech_pct": 0.5,
+          "mana_leech_pct": 0.5
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 18000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 26300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 38400000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 56000000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 81800000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 119400000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 174300000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 254500000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 371600000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 542600000
+          }
+        ],
+        "total_gold_to_max": 1682900000
+      },
+      {
+        "key": "precisao_gem",
+        "path": "precisao",
+        "ring": 4,
+        "max": 5,
+        "name": "FATAL: Execução",
+        "effects": {
+          "fatal_execucao_pct": 10
+        },
+        "cost_multiplier": 1.0,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 90000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 157500000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 275600000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 482300000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 844100000
+          }
+        ],
+        "total_gold_to_max": 1849500000
+      },
+      {
+        "key": "maestria_1",
+        "path": "maestria",
+        "ring": 1,
+        "max": 10,
+        "name": "Maestria I",
+        "effects": {},
+        "cost_multiplier": 2.5,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 2200000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 3200000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 4500000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 6400000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 9100000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 13000000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 18400000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 26200000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 37200000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 52800000
+          }
+        ],
+        "total_gold_to_max": 173000000
+      },
+      {
+        "key": "maestria_2",
+        "path": "maestria",
+        "ring": 2,
+        "max": 10,
+        "name": "Maestria II",
+        "effects": {},
+        "cost_multiplier": 2.5,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 11200000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 16300000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 23700000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 34300000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 49700000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 72100000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 104600000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 151600000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 219800000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 318800000
+          }
+        ],
+        "total_gold_to_max": 1002100000
+      },
+      {
+        "key": "maestria_gem",
+        "path": "maestria",
+        "ring": 3,
+        "max": 10,
+        "name": "Gema de Maestria",
+        "effects": {},
+        "cost_multiplier": 2.5,
+        "upgrade_costs": [
+          {
+            "from_level": 0,
+            "to_level": 1,
+            "gold": 45000000
+          },
+          {
+            "from_level": 1,
+            "to_level": 2,
+            "gold": 65700000
+          },
+          {
+            "from_level": 2,
+            "to_level": 3,
+            "gold": 95900000
+          },
+          {
+            "from_level": 3,
+            "to_level": 4,
+            "gold": 140000000
+          },
+          {
+            "from_level": 4,
+            "to_level": 5,
+            "gold": 204500000
+          },
+          {
+            "from_level": 5,
+            "to_level": 6,
+            "gold": 298500000
+          },
+          {
+            "from_level": 6,
+            "to_level": 7,
+            "gold": 435800000
+          },
+          {
+            "from_level": 7,
+            "to_level": 8,
+            "gold": 636300000
+          },
+          {
+            "from_level": 8,
+            "to_level": 9,
+            "gold": 929000000
+          },
+          {
+            "from_level": 9,
+            "to_level": 10,
+            "gold": 1356400000
+          }
+        ],
+        "total_gold_to_max": 4207100000
+      }
+    ],
+    "maximum_path_totals_by_base_vocation": {
+      "sorcerer": {
+        "furia": {
+          "weapon_dmg_pct": 48.0,
+          "fatal_impeto_pct": 12.0
+        },
+        "arcano": {
+          "spell_cd_pct": 26.0,
+          "spell_dmg_pct": 52.0,
+          "max_mana_pct": 26.0,
+          "fatal_eco_pct": 19.5
+        },
+        "protecao": {
+          "max_hp_pct": 34.0,
+          "all_resist_pct": 12.75,
+          "physical_reduction_pct": 8.5,
+          "fatal_baluarte_pct": 8.5
+        },
+        "precisao": {
+          "crit_chance_pct": 11.0,
+          "crit_damage_pct": 33.0,
+          "life_leech_pct": 5.5,
+          "mana_leech_pct": 5.5,
+          "fatal_execucao_pct": 55.0
+        },
+        "maestria": {
+          "spell_1_damage_pct_at_max": 20,
+          "spell_2_damage_pct_at_max": 25,
+          "spell_3_damage_pct_at_max": 30
+        }
+      },
+      "druid": {
+        "furia": {
+          "weapon_dmg_pct": 48.0,
+          "fatal_impeto_pct": 12.0
+        },
+        "arcano": {
+          "spell_cd_pct": 25.0,
+          "spell_dmg_pct": 50.0,
+          "max_mana_pct": 25.0,
+          "fatal_eco_pct": 18.75
+        },
+        "protecao": {
+          "max_hp_pct": 46.0,
+          "all_resist_pct": 17.25,
+          "physical_reduction_pct": 11.5,
+          "fatal_baluarte_pct": 11.5
+        },
+        "precisao": {
+          "crit_chance_pct": 9.5,
+          "crit_damage_pct": 28.5,
+          "life_leech_pct": 4.75,
+          "mana_leech_pct": 4.75,
+          "fatal_execucao_pct": 47.5
+        },
+        "maestria": {
+          "spell_1_damage_pct_at_max": 20,
+          "spell_2_damage_pct_at_max": 25,
+          "spell_3_damage_pct_at_max": 30
+        }
+      },
+      "paladin": {
+        "furia": {
+          "weapon_dmg_pct": 66.0,
+          "fatal_impeto_pct": 16.5
+        },
+        "arcano": {
+          "spell_cd_pct": 17.0,
+          "spell_dmg_pct": 34.0,
+          "max_mana_pct": 17.0,
+          "fatal_eco_pct": 12.75
+        },
+        "protecao": {
+          "max_hp_pct": 40.0,
+          "all_resist_pct": 15.0,
+          "physical_reduction_pct": 10.0,
+          "fatal_baluarte_pct": 10.0
+        },
+        "precisao": {
+          "crit_chance_pct": 12.5,
+          "crit_damage_pct": 37.5,
+          "life_leech_pct": 6.25,
+          "mana_leech_pct": 6.25,
+          "fatal_execucao_pct": 62.5
+        },
+        "maestria": {
+          "spell_1_damage_pct_at_max": 20,
+          "spell_2_damage_pct_at_max": 25,
+          "spell_3_damage_pct_at_max": 30
+        }
+      },
+      "knight": {
+        "furia": {
+          "weapon_dmg_pct": 65,
+          "fatal_impeto_pct": 18.75
+        },
+        "arcano": {
+          "spell_cd_pct": 14.0,
+          "spell_dmg_pct": 28.0,
+          "max_mana_pct": 14.0,
+          "fatal_eco_pct": 10.5
+        },
+        "protecao": {
+          "max_hp_pct": 50.0,
+          "all_resist_pct": 18.75,
+          "physical_reduction_pct": 12.5,
+          "fatal_baluarte_pct": 12.5
+        },
+        "precisao": {
+          "crit_chance_pct": 10.0,
+          "crit_damage_pct": 30.0,
+          "life_leech_pct": 5.0,
+          "mana_leech_pct": 5.0,
+          "fatal_execucao_pct": 50.0
+        },
+        "maestria": {
+          "spell_1_damage_pct_at_max": 20,
+          "spell_2_damage_pct_at_max": 25,
+          "spell_3_damage_pct_at_max": 30
+        }
+      }
+    },
+    "maestria_spell_maps": {
+      "sorcerer": {
+        "fire": {
+          "1": "exevo flam hur",
+          "2": "exevo gran flam hur",
+          "3": "exevo gran mas flam"
+        },
+        "energy": {
+          "1": "exevo vis lux",
+          "2": "exevo vis hur",
+          "3": "exevo gran mas vis"
+        }
+      },
+      "druid": {
+        "ice": {
+          "1": "exevo frigo hur",
+          "2": "exevo gran frigo hur",
+          "3": "exevo gran mas frigo"
+        },
+        "earth": {
+          "1": "exori gran tera",
+          "2": "exevo tera hur",
+          "3": "exevo gran mas tera"
+        }
+      },
+      "paladin": {
+        "default": {
+          "1": "exori con",
+          "2": "exori gran con",
+          "3": "exevo mas san"
+        }
+      },
+      "knight": {
+        "default": {
+          "1": "exori",
+          "2": "exori min",
+          "3": "exori gran"
+        }
+      }
+    }
+  },
+  "specialties": [
+    {
+      "key": "critical_hit",
+      "name": "Golpe Crítico",
+      "max_level": 20,
+      "description": "Chance de acertar um golpe com dano bônus em qualquer ataque.",
+      "effect_source": {
+        "chance": "getAttrPercent(level, 10, 20)",
+        "extra_damage": "getAttrPercent(level, 50, 100)"
+      },
+      "status": "A função auxiliar getAttrPercent não foi capturada; expressões de chamada preservadas sem inventar a curva."
+    },
+    {
+      "key": "life_leech",
+      "name": "Vampirismo",
+      "max_level": 20,
+      "description": "Recupera uma porcentagem do dano causado diretamente em Vida.",
+      "effect_source": {
+        "life_leech_pct": "getAttrPercent(level, 12.5, 25)"
+      },
+      "status": "A função auxiliar getAttrPercent não foi capturada."
+    },
+    {
+      "key": "mana_leech",
+      "name": "Mana Leech",
+      "max_level": 20,
+      "description": "Recupera uma porcentagem do dano causado diretamente em Mana.",
+      "effect_source": {
+        "mana_leech_pct": "getAttrPercent(level, 12.5, 25)"
+      },
+      "status": "A função auxiliar getAttrPercent não foi capturada."
+    },
+    {
+      "key": "dodge",
+      "name": "Esquiva",
+      "max_level": 20,
+      "description": "Chance de anular completamente um golpe recebido, inclusive elemental; o custo é o dobro dos atributos comuns.",
+      "effect_source": {
+        "dodge_pct": "getAttrPercent(clamp(level,0,20), 6, DODGE_ATTR_CAP)",
+        "upgrade_cost": "getAttrUpgradeCost(level) * DODGE_COST_MULT"
+      },
+      "status": "DODGE_ATTR_CAP, DODGE_COST_MULT e a função auxiliar de custo não foram capturados."
+    },
+    {
+      "key": "golden_hunt",
+      "name": "Caçada Dourada",
+      "max_level": 20,
+      "description": "Aumenta a chance de encontrar um monstro dourado com 1 Poeira garantida.",
+      "status": "A curva completa não foi capturada; o snapshot pessoal foi removido."
+    },
+    {
+      "key": "wave_mastery",
+      "name": "Domínio de Levas",
+      "max_level": 40,
+      "description": "Melhora a distribuição das levas e libera até 8 monstros simultâneos.",
+      "unlock_levels": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 5,
+        "5": 21,
+        "6": 25,
+        "7": 29,
+        "8": 33
+      },
+      "progression": [
+        {
+          "level": 0,
+          "distribution": [
+            70,
+            25,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.3499999999999999
+        },
+        {
+          "level": 1,
+          "distribution": [
+            67.75,
+            26,
+            6.25,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.385
+        },
+        {
+          "level": 2,
+          "distribution": [
+            65.5,
+            27,
+            7.5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.4200000000000002
+        },
+        {
+          "level": 3,
+          "distribution": [
+            63.25,
+            28,
+            8.75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.4549999999999998
+        },
+        {
+          "level": 4,
+          "distribution": [
+            61,
+            29,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.49
+        },
+        {
+          "level": 5,
+          "distribution": [
+            57.1875,
+            30,
+            11.25,
+            1.5625,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.571875
+        },
+        {
+          "level": 6,
+          "distribution": [
+            53.375,
+            31,
+            12.5,
+            3.125,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.65375
+        },
+        {
+          "level": 7,
+          "distribution": [
+            49.5625,
+            32,
+            13.75,
+            4.6875,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.7356250000000002
+        },
+        {
+          "level": 8,
+          "distribution": [
+            45.75,
+            33,
+            15,
+            6.25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.8175000000000001
+        },
+        {
+          "level": 9,
+          "distribution": [
+            41.9375,
+            34,
+            16.25,
+            7.8125,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.899375
+        },
+        {
+          "level": 10,
+          "distribution": [
+            38.125,
+            35,
+            17.5,
+            9.375,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 1.9812499999999997
+        },
+        {
+          "level": 11,
+          "distribution": [
+            34.3125,
+            36,
+            18.75,
+            10.9375,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.063125
+        },
+        {
+          "level": 12,
+          "distribution": [
+            30.5,
+            37,
+            20,
+            12.5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.145
+        },
+        {
+          "level": 13,
+          "distribution": [
+            26.6875,
+            38,
+            21.25,
+            14.0625,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.2268749999999997
+        },
+        {
+          "level": 14,
+          "distribution": [
+            22.875,
+            39,
+            22.5,
+            15.625,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.30875
+        },
+        {
+          "level": 15,
+          "distribution": [
+            19.0625,
+            40,
+            23.75,
+            17.1875,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.390625
+        },
+        {
+          "level": 16,
+          "distribution": [
+            15.25,
+            41,
+            25,
+            18.75,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.4725
+        },
+        {
+          "level": 17,
+          "distribution": [
+            11.4375,
+            42,
+            26.25,
+            20.3125,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.554375
+        },
+        {
+          "level": 18,
+          "distribution": [
+            7.625,
+            43,
+            27.5,
+            21.875,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.63625
+        },
+        {
+          "level": 19,
+          "distribution": [
+            3.8125,
+            44,
+            28.75,
+            23.4375,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.718125
+        },
+        {
+          "level": 20,
+          "distribution": [
+            0,
+            45,
+            30,
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.8
+        },
+        {
+          "level": 21,
+          "distribution": [
+            0,
+            45.5,
+            29,
+            24.5,
+            1,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.8099999999999996
+        },
+        {
+          "level": 22,
+          "distribution": [
+            0,
+            46,
+            28,
+            24,
+            2,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.82
+        },
+        {
+          "level": 23,
+          "distribution": [
+            0,
+            46.5,
+            27,
+            23.5,
+            3,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.83
+        },
+        {
+          "level": 24,
+          "distribution": [
+            0,
+            47,
+            26,
+            23,
+            4,
+            0,
+            0,
+            0
+          ],
+          "expectedSize": 2.8400000000000003
+        },
+        {
+          "level": 25,
+          "distribution": [
+            0,
+            46.25,
+            25,
+            22.5,
+            5,
+            1.25,
+            0,
+            0
+          ],
+          "expectedSize": 2.9000000000000004
+        },
+        {
+          "level": 26,
+          "distribution": [
+            0,
+            45.5,
+            24,
+            22,
+            6,
+            2.5,
+            0,
+            0
+          ],
+          "expectedSize": 2.9599999999999995
+        },
+        {
+          "level": 27,
+          "distribution": [
+            0,
+            44.75,
+            23,
+            21.5,
+            7,
+            3.75,
+            0,
+            0
+          ],
+          "expectedSize": 3.02
+        },
+        {
+          "level": 28,
+          "distribution": [
+            0,
+            44,
+            22,
+            21,
+            8,
+            5,
+            0,
+            0
+          ],
+          "expectedSize": 3.0799999999999996
+        },
+        {
+          "level": 29,
+          "distribution": [
+            0,
+            42,
+            21,
+            20.5,
+            9,
+            6.25,
+            1.25,
+            0
+          ],
+          "expectedSize": 3.2025
+        },
+        {
+          "level": 30,
+          "distribution": [
+            0,
+            40,
+            20,
+            20,
+            10,
+            7.5,
+            2.5,
+            0
+          ],
+          "expectedSize": 3.325
+        },
+        {
+          "level": 31,
+          "distribution": [
+            0,
+            38,
+            19,
+            19.5,
+            11,
+            8.75,
+            3.75,
+            0
+          ],
+          "expectedSize": 3.4475000000000002
+        },
+        {
+          "level": 32,
+          "distribution": [
+            0,
+            36,
+            18,
+            19,
+            12,
+            10,
+            5,
+            0
+          ],
+          "expectedSize": 3.5700000000000003
+        },
+        {
+          "level": 33,
+          "distribution": [
+            0,
+            32.125,
+            17,
+            18.5,
+            13,
+            11.25,
+            6.25,
+            1.875
+          ],
+          "expectedSize": 3.805
+        },
+        {
+          "level": 34,
+          "distribution": [
+            0,
+            28.25,
+            16,
+            18,
+            14,
+            12.5,
+            7.5,
+            3.75
+          ],
+          "expectedSize": 4.04
+        },
+        {
+          "level": 35,
+          "distribution": [
+            0,
+            24.375,
+            15,
+            17.5,
+            15,
+            13.75,
+            8.75,
+            5.625
+          ],
+          "expectedSize": 4.275
+        },
+        {
+          "level": 36,
+          "distribution": [
+            0,
+            20.5,
+            14,
+            17,
+            16,
+            15,
+            10,
+            7.5
+          ],
+          "expectedSize": 4.51
+        },
+        {
+          "level": 37,
+          "distribution": [
+            0,
+            16.625,
+            13,
+            16.5,
+            17,
+            16.25,
+            11.25,
+            9.375
+          ],
+          "expectedSize": 4.745
+        },
+        {
+          "level": 38,
+          "distribution": [
+            0,
+            12.75,
+            12,
+            16,
+            18,
+            17.5,
+            12.5,
+            11.25
+          ],
+          "expectedSize": 4.98
+        },
+        {
+          "level": 39,
+          "distribution": [
+            0,
+            8.875,
+            11,
+            15.5,
+            19,
+            18.75,
+            13.75,
+            13.125
+          ],
+          "expectedSize": 5.215
+        },
+        {
+          "level": 40,
+          "distribution": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            20,
+            15,
+            15
+          ],
+          "expectedSize": 5.45
+        }
+      ]
+    },
+    {
+      "key": "alchemy",
+      "name": "Alquimia",
+      "max_level": 50,
+      "unlock_gold": 3000,
+      "description": "Cada nível aumenta em 2% a eficácia de poções de Vida e Mana nas caçadas, até +100%; não vale no PVP.",
+      "progression": [
+        {
+          "level": 0,
+          "percent": 0
+        },
+        {
+          "level": 1,
+          "percent": 2
+        },
+        {
+          "level": 2,
+          "percent": 4
+        },
+        {
+          "level": 3,
+          "percent": 6
+        },
+        {
+          "level": 4,
+          "percent": 8
+        },
+        {
+          "level": 5,
+          "percent": 10
+        },
+        {
+          "level": 6,
+          "percent": 12
+        },
+        {
+          "level": 7,
+          "percent": 14
+        },
+        {
+          "level": 8,
+          "percent": 16
+        },
+        {
+          "level": 9,
+          "percent": 18
+        },
+        {
+          "level": 10,
+          "percent": 20
+        },
+        {
+          "level": 11,
+          "percent": 22
+        },
+        {
+          "level": 12,
+          "percent": 24
+        },
+        {
+          "level": 13,
+          "percent": 26
+        },
+        {
+          "level": 14,
+          "percent": 28
+        },
+        {
+          "level": 15,
+          "percent": 30
+        },
+        {
+          "level": 16,
+          "percent": 32
+        },
+        {
+          "level": 17,
+          "percent": 34
+        },
+        {
+          "level": 18,
+          "percent": 36
+        },
+        {
+          "level": 19,
+          "percent": 38
+        },
+        {
+          "level": 20,
+          "percent": 40
+        },
+        {
+          "level": 21,
+          "percent": 42
+        },
+        {
+          "level": 22,
+          "percent": 44
+        },
+        {
+          "level": 23,
+          "percent": 46
+        },
+        {
+          "level": 24,
+          "percent": 48
+        },
+        {
+          "level": 25,
+          "percent": 50
+        },
+        {
+          "level": 26,
+          "percent": 52
+        },
+        {
+          "level": 27,
+          "percent": 54
+        },
+        {
+          "level": 28,
+          "percent": 56
+        },
+        {
+          "level": 29,
+          "percent": 58
+        },
+        {
+          "level": 30,
+          "percent": 60
+        },
+        {
+          "level": 31,
+          "percent": 62
+        },
+        {
+          "level": 32,
+          "percent": 64
+        },
+        {
+          "level": 33,
+          "percent": 66
+        },
+        {
+          "level": 34,
+          "percent": 68
+        },
+        {
+          "level": 35,
+          "percent": 70
+        },
+        {
+          "level": 36,
+          "percent": 72
+        },
+        {
+          "level": 37,
+          "percent": 74
+        },
+        {
+          "level": 38,
+          "percent": 76
+        },
+        {
+          "level": 39,
+          "percent": 78
+        },
+        {
+          "level": 40,
+          "percent": 80
+        },
+        {
+          "level": 41,
+          "percent": 82
+        },
+        {
+          "level": 42,
+          "percent": 84
+        },
+        {
+          "level": 43,
+          "percent": 86
+        },
+        {
+          "level": 44,
+          "percent": 88
+        },
+        {
+          "level": 45,
+          "percent": 90
+        },
+        {
+          "level": 46,
+          "percent": 92
+        },
+        {
+          "level": 47,
+          "percent": 94
+        },
+        {
+          "level": 48,
+          "percent": 96
+        },
+        {
+          "level": 49,
+          "percent": 98
+        },
+        {
+          "level": 50,
+          "percent": 100
+        }
+      ]
+    }
+  ],
+  "formula_sources": {
+    "getWheelNodeCost": "function getWheelNodeCost(ring, currentLvl, mult = 1.0) {\n                    const c = WHEEL_COST_CURVE[ring] || WHEEL_COST_CURVE[1];\n                    const raw = c.base * Math.pow(c.growth, Math.max(0, currentLvl)) * Math.max(0.1, mult);\n                    return Math.round(raw / 100000) * 100000;\n                }",
+    "getWheelBonuses": "function getWheelBonuses() {\n                    const bonuses = {\n                        weapon_dmg_pct: 0, spell_dmg_pct: 0, spell_cd_pct: 0,\n                        max_hp_pct: 0, max_mana_pct: 0, all_resist_pct: 0,\n                        physical_reduction_pct: 0, crit_chance_pct: 0, crit_damage_pct: 0,\n                        life_leech_pct: 0, mana_leech_pct: 0,\n                        fatal_impeto_pct: 0, fatal_eco_pct: 0,\n                        fatal_baluarte_pct: 0, fatal_execucao_pct: 0,\n                        spell_damage_bonus: {}, maestria_gem_spell: null,\n                    };\n                    if ((playerState.level || 0) < WHEEL_MIN_LEVEL) return bonuses;\n\n                    for (const key in WHEEL_NODE_DEFS) {\n                        const lvl = getWheelNodeLevel(key);\n                        if (lvl <= 0) continue;\n                        const def = WHEEL_NODE_DEFS[key];\n                        const mult = getWheelVocationMultiplier(def.path);\n                        for (const effectKey in def.effects) {\n                            if (bonuses[effectKey] === undefined) continue;\n                            bonuses[effectKey] += def.effects[effectKey] * lvl * mult;\n                        }\n                    }\n\n                    // Teto do Knight/Elite Knight no bônus de arma da Furia — espelho do mesmo\n                    // teto em idleWheelBonuses() (PHP). Só sobre weapon_dmg_pct, não afeta os\n                    // outros efeitos da Furia nem o caminho de outra vocação.\n                    if (isKnightVocation() && bonuses.weapon_dmg_pct > KNIGHT_FURIA_WEAPON_DMG_CAP_PCT) {\n                        bonuses.weapon_dmg_pct = KNIGHT_FURIA_WEAPON_DMG_CAP_PCT;\n                    }\n\n                    // ── MAESTRIA: bônus de dano por magia (espelho de idleWheelBonuses). ──\n                    const map = getMaestriaSpellMap();\n                    const addSpellBonus = (spell, pct) => {\n                        if (!spell || pct <= 0) return;\n                        bonuses.spell_damage_bonus[spell] = (bonuses.spell_damage_bonus[spell] || 0) + pct;\n                    };\n                    const m1Lvl = getWheelNodeLevel('maestria_1');\n                    if (m1Lvl > 0) addSpellBonus(map['1'], 2.0 * m1Lvl);\n\n                    const m2Lvl = getWheelNodeLevel('maestria_2');\n                    if (m2Lvl > 0) addSpellBonus(map['2'], 2.5 * m2Lvl);\n\n                    const gemLvl = getWheelNodeLevel('maestria_gem');\n                    if (gemLvl > 0) addSpellBonus(map['3'], 3.0 * gemLvl);\n\n                    for (const k in bonuses) {\n                        if (typeof bonuses[k] === 'number') bonuses[k] = Math.round(bonuses[k] * 100) / 100;\n                    }\n                    for (const sk in bonuses.spell_damage_bonus) {\n                        bonuses.spell_damage_bonus[sk] = Math.round(bonuses.spell_damage_bonus[sk] * 100) / 100;\n                    }\n                    return bonuses;\n                }",
+    "getWaveDistribution": "function getWaveDistribution(lvl) {\n                    lvl = Math.max(0, Math.min(40, parseInt(lvl, 10) || 0));\n                    if (lvl <= 20) {\n                        const four = lvl >= 5 ? Math.min(25, (lvl - 4) * 1.5625) : 0;\n                        const three = 5 + lvl * 1.25;\n                        const two = 25 + lvl * 1.0;\n                        const one = Math.max(0, 100 - two - three - four);\n                        return [one, two, three, four, 0, 0, 0, 0];\n                    }\n                    const e = lvl - 20;\n                    const three = 30 - e * 1.0;\n                    const four = 25 - e * 0.5;\n                    const five = e * 1.0;\n                    const six = Math.max(0, e - 4) * 1.25;\n                    const seven = Math.max(0, e - 8) * 1.25;\n                    const eight = Math.max(0, e - 12) * 1.875;\n                    const two = Math.max(0, 100 - three - four - five - six - seven - eight);\n                    return [0, two, three, four, five, six, seven, eight];\n                }",
+    "getWaveExpectedSize": "function getWaveExpectedSize(lvl) {\n                    return getWaveDistribution(lvl).reduce((sum, chance, index) => sum + (index + 1) * chance / 100, 0);\n                }",
+    "getWaveUnlockLevels": "function getWaveUnlockLevels() {\n                    const unlock = {};\n                    for (let l = 0; l <= 40; l++) {\n                        const d = getWaveDistribution(l);\n                        for (let i = 0; i < d.length; i++) {\n                            if (d[i] > 0 && unlock[i + 1] === undefined) unlock[i + 1] = l;\n                        }\n                    }\n                    return unlock;\n                }",
+    "getPotionMasteryPercent": "function getPotionMasteryPercent(lvl) {\n                    const l = Math.max(0, Math.min(50, parseInt(lvl, 10) || 0));\n                    return l * 2;\n                }",
+    "rollCriticalHit": "function rollCriticalHit(critLvl, gearChancePct = 0, gearDmgPct = 0) {\n                    const lvl = Math.max(0, critLvl || 0);\n                    // Rebalanceamento 2026-07: chance sobe suave até 20% no nível 20 (era travado\n                    // em 25% desde o nível 5). Dano extra sobe suave até +100% no nível 20 (era até\n                    // +150%) — crítico máximo agora causa 200% do dano normal, não 250%.\n                    const baseChance = lvl > 0 ? getAttrPercent(lvl, 10, 20) : 0;\n                    const chance = Math.min(100, baseChance + (gearChancePct || 0)) / 100;\n                    if (chance <= 0) {\n                        return { isCrit: false, multiplier: 1.0 };\n                    }\n                    if (Math.random() < chance) {\n                        const baseExtraRatio = lvl > 0 ? getAttrPercent(lvl, 50, 100) / 100 : 0;\n                        const extraRatio = baseExtraRatio + (gearDmgPct || 0) / 100;\n                        return { isCrit: true, multiplier: 1.0 + extraRatio };\n                    }\n                    return { isCrit: false, multiplier: 1.0 };\n                }",
+    "getCritExtraDamage": "function getCritExtraDamage(lvl) {\n                    if (lvl <= 0) return 0;\n                    return getAttrPercent(lvl, 50, 100);\n                }",
+    "getDodgePercent": "function getDodgePercent(lvl) {\n                    return getAttrPercent(Math.max(0, Math.min(20, lvl || 0)), 6, DODGE_ATTR_CAP);\n                }",
+    "renderLeechPanel": "function renderLeechPanel() {\n                    const lvl = playerState.leechLvl || 0;\n                    renderAttrCard('leech', lvl, (l) => [\n                        { label: 'Absorção de Vida', value: getAttrPercent(l, 12.5, 25).toFixed(1).replace(/\\.0$/, '') + '%' }\n                    ]);\n                }",
+    "renderManaLeechPanel": "function renderManaLeechPanel() {\n                    const lvl = playerState.manaLeechLvl || 0;\n                    renderAttrCard('mana-leech', lvl, (l) => [\n                        { label: 'Absorção de Mana', value: getAttrPercent(l, 12.5, 25).toFixed(1).replace(/\\.0$/, '') + '%' }\n                    ]);\n                }"
+  }
+}

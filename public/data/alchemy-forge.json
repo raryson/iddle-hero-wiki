@@ -1,0 +1,944 @@
+{
+  "metadata": {
+    "game": "Idle Hero / Idle Expedition",
+    "source": "https://idlehero.online/game",
+    "package_schema_version": "1.0.0",
+    "client_map_extracted_at": "2026-08-04T14:20:35.914Z",
+    "dynamic_data_extracted_at": "2026-08-04T14:29:52.280Z",
+    "calculated_tables_extracted_at": "2026-08-04T14:08:44.045Z",
+    "privacy": "Dados pessoais da conta, personagem, inventário, saldos, tokens, cookies, CSRF e sessão foram removidos.",
+    "category": 7,
+    "slug": "potions-imbuements-tier-forge"
+  },
+  "summary": {
+    "potion_count": 5,
+    "imbuement_element_count": 5,
+    "tier_slot_count": 9,
+    "forge_recipe_count": 1
+  },
+  "potions": [
+    {
+      "id": 7618,
+      "type": "hp",
+      "name": "Health Potion",
+      "cost": 45,
+      "min": 125,
+      "max": 175,
+      "mana_min": 0,
+      "mana_max": 0,
+      "level": 1,
+      "vocs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "average": 150.0,
+      "category": "hp"
+    },
+    {
+      "id": 7589,
+      "type": "mana",
+      "name": "Strong Mana Potion",
+      "cost": 80,
+      "min": 115,
+      "max": 185,
+      "level": 50,
+      "vocs": [
+        1,
+        2,
+        3
+      ],
+      "average": 150.0,
+      "category": "mana"
+    },
+    {
+      "id": 7590,
+      "type": "mana",
+      "name": "Great Mana Potion",
+      "cost": 120,
+      "min": 150,
+      "max": 250,
+      "level": 80,
+      "vocs": [
+        1,
+        2
+      ],
+      "average": 200.0,
+      "category": "mana"
+    },
+    {
+      "id": 7620,
+      "type": "mana",
+      "name": "Mana Potion",
+      "cost": 50,
+      "min": 75,
+      "max": 125,
+      "level": 1,
+      "vocs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "average": 100.0,
+      "category": "mana"
+    },
+    {
+      "id": 26029,
+      "type": "mana",
+      "name": "Ultimate Mana Potion",
+      "cost": 350,
+      "min": 425,
+      "max": 575,
+      "level": 130,
+      "vocs": [
+        1,
+        2
+      ],
+      "average": 500.0,
+      "category": "mana"
+    }
+  ],
+  "base_potion_config": {
+    "hp": {
+      "id": 7618,
+      "type": "hp",
+      "name": "Health Potion",
+      "cost": 45,
+      "min": 125,
+      "max": 175,
+      "mana_min": 0,
+      "mana_max": 0,
+      "level": 1,
+      "vocs": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "mp": {
+      "id": 7620,
+      "type": "mana",
+      "name": "Mana Potion",
+      "cost": 50,
+      "min": 75,
+      "max": 125,
+      "level": 1,
+      "vocs": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "alchemy_note": "A eficácia é multiplicada por 1 + 0,02 × nível, até o nível 50.",
+  "imbuements": {
+    "elements": [
+      {
+        "key": "fire",
+        "label": "Fogo",
+        "icon": "🔥",
+        "color": "#ff9100"
+      },
+      {
+        "key": "ice",
+        "label": "Gelo",
+        "icon": "❄️",
+        "color": "#00e5ff"
+      },
+      {
+        "key": "earth",
+        "label": "Terra",
+        "icon": "🌿",
+        "color": "#76ff03"
+      },
+      {
+        "key": "energy",
+        "label": "Energia",
+        "icon": "⚡",
+        "color": "#e040fb"
+      },
+      {
+        "key": "death",
+        "label": "Morte",
+        "icon": "💀",
+        "color": "#ba68c8"
+      }
+    ],
+    "weapon": {
+      "cost_gold": 5000000,
+      "duration_seconds": 72000,
+      "elemental_damage_share": 0.4,
+      "effect": "Substitui a divisão elemental nativa do golpe da arma enquanto ativa."
+    },
+    "armor": {
+      "cost_gold": 10000000,
+      "duration_seconds": 72000,
+      "resistance_pct": 15,
+      "effect": "Adiciona resistência ao elemento escolhido, respeitando o teto de 90% citado pelo cliente."
+    },
+    "clear_fee_pct": 10,
+    "clear_fee_gold": {
+      "weapon": 500000,
+      "armor": 1000000
+    }
+  },
+  "tier": {
+    "maximum_tier": 10,
+    "upgrade_costs": [
+      {
+        "from_tier": 0,
+        "to_tier": 1,
+        "dust": 100,
+        "gold": 500000
+      },
+      {
+        "from_tier": 1,
+        "to_tier": 2,
+        "dust": 200,
+        "gold": 1000000
+      },
+      {
+        "from_tier": 2,
+        "to_tier": 3,
+        "dust": 400,
+        "gold": 2000000
+      },
+      {
+        "from_tier": 3,
+        "to_tier": 4,
+        "dust": 800,
+        "gold": 4000000
+      },
+      {
+        "from_tier": 4,
+        "to_tier": 5,
+        "dust": 1600,
+        "gold": 8000000
+      },
+      {
+        "from_tier": 5,
+        "to_tier": 6,
+        "dust": 3200,
+        "gold": 16000000
+      },
+      {
+        "from_tier": 6,
+        "to_tier": 7,
+        "dust": 6400,
+        "gold": 32000000
+      },
+      {
+        "from_tier": 7,
+        "to_tier": 8,
+        "dust": 12800,
+        "gold": 64000000
+      },
+      {
+        "from_tier": 8,
+        "to_tier": 9,
+        "dust": 25600,
+        "gold": 128000000
+      },
+      {
+        "from_tier": 9,
+        "to_tier": 10,
+        "dust": 51200,
+        "gold": 256000000
+      }
+    ],
+    "effects_by_slot": {
+      "weapon": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "critical_chance_pct": 0.5,
+            "critical_extra_damage_pct": 1
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "critical_chance_pct": 1.0,
+            "critical_extra_damage_pct": 2
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "critical_chance_pct": 1.5,
+            "critical_extra_damage_pct": 3
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "critical_chance_pct": 2.0,
+            "critical_extra_damage_pct": 4
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "critical_chance_pct": 2.5,
+            "critical_extra_damage_pct": 5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "critical_chance_pct": 3.0,
+            "critical_extra_damage_pct": 6
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "critical_chance_pct": 3.5,
+            "critical_extra_damage_pct": 7
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "critical_chance_pct": 4.0,
+            "critical_extra_damage_pct": 8
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "critical_chance_pct": 4.5,
+            "critical_extra_damage_pct": 9
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "critical_chance_pct": 5.0,
+            "critical_extra_damage_pct": 10
+          }
+        }
+      ],
+      "ammo": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "critical_chance_pct": 0.5,
+            "critical_extra_damage_pct": 1
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "critical_chance_pct": 1.0,
+            "critical_extra_damage_pct": 2
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "critical_chance_pct": 1.5,
+            "critical_extra_damage_pct": 3
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "critical_chance_pct": 2.0,
+            "critical_extra_damage_pct": 4
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "critical_chance_pct": 2.5,
+            "critical_extra_damage_pct": 5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "critical_chance_pct": 3.0,
+            "critical_extra_damage_pct": 6
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "critical_chance_pct": 3.5,
+            "critical_extra_damage_pct": 7
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "critical_chance_pct": 4.0,
+            "critical_extra_damage_pct": 8
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "critical_chance_pct": 4.5,
+            "critical_extra_damage_pct": 9
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "critical_chance_pct": 5.0,
+            "critical_extra_damage_pct": 10
+          }
+        }
+      ],
+      "shield": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "reflect_pct": 1
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "reflect_pct": 2
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "reflect_pct": 3
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "reflect_pct": 4
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "reflect_pct": 5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "reflect_pct": 6
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "reflect_pct": 7
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "reflect_pct": 8
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "reflect_pct": 9
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "reflect_pct": 10
+          }
+        }
+      ],
+      "helmet": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "mana_leech_pct": 0.3
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "mana_leech_pct": 0.6
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "mana_leech_pct": 0.9
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "mana_leech_pct": 1.2
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "mana_leech_pct": 1.5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "mana_leech_pct": 1.8
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "mana_leech_pct": 2.1
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "mana_leech_pct": 2.4
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "mana_leech_pct": 2.7
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "mana_leech_pct": 3.0
+          }
+        }
+      ],
+      "armor": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "life_leech_pct": 0.3
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "life_leech_pct": 0.6
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "life_leech_pct": 0.9
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "life_leech_pct": 1.2
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "life_leech_pct": 1.5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "life_leech_pct": 1.8
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "life_leech_pct": 2.1
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "life_leech_pct": 2.4
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "life_leech_pct": 2.7
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "life_leech_pct": 3.0
+          }
+        }
+      ],
+      "legs": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "dodge_pct": 0.3
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "dodge_pct": 0.6
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "dodge_pct": 0.9
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "dodge_pct": 1.2
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "dodge_pct": 1.5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "dodge_pct": 1.8
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "dodge_pct": 2.1
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "dodge_pct": 2.4
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "dodge_pct": 2.7
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "dodge_pct": 3.0
+          }
+        }
+      ],
+      "boots": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "speed": 5
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "speed": 10
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "speed": 15
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "speed": 20
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "speed": 25
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "speed": 30
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "speed": 35
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "speed": 40
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "speed": 45
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "speed": 50
+          }
+        }
+      ],
+      "ring": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "damage_pct": 1
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "damage_pct": 2
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "damage_pct": 3
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "damage_pct": 4
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "damage_pct": 5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "damage_pct": 6
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "damage_pct": 7
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "damage_pct": 8
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "damage_pct": 9
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "damage_pct": 10
+          }
+        }
+      ],
+      "amulet": [
+        {
+          "tier": 0,
+          "effects": {}
+        },
+        {
+          "tier": 1,
+          "effects": {
+            "xp_pct": 1
+          }
+        },
+        {
+          "tier": 2,
+          "effects": {
+            "xp_pct": 2
+          }
+        },
+        {
+          "tier": 3,
+          "effects": {
+            "xp_pct": 3
+          }
+        },
+        {
+          "tier": 4,
+          "effects": {
+            "xp_pct": 4
+          }
+        },
+        {
+          "tier": 5,
+          "effects": {
+            "xp_pct": 5
+          }
+        },
+        {
+          "tier": 6,
+          "effects": {
+            "xp_pct": 6
+          }
+        },
+        {
+          "tier": 7,
+          "effects": {
+            "xp_pct": 7
+          }
+        },
+        {
+          "tier": 8,
+          "effects": {
+            "xp_pct": 8
+          }
+        },
+        {
+          "tier": 9,
+          "effects": {
+            "xp_pct": 9
+          }
+        },
+        {
+          "tier": 10,
+          "effects": {
+            "xp_pct": 10
+          }
+        }
+      ]
+    }
+  },
+  "forge": {
+    "coverage": "A resposta dinâmica devolveu somente as receitas disponíveis para a vocação do personagem usado na coleta. Nenhuma receita adicional foi inventada.",
+    "general_rule": "A interface informa que cinco armas lendárias, todas Tier 5 ou superior, são fundidas em uma arma; o resultado vai para o Banco.",
+    "recipes": [
+      {
+        "key": "emberwake_channeler",
+        "result_id": 50123,
+        "result_name": "Emberwake Channeler",
+        "type": "Varinha",
+        "ingredients": [
+          {
+            "label": "Arma Soul",
+            "accepted_names": [
+              "soultainter"
+            ],
+            "accepted_item_ids": [
+              39494
+            ],
+            "minimum_tier": 5
+          },
+          {
+            "label": "Sanguine",
+            "accepted_names": [
+              "sanguine coil"
+            ],
+            "accepted_item_ids": [
+              49285
+            ],
+            "minimum_tier": 5
+          },
+          {
+            "label": "Grand Sanguine",
+            "accepted_names": [
+              "grand sanguine coil"
+            ],
+            "accepted_item_ids": [
+              49286
+            ],
+            "minimum_tier": 5
+          },
+          {
+            "label": "Moonsilver",
+            "accepted_names": [
+              "moonsilver channeler"
+            ],
+            "accepted_item_ids": [
+              49317
+            ],
+            "minimum_tier": 5
+          },
+          {
+            "label": "Stellar Moonsilver",
+            "accepted_names": [
+              "stellar moonsilver channeler"
+            ],
+            "accepted_item_ids": [
+              49318
+            ],
+            "minimum_tier": 5
+          }
+        ],
+        "forge_orbs_required": 20,
+        "gold_required": 1000000000,
+        "minimum_ingredient_tier": 5
+      }
+    ]
+  },
+  "formula_sources": {
+    "getTierTooltipStats": "function getTierTooltipStats(slot, tier) {\n                    tier = Math.max(0, parseInt(tier || 0, 10) || 0);\n                    if (tier <= 0) return [];\n                    switch (slot) {\n                        case 'weapon':\n                        case 'ammo':\n                            return [`Tier Crit Chance: +${(tier * 0.5).toFixed(1)}%`, `Tier Crit Dmg: +${tier}%`];\n                        case 'shield':\n                            return [`Tier Reflect: +${tier}%`];\n                        case 'helmet':\n                            return [`Tier Mana Leech: +${(tier * 0.3).toFixed(1)}%`];\n                        case 'armor':\n                            return [`Tier Life Leech: +${(tier * 0.3).toFixed(1)}%`];\n                        case 'legs':\n                            return [`Tier Dodge: +${(tier * 0.3).toFixed(1)}%`];\n                        case 'boots':\n                            return [`Tier Speed: +${tier * 5}`, 'Speed a partir de 40 acelera a próxima leva.'];\n                        case 'ring':\n                            return [`Tier Dano: +${tier}%`];\n                        case 'amulet':\n                            return [`Tier XP: +${tier}%`];\n                        default:\n                            return [];\n                    }\n                }",
+    "describeTierBonus": "function describeTierBonus(slot, tier) {\n                    const cur = tier;\n                    const next = Math.min(10, tier + 1);\n                    const line = (label, curVal, nextVal, suffix = '%') =>\n                        `${label}: +${curVal}${suffix} <span style=\"color:#6fbf73;\">→ +${nextVal}${suffix}</span>`;\n\n                    switch (slot) {\n                        case 'weapon':\n                        case 'ammo':\n                            return line('Crit Chance', (cur * 0.5).toFixed(1), (next * 0.5).toFixed(1))\n                                + '<br>' + line('Crit Dmg', cur * 1, next * 1);\n                        case 'shield':\n                            return line('Reflect', cur * 1, next * 1);\n                        case 'helmet':\n                            return line('Mana Leech', (cur * 0.3).toFixed(1), (next * 0.3).toFixed(1));\n                        case 'armor':\n                            return line('Life Leech', (cur * 0.3).toFixed(1), (next * 0.3).toFixed(1));\n                        case 'legs':\n                            return line('Dodge', (cur * 0.3).toFixed(1), (next * 0.3).toFixed(1));\n                        case 'boots':\n                            return line('Speed', cur * 5, next * 5, '');\n                        case 'ring':\n                            return line('Dano', cur * 1, next * 1);\n                        case 'amulet':\n                            return line('XP', cur, next);\n                        default:\n                            return '';\n                    }\n                }",
+    "imbueCostForSlot": "function imbueCostForSlot(slot) { return slot === 'armor' ? IMBUE_ARMOR_COST : IMBUE_COST; }",
+    "imbueClearFeeForSlot": "function imbueClearFeeForSlot(slot) { return Math.floor(imbueCostForSlot(slot) * IMBUE_CLEAR_FEE_PCT / 100); }",
+    "renderForgeList": "function renderForgeList(data) {\n                    const corpo = document.getElementById('forge-body');\n                    if (!corpo) return;\n                    const receitas = data.receitas || [];\n                    if (!receitas.length) {\n                        corpo.innerHTML = '<div style=\"color:#9db3d6; font-size:12.5px; text-align:center; padding:28px; line-height:1.6;\">Nenhuma receita disponível para a sua vocação.</div>';\n                        return;\n                    }\n\n                    const fmt = n => Math.floor(n).toLocaleString('pt-BR');\n                    corpo.innerHTML = receitas.map(r => {\n                        const passos = r.steps.map(s => {\n                            const cor = s.ok ? '#81c784' : '#ff8a65';\n                            const marca = s.ok ? '✔' : '✘';\n                            // \"aceita\" lista as variantes válidas — é o que o jogador precisa\n                            // procurar quando o passo está vermelho.\n                            const aceita = s.aceita.join(' ou ');\n                            const onde = s.ok ? ` <span style=\"color:#7d8aa0;\">(${s.origem === 'deposito' ? 'banco' : 'mochila'}, T${s.tier})</span>` : '';\n                            return `<div style=\"display:flex; gap:7px; align-items:flex-start; padding:3px 0; font-size:11.5px;\">\n                                <span style=\"color:${cor}; flex-shrink:0; font-weight:bold;\">${marca}</span>\n                                <span style=\"color:#dbe7fa; flex-shrink:0; min-width:132px;\">${escapeTooltipLine(s.label)}</span>\n                                <span style=\"color:${cor};\">${escapeTooltipLine(aceita)}${onde}</span>\n                            </div>`;\n                        }).join('');\n\n                        const corOrb = r.orbs_ok ? '#81c784' : '#ff8a65';\n                        const corGold = r.gold_ok ? '#81c784' : '#ff8a65';\n                        const btn = r.pode\n                            ? `<button onclick=\"forjarArma('${r.chave}','${escapeTooltipLine(r.result_name)}')\" class=\"gold-pulse-btn\" style=\"width:100%; margin-top:10px; padding:10px; background:linear-gradient(to bottom,#d4a85a,#8c5a1d); border:1px solid #43290c; color:#fff; border-radius:5px; font-family:'MedievalSharp',cursive; font-weight:bold; font-size:13px; cursor:pointer;\">🔨 FORJAR ${escapeTooltipLine(r.result_name).toUpperCase()}</button>`\n                            : `<div style=\"width:100%; margin-top:10px; padding:9px; text-align:center; background:rgba(0,0,0,0.25); border:1px dashed rgba(255,138,101,0.4); border-radius:5px; color:#9db3d6; font-size:11.5px;\">Faltam ingredientes</div>`;\n\n                        return `<div style=\"border:2px solid ${r.pode ? '#d4a85a' : '#3a4a66'}; border-radius:8px; padding:12px 14px; margin-bottom:14px; background:rgba(0,0,0,0.22);\">\n                            <div style=\"display:flex; align-items:center; gap:10px; margin-bottom:9px;\">\n                                <img src=\"${itemImagesUrl}${r.result_id}.gif\" style=\"width:38px; height:38px; image-rendering:pixelated; flex-shrink:0;\" alt=\"\">\n                                <div style=\"min-width:0;\">\n                                    <div style=\"font-family:'MedievalSharp',cursive; font-size:15px; color:#f5e3c0; font-weight:bold;\">${escapeTooltipLine(r.result_name)}</div>\n                                    <div style=\"font-size:10.5px; color:#9db3d6;\">${escapeTooltipLine(r.tipo)} · vai para o Banco</div>\n                                </div>\n                            </div>\n                            ${passos}\n                            <div style=\"display:flex; gap:16px; margin-top:8px; padding-top:8px; border-top:1px solid rgba(111,159,216,0.2); font-size:11.5px;\">\n                                <span style=\"color:${corOrb};\">${r.orbs_ok ? '✔' : '✘'} Forge Orb ${r.orbs_tem}/${r.orbs_precisa}</span>\n                                <span style=\"color:${corGold};\">${r.gold_ok ? '✔' : '✘'} ${fmt(r.gold_precisa)} Gold</span>\n                            </div>\n                            ${btn}\n                        </div>`;\n                    }).join('');\n                }"
+  }
+}

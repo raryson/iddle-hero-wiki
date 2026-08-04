@@ -1,0 +1,721 @@
+{
+  "metadata": {
+    "game": "Idle Hero / Idle Expedition",
+    "source": "https://idlehero.online/game",
+    "package_schema_version": "1.0.0",
+    "client_map_extracted_at": "2026-08-04T14:20:35.914Z",
+    "dynamic_data_extracted_at": "2026-08-04T14:29:52.280Z",
+    "calculated_tables_extracted_at": "2026-08-04T14:08:44.045Z",
+    "privacy": "Dados pessoais da conta, personagem, inventário, saldos, tokens, cookies, CSRF e sessão foram removidos.",
+    "category": 4,
+    "slug": "vocations"
+  },
+  "summary": {
+    "total_vocation_records": 9,
+    "playable_vocations": 8
+  },
+  "conventions": {
+    "skills_array": "A ordem dos sete multiplicadores não foi nomeada no objeto vocationsDb; o vetor foi preservado sem renomeação para evitar suposição.",
+    "global_damage_tuning": "Multiplicador geral encontrado no cliente em 2026-08-04.",
+    "weapon_damage_multipliers": "Resultado direto da função do cliente para cada tipo de arma, já incluindo o tuning geral."
+  },
+  "vocations": [
+    {
+      "id": 0,
+      "name": "None",
+      "gainhp": 5,
+      "gainmana": 5,
+      "gaincap": 10,
+      "manamultiplier": 4,
+      "gainhpticks": 6,
+      "gainhpamount": 1,
+      "gainmanaticks": 6,
+      "gainmanaamount": 1,
+      "skills": [
+        1.5,
+        2,
+        2,
+        2,
+        2,
+        1.5,
+        1.1
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Sorcerer",
+      "gainhp": 5,
+      "gainmana": 30,
+      "gaincap": 10,
+      "manamultiplier": 1.1,
+      "gainhpticks": 6,
+      "gainhpamount": 5,
+      "gainmanaticks": 3,
+      "gainmanaamount": 5,
+      "skills": [
+        1.5,
+        2,
+        2,
+        2,
+        2,
+        1.5,
+        1.1
+      ],
+      "base_family": "sorcerer",
+      "promoted": false,
+      "base_vocation_id": 1,
+      "global_damage_tuning": 0.85,
+      "weapon_damage_multipliers": {
+        "sword": 0.2975,
+        "axe": 0.2975,
+        "club": 0.2975,
+        "distance": 0.2975,
+        "wand": 0.85,
+        "other": 0.2975
+      },
+      "wheel_path_multipliers": {
+        "furia": 0.8,
+        "arcano": 1.3,
+        "protecao": 0.85,
+        "precisao": 1.1
+      },
+      "compatible_spell_words": [
+        "exana pox",
+        "exevo flam hur",
+        "exevo gran flam hur",
+        "exevo gran mas flam",
+        "exevo gran mas vis",
+        "exevo gran vis lux",
+        "exevo infir flam hur",
+        "exevo vis hur",
+        "exevo vis lux",
+        "exori amp vis",
+        "exori flam",
+        "exori frigo",
+        "exori gran flam",
+        "exori gran vis",
+        "exori infir vis",
+        "exori max flam",
+        "exori max vis",
+        "exori min flam",
+        "exori mort",
+        "exori tera",
+        "exori vis",
+        "exura",
+        "exura gran",
+        "exura infir",
+        "exura vita",
+        "utamo vita",
+        "utito arcanum",
+        "utori flam",
+        "utori mort",
+        "utori vis"
+      ],
+      "compatible_rune_ids": [
+        2260,
+        2265,
+        2268,
+        2273,
+        2287,
+        2302,
+        2304,
+        2311,
+        2313,
+        2315
+      ],
+      "maestria": {
+        "fire": {
+          "1": "exevo flam hur",
+          "2": "exevo gran flam hur",
+          "3": "exevo gran mas flam"
+        },
+        "energy": {
+          "1": "exevo vis lux",
+          "2": "exevo vis hur",
+          "3": "exevo gran mas vis"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Druid",
+      "gainhp": 5,
+      "gainmana": 30,
+      "gaincap": 10,
+      "manamultiplier": 1.1,
+      "gainhpticks": 6,
+      "gainhpamount": 5,
+      "gainmanaticks": 3,
+      "gainmanaamount": 5,
+      "skills": [
+        1.5,
+        1.8,
+        1.8,
+        1.8,
+        1.8,
+        1.5,
+        1.1
+      ],
+      "base_family": "druid",
+      "promoted": false,
+      "base_vocation_id": 2,
+      "global_damage_tuning": 1.0,
+      "weapon_damage_multipliers": {
+        "sword": 0.35,
+        "axe": 0.35,
+        "club": 0.35,
+        "distance": 0.35,
+        "wand": 1.0,
+        "other": 0.35
+      },
+      "wheel_path_multipliers": {
+        "furia": 0.8,
+        "arcano": 1.25,
+        "protecao": 1.15,
+        "precisao": 0.95
+      },
+      "compatible_spell_words": [
+        "exana flam",
+        "exana kor",
+        "exana pox",
+        "exana vis",
+        "exevo frigo hur",
+        "exevo gran frigo hur",
+        "exevo gran mas frigo",
+        "exevo gran mas tera",
+        "exevo infir frigo hur",
+        "exevo tera hur",
+        "exori flam",
+        "exori frigo",
+        "exori gran frigo",
+        "exori gran tera",
+        "exori infir tera",
+        "exori max frigo",
+        "exori max tera",
+        "exori min flam",
+        "exori moe ico",
+        "exori tera",
+        "exori vis",
+        "exura",
+        "exura gran",
+        "exura gran mas res",
+        "exura infir",
+        "exura sio",
+        "exura vita",
+        "utamo vita",
+        "utori arcanum",
+        "utori pox"
+      ],
+      "compatible_rune_ids": [
+        2260,
+        2265,
+        2268,
+        2271,
+        2273,
+        2274,
+        2287,
+        2288,
+        2304,
+        2311,
+        2313
+      ],
+      "maestria": {
+        "ice": {
+          "1": "exevo frigo hur",
+          "2": "exevo gran frigo hur",
+          "3": "exevo gran mas frigo"
+        },
+        "earth": {
+          "1": "exori gran tera",
+          "2": "exevo tera hur",
+          "3": "exevo gran mas tera"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Paladin",
+      "gainhp": 10,
+      "gainmana": 15,
+      "gaincap": 20,
+      "manamultiplier": 1.4,
+      "gainhpticks": 4,
+      "gainhpamount": 5,
+      "gainmanaticks": 4,
+      "gainmanaamount": 5,
+      "skills": [
+        1.2,
+        1.2,
+        1.2,
+        1.2,
+        1.1,
+        1.1,
+        1.1
+      ],
+      "base_family": "paladin",
+      "promoted": false,
+      "base_vocation_id": 3,
+      "global_damage_tuning": 1.1,
+      "weapon_damage_multipliers": {
+        "sword": 1.1,
+        "axe": 1.1,
+        "club": 1.1,
+        "distance": 1.171445,
+        "wand": 1.1,
+        "other": 1.1
+      },
+      "wheel_path_multipliers": {
+        "furia": 1.1,
+        "arcano": 0.85,
+        "protecao": 1,
+        "precisao": 1.25
+      },
+      "compatible_spell_words": [
+        "exana mort",
+        "exana pox",
+        "exevo mas san",
+        "exori con",
+        "exori gran con",
+        "exori san",
+        "exura",
+        "exura gran",
+        "exura gran san",
+        "exura infir",
+        "exura san",
+        "utito tempo san",
+        "utori san",
+        "utura",
+        "utura gran"
+      ],
+      "compatible_rune_ids": [
+        2260,
+        2265,
+        2273,
+        2274,
+        2287,
+        2295,
+        2304,
+        2311,
+        2313
+      ],
+      "maestria": {
+        "default": {
+          "1": "exori con",
+          "2": "exori gran con",
+          "3": "exevo mas san"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Knight",
+      "gainhp": 15,
+      "gainmana": 5,
+      "gaincap": 25,
+      "manamultiplier": 3,
+      "gainhpticks": 3,
+      "gainhpamount": 5,
+      "gainmanaticks": 6,
+      "gainmanaamount": 5,
+      "skills": [
+        1.1,
+        1.1,
+        1.1,
+        1.1,
+        1.4,
+        1.1,
+        1.1
+      ],
+      "base_family": "knight",
+      "promoted": false,
+      "base_vocation_id": 4,
+      "global_damage_tuning": 1.58,
+      "weapon_damage_multipliers": {
+        "sword": 1.6483824,
+        "axe": 1.6483824,
+        "club": 1.6483824,
+        "distance": 0.79948,
+        "wand": 1.58,
+        "other": 1.58
+      },
+      "wheel_path_multipliers": {
+        "furia": 1.25,
+        "arcano": 0.7,
+        "protecao": 1.25,
+        "precisao": 1
+      },
+      "compatible_spell_words": [
+        "exana kor",
+        "exana pox",
+        "exori",
+        "exori gran",
+        "exori gran ico",
+        "exori hur",
+        "exori ico",
+        "exori mas",
+        "exori min",
+        "exura gran ico",
+        "exura ico",
+        "exura infir ico",
+        "utamo tempo",
+        "utito tempo",
+        "utori kor",
+        "utura",
+        "utura gran"
+      ],
+      "compatible_rune_ids": [
+        2265,
+        2273,
+        2313
+      ],
+      "maestria": {
+        "default": {
+          "1": "exori",
+          "2": "exori min",
+          "3": "exori gran"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Master Sorcerer",
+      "gainhp": 5,
+      "gainmana": 30,
+      "gaincap": 10,
+      "manamultiplier": 1.1,
+      "gainhpticks": 4,
+      "gainhpamount": 10,
+      "gainmanaticks": 2,
+      "gainmanaamount": 10,
+      "skills": [
+        1.5,
+        2,
+        2,
+        2,
+        2,
+        1.5,
+        1.1
+      ],
+      "base_family": "sorcerer",
+      "promoted": true,
+      "base_vocation_id": 1,
+      "global_damage_tuning": 0.85,
+      "weapon_damage_multipliers": {
+        "sword": 0.2975,
+        "axe": 0.2975,
+        "club": 0.2975,
+        "distance": 0.2975,
+        "wand": 0.85,
+        "other": 0.2975
+      },
+      "wheel_path_multipliers": {
+        "furia": 0.8,
+        "arcano": 1.3,
+        "protecao": 0.85,
+        "precisao": 1.1
+      },
+      "compatible_spell_words": [
+        "exana pox",
+        "exevo flam hur",
+        "exevo gran flam hur",
+        "exevo gran mas flam",
+        "exevo gran mas vis",
+        "exevo gran vis lux",
+        "exevo infir flam hur",
+        "exevo vis hur",
+        "exevo vis lux",
+        "exori amp vis",
+        "exori flam",
+        "exori frigo",
+        "exori gran flam",
+        "exori gran vis",
+        "exori infir vis",
+        "exori max flam",
+        "exori max vis",
+        "exori min flam",
+        "exori mort",
+        "exori tera",
+        "exori vis",
+        "exura",
+        "exura gran",
+        "exura infir",
+        "exura vita",
+        "utamo vita",
+        "utito arcanum",
+        "utori flam",
+        "utori mort",
+        "utori vis"
+      ],
+      "compatible_rune_ids": [
+        2260,
+        2265,
+        2268,
+        2273,
+        2287,
+        2302,
+        2304,
+        2311,
+        2313,
+        2315
+      ],
+      "maestria": {
+        "fire": {
+          "1": "exevo flam hur",
+          "2": "exevo gran flam hur",
+          "3": "exevo gran mas flam"
+        },
+        "energy": {
+          "1": "exevo vis lux",
+          "2": "exevo vis hur",
+          "3": "exevo gran mas vis"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Elder Druid",
+      "gainhp": 5,
+      "gainmana": 30,
+      "gaincap": 10,
+      "manamultiplier": 1.1,
+      "gainhpticks": 4,
+      "gainhpamount": 10,
+      "gainmanaticks": 2,
+      "gainmanaamount": 10,
+      "skills": [
+        1.5,
+        1.8,
+        1.8,
+        1.8,
+        1.8,
+        1.5,
+        1.1
+      ],
+      "base_family": "druid",
+      "promoted": true,
+      "base_vocation_id": 2,
+      "global_damage_tuning": 1.0,
+      "weapon_damage_multipliers": {
+        "sword": 0.35,
+        "axe": 0.35,
+        "club": 0.35,
+        "distance": 0.35,
+        "wand": 1.0,
+        "other": 0.35
+      },
+      "wheel_path_multipliers": {
+        "furia": 0.8,
+        "arcano": 1.25,
+        "protecao": 1.15,
+        "precisao": 0.95
+      },
+      "compatible_spell_words": [
+        "exana flam",
+        "exana kor",
+        "exana pox",
+        "exana vis",
+        "exevo frigo hur",
+        "exevo gran frigo hur",
+        "exevo gran mas frigo",
+        "exevo gran mas tera",
+        "exevo infir frigo hur",
+        "exevo tera hur",
+        "exori flam",
+        "exori frigo",
+        "exori gran frigo",
+        "exori gran tera",
+        "exori infir tera",
+        "exori max frigo",
+        "exori max tera",
+        "exori min flam",
+        "exori moe ico",
+        "exori tera",
+        "exori vis",
+        "exura",
+        "exura gran",
+        "exura gran mas res",
+        "exura infir",
+        "exura sio",
+        "exura vita",
+        "utamo vita",
+        "utori arcanum",
+        "utori pox"
+      ],
+      "compatible_rune_ids": [
+        2260,
+        2265,
+        2268,
+        2271,
+        2273,
+        2274,
+        2287,
+        2288,
+        2304,
+        2311,
+        2313
+      ],
+      "maestria": {
+        "ice": {
+          "1": "exevo frigo hur",
+          "2": "exevo gran frigo hur",
+          "3": "exevo gran mas frigo"
+        },
+        "earth": {
+          "1": "exori gran tera",
+          "2": "exevo tera hur",
+          "3": "exevo gran mas tera"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Royal Paladin",
+      "gainhp": 10,
+      "gainmana": 15,
+      "gaincap": 20,
+      "manamultiplier": 1.4,
+      "gainhpticks": 3,
+      "gainhpamount": 10,
+      "gainmanaticks": 3,
+      "gainmanaamount": 10,
+      "skills": [
+        1.2,
+        1.2,
+        1.2,
+        1.2,
+        1.1,
+        1.1,
+        1.1
+      ],
+      "base_family": "paladin",
+      "promoted": true,
+      "base_vocation_id": 3,
+      "global_damage_tuning": 1.1,
+      "weapon_damage_multipliers": {
+        "sword": 1.1,
+        "axe": 1.1,
+        "club": 1.1,
+        "distance": 1.171445,
+        "wand": 1.1,
+        "other": 1.1
+      },
+      "wheel_path_multipliers": {
+        "furia": 1.1,
+        "arcano": 0.85,
+        "protecao": 1,
+        "precisao": 1.25
+      },
+      "compatible_spell_words": [
+        "exana mort",
+        "exana pox",
+        "exevo mas san",
+        "exori con",
+        "exori gran con",
+        "exori san",
+        "exura",
+        "exura gran",
+        "exura gran san",
+        "exura infir",
+        "exura san",
+        "utito tempo san",
+        "utori san",
+        "utura",
+        "utura gran"
+      ],
+      "compatible_rune_ids": [
+        2260,
+        2265,
+        2273,
+        2274,
+        2287,
+        2295,
+        2304,
+        2311,
+        2313
+      ],
+      "maestria": {
+        "default": {
+          "1": "exori con",
+          "2": "exori gran con",
+          "3": "exevo mas san"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Elite Knight",
+      "gainhp": 15,
+      "gainmana": 5,
+      "gaincap": 25,
+      "manamultiplier": 3,
+      "gainhpticks": 2,
+      "gainhpamount": 10,
+      "gainmanaticks": 4,
+      "gainmanaamount": 10,
+      "skills": [
+        1.1,
+        1.1,
+        1.1,
+        1.1,
+        1.4,
+        1.1,
+        1.1
+      ],
+      "base_family": "knight",
+      "promoted": true,
+      "base_vocation_id": 4,
+      "global_damage_tuning": 1.58,
+      "weapon_damage_multipliers": {
+        "sword": 1.6483824,
+        "axe": 1.6483824,
+        "club": 1.6483824,
+        "distance": 0.79948,
+        "wand": 1.58,
+        "other": 1.58
+      },
+      "wheel_path_multipliers": {
+        "furia": 1.25,
+        "arcano": 0.7,
+        "protecao": 1.25,
+        "precisao": 1
+      },
+      "compatible_spell_words": [
+        "exana kor",
+        "exana pox",
+        "exori",
+        "exori gran",
+        "exori gran ico",
+        "exori hur",
+        "exori ico",
+        "exori mas",
+        "exori min",
+        "exura gran ico",
+        "exura ico",
+        "exura infir ico",
+        "utamo tempo",
+        "utito tempo",
+        "utori kor",
+        "utura",
+        "utura gran"
+      ],
+      "compatible_rune_ids": [
+        2265,
+        2273,
+        2313
+      ],
+      "maestria": {
+        "default": {
+          "1": "exori",
+          "2": "exori min",
+          "3": "exori gran"
+        }
+      }
+    }
+  ],
+  "formula_sources": {
+    "getVocationBase": "function getVocationBase(vocId) {\n                    if (vocId === 1 || vocId === 5) return 'sorcerer';\n                    if (vocId === 2 || vocId === 6) return 'druid';\n                    if (vocId === 3 || vocId === 7) return 'paladin';\n                    if (vocId === 4 || vocId === 8) return 'knight';\n                    return 'knight';\n                }",
+    "getVocationGlobalDamageTuning": "function getVocationGlobalDamageTuning(vocation) {\n                    const baseVoc = vocation > 4 ? vocation - 4 : vocation;\n                    if (baseVoc === 4) return 1.58;  // Knight / Elite Knight     (+58% acumulado)\n                    if (baseVoc === 3) return 1.10;  // Paladin / Royal Paladin   (+10%)\n                    if (baseVoc === 1) return 0.85;  // Sorcerer / Master Sorcerer (-15%, 2026-08-02)\n                    // baseVoc === 2 (Druid / Elder Druid) cai aqui de propósito — intocado.\n                    return 1.0;\n                }",
+    "getWeaponVocationDamageMultiplier": "function getWeaponVocationDamageMultiplier(vocation, weaponKind) {\n                    const baseVoc = vocation > 4 ? vocation - 4 : vocation;\n                    const tuning = getVocationGlobalDamageTuning(vocation);\n                    if ((baseVoc === 1 || baseVoc === 2) && weaponKind !== 'wand') return 0.35 * tuning;\n                    // Ajuste de balanceamento (2026-07-26): era 1.18, agora 1.18*0.95=1.121 — -5%\n                    // geral no golpe de arma do Paladin (arco/besta). Espelho em\n                    // idleWeaponVocationDamageMultiplier() no PHP; os dois têm que mudar juntos.\n                    // A fatia adicional de -10% pra alvo único (sem munição de área) é aplicada\n                    // separadamente em combatTick, perto de \"weaponDmg = applyCriticalDamage\".\n                    // Ajuste de balanceamento (2026-07-30): mais -5% geral em cima da base já\n                    // ajustada: 1.121*0.95=1.06495. Espelho em idleWeaponVocationDamageMultiplier()\n                    // no PHP.\n                    if (baseVoc === 3 && weaponKind === 'distance') return 1.06495 * tuning;\n                    // Ajuste de balanceamento (2026-07-26): tentamos 1.08*1.10=1.188 (+10%) e\n                    // ficou forte demais em teste — reduzido pra 1.08*1.05=1.134 (+5%) pra\n                    // continuar testando. Espelho em idleWeaponVocationDamageMultiplier() no\n                    // PHP; os dois têm que mudar juntos.\n                    // Ajuste de balanceamento (2026-07-28): redução geral de -4% no dano do\n                    // Knight/Elite Knight (pedido explícito do dono do projeto) —\n                    // 1.134*0.96=1.08864 e 0.55*0.96=0.528 (distância). Mexe no golpe de arma\n                    // normal E na família Exori (mesma base de skill*attack).\n                    // Ajuste de balanceamento (2026-07-28, mesma sessão): -4% não foi suficiente\n                    // em teste, subiu pra -8% geral sobre a base original — 1.134*0.92=1.04328 e\n                    // 0.55*0.92=0.506 (distância). Espelho de idleWeaponVocationDamageMultiplier()\n                    // no PHP; os dois têm que mudar juntos.\n                    if (baseVoc === 4 && ['sword', 'axe', 'club'].includes(weaponKind)) return 1.04328 * tuning;\n                    if (baseVoc === 4 && weaponKind === 'distance') return 0.506 * tuning;\n                    return 1.0 * tuning;\n                }",
+    "getMaestriaElementsForVocation": "function getMaestriaElementsForVocation() {\n                    const voc = playerState.vocation > 4 ? playerState.vocation - 4 : playerState.vocation;\n                    if (voc === 1) return [{ id: 'fire', label: '🔥 Fogo' }, { id: 'energy', label: '⚡ Energia' }];\n                    if (voc === 2) return [{ id: 'ice', label: '❄️ Gelo' }, { id: 'earth', label: '🌿 Terra' }];\n                    return [];\n                }"
+  }
+}

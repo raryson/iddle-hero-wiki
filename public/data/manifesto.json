@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "game": "Idle Hero / Idle Expedition",
+    "source": "https://idlehero.online/game",
+    "package_schema_version": "1.0.0",
+    "client_map_extracted_at": "2026-08-04T14:20:35.914Z",
+    "dynamic_data_extracted_at": "2026-08-04T14:29:52.280Z",
+    "calculated_tables_extracted_at": "2026-08-04T14:08:44.045Z",
+    "privacy": "Dados pessoais da conta, personagem, inventário, saldos, tokens, cookies, CSRF e sessão foram removidos.",
+    "category": 8,
+    "slug": "manifest",
+    "generated_at": "2026-08-04T14:35:00Z"
+  },
+  "purpose": "Pacote de dados JSON para alimentação de uma wiki comunitária. A categoria 1 (hunts) não está incluída porque já havia sido enviada separadamente.",
+  "files": [
+    {
+      "name": "02-itens.json",
+      "bytes": 1229665,
+      "sha256": "e5be97869b65ef2deff1f84d375cac10b8e1ca8d9f7db247918726ec6f946d2a",
+      "category": 2,
+      "record_summary": {
+        "total_items": 646,
+        "configured_sell_price_count": 369,
+        "by_slot": {
+          "ammo": 31,
+          "amulet": 39,
+          "armor": 76,
+          "boots": 30,
+          "helmet": 64,
+          "legs": 28,
+          "none": 2,
+          "ring": 33,
+          "shield": 55,
+          "weapon": 288
+        },
+        "by_market_category": {
+          "ammo": 31,
+          "amulet": 39,
+          "armor": 76,
+          "axe": 67,
+          "boots": 30,
+          "club": 75,
+          "helmet": 67,
+          "legs": 28,
+          "other": 2,
+          "ranged": 37,
+          "ring": 33,
+          "shield": 55,
+          "sword": 71,
+          "wand": 35
+        }
+      }
+    },
+    {
+      "name": "03-magias-runas.json",
+      "bytes": 90489,
+      "sha256": "b47eb79432e84020c711d20c1964550a15c30cb981a6688bf24571350ae4300c",
+      "category": 3,
+      "record_summary": {
+        "total_spells": 75,
+        "total_runes": 14,
+        "spell_groups": {
+          "attack": 50,
+          "healing": 19,
+          "support": 6
+        },
+        "spell_vocation_counts": {
+          "Druid": 30,
+          "Elder Druid": 30,
+          "Elite Knight": 17,
+          "Knight": 17,
+          "Master Sorcerer": 30,
+          "None": 2,
+          "Paladin": 15,
+          "Royal Paladin": 15,
+          "Sorcerer": 30
+        }
+      }
+    },
+    {
+      "name": "04-vocacoes.json",
+      "bytes": 19609,
+      "sha256": "190fe162f8fd21245e664c1c49a95f4d45a09f7cacc2a1aff12a047057fe2071",
+      "category": 4,
+      "record_summary": {
+        "total_vocation_records": 9,
+        "playable_vocations": 8
+      }
+    },
+    {
+      "name": "05-roda-especialidades.json",
+      "bytes": 56281,
+      "sha256": "77f1e1e62bf86f910c2bf8572b046d861ae05d4802d5fab7a3f6c1b6c3bdd59b",
+      "category": 5,
+      "record_summary": {
+        "wheel_node_count": 19,
+        "wheel_path_count": 4,
+        "maestria_node_count": 3,
+        "specialty_count": 7
+      }
+    },
+    {
+      "name": "06-bestiario-chefes-prey.json",
+      "bytes": 159443,
+      "sha256": "90f35dce844953a1ccb74c63779b8de06e6711e929536d9ec7254968d8984cf7",
+      "category": 6,
+      "record_summary": {
+        "boss_count": 20,
+        "prey_bonus_type_count": 4,
+        "bestiary_threshold_bracket_count": 13
+      }
+    },
+    {
+      "name": "07-pocoes-imbuimentos-tier-forja.json",
+      "bytes": 25960,
+      "sha256": "c95b8eac5b319ac475b660f18dc197b1fedf717211ea7f1f478265a072dd62bd",
+      "category": 7,
+      "record_summary": {
+        "potion_count": 5,
+        "imbuement_element_count": 5,
+        "tier_slot_count": 9,
+        "forge_recipe_count": 1
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "name": "idlehero-wiki-mapeamento-v4-1-2026-08-04T14-20-35-918Z.json",
+      "role": "Declarações e funções internas do cliente"
+    },
+    {
+      "name": "idlehero-wiki-dados-faltantes-2026-08-04T14-29-52-304Z.json",
+      "role": "Resposta dinâmica da Forja e funções de Especialidades"
+    },
+    {
+      "name": "idlehero-wiki-categorias-2-a-8-2026-08-04T14-08-44-046Z.json",
+      "role": "Tabelas calculadas de Domínio de Levas e Alquimia"
+    }
+  ],
+  "quality_notes": [
+    {
+      "category": 2,
+      "status": "complete_from_client_snapshot",
+      "note": "646 itens preservados com atributos e preços de venda."
+    },
+    {
+      "category": 3,
+      "status": "complete_from_client_snapshot",
+      "note": "75 magias e 14 runas; fórmulas especiais/fallbacks também foram preservadas em formula_sources."
+    },
+    {
+      "category": 4,
+      "status": "complete_from_client_snapshot",
+      "note": "9 registros, incluindo None e oito vocações base/promovidas."
+    },
+    {
+      "category": 5,
+      "status": "mostly_complete",
+      "note": "Roda, Maestria, Domínio de Levas e Alquimia completos. A curva auxiliar getAttrPercent e constantes de Esquiva/Caçada Dourada não foram capturadas; não foram estimadas."
+    },
+    {
+      "category": 6,
+      "status": "complete_from_client_snapshot",
+      "note": "20 chefes, Bestiário, Bosstiário e quatro tipos de Prey."
+    },
+    {
+      "category": 7,
+      "status": "partial_forge_coverage",
+      "note": "Poções, imbuimentos e Tier completos. A Forja retornou apenas a receita disponível para a vocação usada na coleta."
+    }
+  ],
+  "privacy_actions": [
+    "Não foram incluídos nome do personagem, level, saldo, gold atual, inventário, estado dos ingredientes, logs de batalha, macros, token, cookies, sessão ou CSRF.",
+    "Campos dinâmicos da receita como orbs_tem, gold_tem, ok, origem e item_id foram removidos."
+  ],
+  "conventions": {
+    "json_encoding": "UTF-8",
+    "indentation": 2,
+    "drop_chance": "100000 = 100%; 1000 = 1%",
+    "time_units": "Cooldowns de magias em milissegundos; duração de imbuimentos em segundos."
+  }
+}

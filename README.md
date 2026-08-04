@@ -14,6 +14,8 @@ O projeto é open source e contribuições são bem-vindas:
 - Ordenação por estágio, XP/HP, Gold/HP ou HP.
 - Recomendações de hunts por level, usando as rotas configuradas de XP e Gold.
 - Detalhes da criatura ao clicar em uma linha.
+- Abas de bestiário, itens, magias e runas, vocações, especialidades, poções e forja.
+- Manifesto com a origem e as notas de qualidade dos dados.
 - Layout responsivo para desktop e celular.
 
 ## Tecnologias
@@ -44,7 +46,7 @@ npm run preview  # visualiza a build localmente
 ## Estrutura principal
 
 ```text
-public/data/hunts.json  dados das hunts exibidos pelo app
+public/data/*.json      dados do jogo exibidos pelo app
 src/main.jsx            aplicação React e componentes da página
 src/routes.js           rotas de XP e Gold usadas nas recomendações
 src/styles.css          estilos base

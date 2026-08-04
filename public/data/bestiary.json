@@ -1,0 +1,6738 @@
+{
+  "metadata": {
+    "game": "Idle Hero / Idle Expedition",
+    "source": "https://idlehero.online/game",
+    "package_schema_version": "1.0.0",
+    "client_map_extracted_at": "2026-08-04T14:20:35.914Z",
+    "dynamic_data_extracted_at": "2026-08-04T14:29:52.280Z",
+    "calculated_tables_extracted_at": "2026-08-04T14:08:44.045Z",
+    "privacy": "Dados pessoais da conta, personagem, inventário, saldos, tokens, cookies, CSRF e sessão foram removidos.",
+    "category": 6,
+    "slug": "bestiary-bosses-prey"
+  },
+  "summary": {
+    "boss_count": 20,
+    "prey_bonus_type_count": 4,
+    "bestiary_threshold_bracket_count": 13
+  },
+  "bestiary": {
+    "required_kills_by_recommended_level": [
+      {
+        "max_recommended_level": 10,
+        "required_kills": 1000
+      },
+      {
+        "max_recommended_level": 20,
+        "required_kills": 1600
+      },
+      {
+        "max_recommended_level": 30,
+        "required_kills": 2400
+      },
+      {
+        "max_recommended_level": 40,
+        "required_kills": 3200
+      },
+      {
+        "max_recommended_level": 50,
+        "required_kills": 4000
+      },
+      {
+        "max_recommended_level": 60,
+        "required_kills": 5000
+      },
+      {
+        "max_recommended_level": 70,
+        "required_kills": 6000
+      },
+      {
+        "max_recommended_level": 80,
+        "required_kills": 7000
+      },
+      {
+        "max_recommended_level": 90,
+        "required_kills": 8000
+      },
+      {
+        "max_recommended_level": 100,
+        "required_kills": 9200
+      },
+      {
+        "max_recommended_level": 110,
+        "required_kills": 10400
+      },
+      {
+        "max_recommended_level": 120,
+        "required_kills": 12000
+      },
+      {
+        "min_recommended_level": 121,
+        "max_recommended_level": 2000,
+        "required_kills": 14000
+      }
+    ],
+    "completion_bonus": {
+      "damage_multiplier": 1.1,
+      "loot_multiplier": 1.05
+    },
+    "global_bonus_per_completed_entry": {
+      "multiplier_increment": 0.0005,
+      "percentage_points": 0.05
+    },
+    "auto_bestiary_cost": {
+      "value": 150,
+      "unit": "não identificado no trecho capturado"
+    }
+  },
+  "bossiary": {
+    "kills_required_per_boss_tier": 100,
+    "completed_tier_bonus": {
+      "damage_pct": 5,
+      "extra_item_chance_pct": 5
+    },
+    "global_bonus_per_completed_bossiary": {
+      "damage_pct": 0.25,
+      "extra_item_chance_pct": 0.25
+    },
+    "formula_note": "O bônus de cada tier soma 5% quando o tier está completo e 0,25 ponto percentual por Bosstiário completo global."
+  },
+  "bosses": [
+    {
+      "boss_key": 15,
+      "name": "Gargoyle",
+      "hp": 250,
+      "xp": 2500,
+      "gold": 500,
+      "atk": 65,
+      "armor": 26,
+      "defense": 26,
+      "sprite": 95,
+      "sprite_query": "",
+      "race": "undead",
+      "visual_version": 12,
+      "attacks_visual": [],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 1
+      },
+      "rec_level": 15,
+      "loot_pool": [
+        {
+          "id": 1294,
+          "chance": 15800
+        },
+        {
+          "id": 2394,
+          "chance": 1500
+        },
+        {
+          "id": 2513,
+          "chance": 1300
+        },
+        {
+          "id": 2129,
+          "chance": 1180
+        },
+        {
+          "id": 2457,
+          "chance": 850
+        },
+        {
+          "id": 2489,
+          "chance": 300
+        },
+        {
+          "id": 2209,
+          "chance": 260
+        }
+      ],
+      "unlock_level": 15,
+      "reward_level": 15,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "2197": 1500,
+        "2200": 2000,
+        "2214": 1500,
+        "2452": 1000
+      },
+      "combined_drops": [
+        {
+          "item_id": 1294,
+          "item_name": "small stone",
+          "combined_chance": 15800,
+          "chance_percent": 15.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 15800
+            }
+          ]
+        },
+        {
+          "item_id": 2200,
+          "item_name": "protection amulet",
+          "combined_chance": 2000,
+          "chance_percent": 2.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 2000
+            }
+          ]
+        },
+        {
+          "item_id": 2197,
+          "item_name": "stone skin amulet",
+          "combined_chance": 1500,
+          "chance_percent": 1.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1500
+            }
+          ]
+        },
+        {
+          "item_id": 2214,
+          "item_name": "ring of healing",
+          "combined_chance": 1500,
+          "chance_percent": 1.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1500
+            }
+          ]
+        },
+        {
+          "item_id": 2394,
+          "item_name": "morning star",
+          "combined_chance": 1500,
+          "chance_percent": 1.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1500
+            }
+          ]
+        },
+        {
+          "item_id": 2513,
+          "item_name": "battle shield",
+          "combined_chance": 1300,
+          "chance_percent": 1.3,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1300
+            }
+          ]
+        },
+        {
+          "item_id": 2129,
+          "item_name": "wolf tooth chain",
+          "combined_chance": 1180,
+          "chance_percent": 1.18,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1180
+            }
+          ]
+        },
+        {
+          "item_id": 2452,
+          "item_name": "heavy mace",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 2457,
+          "item_name": "steel helmet",
+          "combined_chance": 850,
+          "chance_percent": 0.85,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 850
+            }
+          ]
+        },
+        {
+          "item_id": 2489,
+          "item_name": "dark armor",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 2209,
+          "item_name": "club ring",
+          "combined_chance": 260,
+          "chance_percent": 0.26,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 260
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 25,
+      "name": "Gazer",
+      "hp": 120,
+      "xp": 8000,
+      "gold": 1600,
+      "atk": 19,
+      "armor": 4,
+      "defense": 4,
+      "sprite": 109,
+      "sprite_query": "",
+      "race": "venom",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "lifedrain",
+          "chance": 15,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "redshimmer"
+        },
+        {
+          "name": "manadrain",
+          "chance": 10,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": ""
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 1
+      },
+      "rec_level": 25,
+      "loot_pool": [],
+      "unlock_level": 25,
+      "reward_level": 25,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "2168": 1500,
+        "2189": 1500,
+        "8871": 1000
+      },
+      "combined_drops": [
+        {
+          "item_id": 2168,
+          "item_name": "life ring",
+          "combined_chance": 1500,
+          "chance_percent": 1.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1500
+            }
+          ]
+        },
+        {
+          "item_id": 2189,
+          "item_name": "wand of cosmic energy",
+          "combined_chance": 1500,
+          "chance_percent": 1.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1500
+            }
+          ]
+        },
+        {
+          "item_id": 8871,
+          "item_name": "focus cape",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 50,
+      "name": "Foreman Kneebiter",
+      "hp": 1000,
+      "xp": 40000,
+      "gold": 8000,
+      "atk": 200,
+      "armor": 15,
+      "defense": 22,
+      "sprite": 70,
+      "sprite_query": "",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 1
+      },
+      "rec_level": 50,
+      "loot_pool": [
+        {
+          "id": 2513,
+          "chance": 6666
+        }
+      ],
+      "unlock_level": 50,
+      "reward_level": 50,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "2195": 1500,
+        "2392": 1200,
+        "2421": 1000,
+        "2430": 1200,
+        "2436": 1200,
+        "2470": 800,
+        "2472": 500,
+        "2498": 1000,
+        "2514": 800
+      },
+      "combined_drops": [
+        {
+          "item_id": 2513,
+          "item_name": "battle shield",
+          "combined_chance": 6666,
+          "chance_percent": 6.666,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6666
+            }
+          ]
+        },
+        {
+          "item_id": 2195,
+          "item_name": "boots of haste",
+          "combined_chance": 1500,
+          "chance_percent": 1.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1500
+            }
+          ]
+        },
+        {
+          "item_id": 2392,
+          "item_name": "fire sword",
+          "combined_chance": 1200,
+          "chance_percent": 1.2,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1200
+            }
+          ]
+        },
+        {
+          "item_id": 2430,
+          "item_name": "knight axe",
+          "combined_chance": 1200,
+          "chance_percent": 1.2,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1200
+            }
+          ]
+        },
+        {
+          "item_id": 2436,
+          "item_name": "skull staff",
+          "combined_chance": 1200,
+          "chance_percent": 1.2,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1200
+            }
+          ]
+        },
+        {
+          "item_id": 2421,
+          "item_name": "thunder hammer",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 2498,
+          "item_name": "royal helmet",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 2470,
+          "item_name": "golden legs",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 2514,
+          "item_name": "mastermind shield",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 2472,
+          "item_name": "magic plate armor",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 100,
+      "name": "Zevelon Duskbringer",
+      "hp": 25000,
+      "xp": 80000,
+      "gold": 16000,
+      "atk": 273,
+      "armor": 30,
+      "defense": 30,
+      "sprite": 287,
+      "sprite_query": "",
+      "race": "undead",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "death",
+          "chance": 12,
+          "range": 1,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "suddendeath",
+          "areaEffect": "mortarea"
+        },
+        {
+          "name": "speed",
+          "chance": 15,
+          "range": 1,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": ""
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.8929,
+        "death": 0.1071
+      },
+      "rec_level": 100,
+      "loot_pool": [
+        {
+          "id": 2214,
+          "chance": 11111
+        },
+        {
+          "id": 2534,
+          "chance": 4500
+        }
+      ],
+      "unlock_level": 100,
+      "reward_level": 100,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "2195": 2000,
+        "2472": 700,
+        "2492": 1000,
+        "2520": 1000,
+        "7382": 800,
+        "7414": 800,
+        "7435": 800,
+        "8851": 1000,
+        "8852": 1000
+      },
+      "combined_drops": [
+        {
+          "item_id": 2214,
+          "item_name": "ring of healing",
+          "combined_chance": 11111,
+          "chance_percent": 11.111,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 11111
+            }
+          ]
+        },
+        {
+          "item_id": 2534,
+          "item_name": "vampire shield",
+          "combined_chance": 4500,
+          "chance_percent": 4.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4500
+            }
+          ]
+        },
+        {
+          "item_id": 2195,
+          "item_name": "boots of haste",
+          "combined_chance": 2000,
+          "chance_percent": 2.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 2000
+            }
+          ]
+        },
+        {
+          "item_id": 2492,
+          "item_name": "dragon scale mail",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 2520,
+          "item_name": "demon shield",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 8851,
+          "item_name": "royal crossbow",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 8852,
+          "item_name": "the devileye",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 7382,
+          "item_name": "demonrage sword",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7414,
+          "item_name": "abyss hammer",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7435,
+          "item_name": "impaler",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 2472,
+          "item_name": "magic plate armor",
+          "combined_chance": 700,
+          "chance_percent": 0.7,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 150,
+      "name": "Grorlam",
+      "hp": 35000,
+      "xp": 100000,
+      "gold": 20000,
+      "atk": 287,
+      "armor": 15,
+      "defense": 25,
+      "sprite": 205,
+      "sprite_query": "",
+      "race": "undead",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "physical",
+          "chance": 15,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "largerock",
+          "areaEffect": ""
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 1
+      },
+      "rec_level": 150,
+      "loot_pool": [
+        {
+          "id": 2509,
+          "chance": 65000
+        },
+        {
+          "id": 2166,
+          "chance": 42000
+        },
+        {
+          "id": 2645,
+          "chance": 11000
+        },
+        {
+          "id": 2124,
+          "chance": 3850
+        },
+        {
+          "id": 1294,
+          "chance": 3850
+        }
+      ],
+      "unlock_level": 150,
+      "reward_level": 150,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "2646": 500,
+        "7403": 800,
+        "7456": 800,
+        "8853": 800,
+        "8881": 600,
+        "8882": 600,
+        "8883": 600,
+        "8888": 600,
+        "8890": 600
+      },
+      "combined_drops": [
+        {
+          "item_id": 2509,
+          "item_name": "steel shield",
+          "combined_chance": 65000,
+          "chance_percent": 65.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 65000
+            }
+          ]
+        },
+        {
+          "item_id": 2166,
+          "item_name": "power ring",
+          "combined_chance": 42000,
+          "chance_percent": 42.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 42000
+            }
+          ]
+        },
+        {
+          "item_id": 2645,
+          "item_name": "steel boots",
+          "combined_chance": 11000,
+          "chance_percent": 11.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 11000
+            }
+          ]
+        },
+        {
+          "item_id": 1294,
+          "item_name": "small stone",
+          "combined_chance": 3850,
+          "chance_percent": 3.85,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3850
+            }
+          ]
+        },
+        {
+          "item_id": 2124,
+          "item_name": "crystal ring",
+          "combined_chance": 3850,
+          "chance_percent": 3.85,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3850
+            }
+          ]
+        },
+        {
+          "item_id": 7403,
+          "item_name": "berserker",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7456,
+          "item_name": "noble axe",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 8853,
+          "item_name": "the ironworker",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 8881,
+          "item_name": "fireborn giant armor",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 8882,
+          "item_name": "earthborn titan armor",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 8883,
+          "item_name": "windborn colossus armor",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 8888,
+          "item_name": "master archer's armor",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 8890,
+          "item_name": "robe of the underworld",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 2646,
+          "item_name": "golden boots",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 200,
+      "name": "Menace",
+      "hp": 45000,
+      "xp": 150000,
+      "gold": 30000,
+      "atk": 215,
+      "armor": 16,
+      "defense": 19,
+      "sprite": 113,
+      "sprite_query": "",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 1
+      },
+      "rec_level": 200,
+      "loot_pool": [],
+      "unlock_level": 200,
+      "reward_level": 200,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "11301": 800,
+        "11302": 800,
+        "11303": 800,
+        "11304": 1000,
+        "12642": 500,
+        "12643": 500,
+        "12644": 500,
+        "12645": 500
+      },
+      "combined_drops": [
+        {
+          "item_id": 11304,
+          "item_name": "Zaoan legs",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 11301,
+          "item_name": "Zaoan armor",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 11302,
+          "item_name": "Zaoan helmet",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 11303,
+          "item_name": "Zaoan shoes",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 12642,
+          "item_name": "royal draken mail",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 12643,
+          "item_name": "royal scale robe",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 12644,
+          "item_name": "shield of corruption",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 12645,
+          "item_name": "elite draken helmet",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 250,
+      "name": "Leviathan",
+      "hp": 50000,
+      "xp": 200000,
+      "gold": 40000,
+      "atk": 299,
+      "armor": 20,
+      "defense": 30,
+      "sprite": 275,
+      "sprite_query": "",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "earth",
+          "chance": 8,
+          "range": 1,
+          "radius": 0,
+          "length": 9,
+          "spread": 3,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "bigplants"
+        },
+        {
+          "name": "ice",
+          "chance": 10,
+          "range": 1,
+          "radius": 0,
+          "length": 9,
+          "spread": 3,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "icearea"
+        },
+        {
+          "name": "drown",
+          "chance": 11,
+          "range": 1,
+          "radius": 4,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "bluebubble"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.8605,
+        "earth": 0.062,
+        "ice": 0.0775
+      },
+      "rec_level": 250,
+      "loot_pool": [],
+      "unlock_level": 250,
+      "reward_level": 250,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "15403": 400,
+        "15404": 600,
+        "15406": 400,
+        "15407": 400,
+        "15408": 500,
+        "18454": 500
+      },
+      "combined_drops": [
+        {
+          "item_id": 15404,
+          "item_name": "deepling axe",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 15408,
+          "item_name": "depth galea",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 18454,
+          "item_name": "mycological bow",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 15403,
+          "item_name": "necklace of the deep",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 15406,
+          "item_name": "ornate chestplate",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 15407,
+          "item_name": "depth lorica",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 300,
+      "name": "Golgordan",
+      "hp": 55000,
+      "xp": 250000,
+      "gold": 50000,
+      "atk": 569,
+      "armor": 48,
+      "defense": 54,
+      "sprite": 12,
+      "sprite_query": "&head=128&body=62&legs=95&feet=15",
+      "race": "fire",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "death",
+          "chance": 15,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "mortarea"
+        },
+        {
+          "name": "poisoncondition",
+          "chance": 11,
+          "range": 1,
+          "radius": 0,
+          "length": 5,
+          "spread": 2,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "poison"
+        },
+        {
+          "name": "physical",
+          "chance": 8,
+          "range": 1,
+          "radius": 6,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "groundshaker"
+        },
+        {
+          "name": "fire",
+          "chance": 15,
+          "range": 1,
+          "radius": 7,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "firearea"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.7248,
+        "death": 0.1007,
+        "earth": 0.0738,
+        "fire": 0.1007
+      },
+      "rec_level": 300,
+      "loot_pool": [],
+      "unlock_level": 300,
+      "reward_level": 300,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "22422": 300,
+        "22423": 300,
+        "22424": 300,
+        "25174": 300,
+        "25180": 300
+      },
+      "combined_drops": [
+        {
+          "item_id": 22422,
+          "item_name": "crude umbral spellbook",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 22423,
+          "item_name": "umbral spellbook",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 22424,
+          "item_name": "umbral master spellbook",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 25174,
+          "item_name": "fireheart cuirass",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 25180,
+          "item_name": "thunderheart cuirass",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 400,
+      "name": "Zavarash",
+      "hp": 65000,
+      "xp": 350000,
+      "gold": 70000,
+      "atk": 1304,
+      "armor": 55,
+      "defense": 65,
+      "sprite": 12,
+      "sprite_query": "&body=15&legs=57&feet=84",
+      "race": "fire",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "physical",
+          "chance": 15,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "throwingknife",
+          "areaEffect": ""
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 1
+      },
+      "rec_level": 400,
+      "loot_pool": [
+        {
+          "id": 5954,
+          "chance": 100000
+        },
+        {
+          "id": 7632,
+          "chance": 40000
+        },
+        {
+          "id": 2515,
+          "chance": 15030
+        },
+        {
+          "id": 2427,
+          "chance": 15030
+        },
+        {
+          "id": 7428,
+          "chance": 15030
+        },
+        {
+          "id": 2452,
+          "chance": 12940
+        },
+        {
+          "id": 2519,
+          "chance": 11540
+        },
+        {
+          "id": 8891,
+          "chance": 9620
+        },
+        {
+          "id": 7387,
+          "chance": 8390
+        },
+        {
+          "id": 2520,
+          "chance": 6290
+        },
+        {
+          "id": 2514,
+          "chance": 1400
+        },
+        {
+          "id": 7431,
+          "chance": 700
+        },
+        {
+          "id": 8877,
+          "chance": 350
+        },
+        {
+          "id": 8928,
+          "chance": 170
+        }
+      ],
+      "unlock_level": 400,
+      "reward_level": 400,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "33217": 100,
+        "33220": 100,
+        "33221": 100,
+        "33222": 100,
+        "33223": 100,
+        "33224": 100,
+        "33225": 100,
+        "33226": 100
+      },
+      "combined_drops": [
+        {
+          "item_id": 5954,
+          "item_name": "demon horn",
+          "combined_chance": 100000,
+          "chance_percent": 100.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 100000
+            }
+          ]
+        },
+        {
+          "item_id": 7632,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 40000,
+          "chance_percent": 40.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 40000
+            }
+          ]
+        },
+        {
+          "item_id": 2427,
+          "item_name": "guardian halberd",
+          "combined_chance": 15030,
+          "chance_percent": 15.03,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 15030
+            }
+          ]
+        },
+        {
+          "item_id": 2515,
+          "item_name": "guardian shield",
+          "combined_chance": 15030,
+          "chance_percent": 15.03,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 15030
+            }
+          ]
+        },
+        {
+          "item_id": 7428,
+          "item_name": "bonebreaker",
+          "combined_chance": 15030,
+          "chance_percent": 15.03,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 15030
+            }
+          ]
+        },
+        {
+          "item_id": 2452,
+          "item_name": "heavy mace",
+          "combined_chance": 12940,
+          "chance_percent": 12.94,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 12940
+            }
+          ]
+        },
+        {
+          "item_id": 2519,
+          "item_name": "crown shield",
+          "combined_chance": 11540,
+          "chance_percent": 11.54,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 11540
+            }
+          ]
+        },
+        {
+          "item_id": 8891,
+          "item_name": "paladin armor",
+          "combined_chance": 9620,
+          "chance_percent": 9.62,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 9620
+            }
+          ]
+        },
+        {
+          "item_id": 7387,
+          "item_name": "diamond sceptre",
+          "combined_chance": 8390,
+          "chance_percent": 8.39,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 8390
+            }
+          ]
+        },
+        {
+          "item_id": 2520,
+          "item_name": "demon shield",
+          "combined_chance": 6290,
+          "chance_percent": 6.29,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6290
+            }
+          ]
+        },
+        {
+          "item_id": 2514,
+          "item_name": "mastermind shield",
+          "combined_chance": 1400,
+          "chance_percent": 1.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1400
+            }
+          ]
+        },
+        {
+          "item_id": 7431,
+          "item_name": "demonbone",
+          "combined_chance": 700,
+          "chance_percent": 0.7,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 700
+            }
+          ]
+        },
+        {
+          "item_id": 8877,
+          "item_name": "lavos armor",
+          "combined_chance": 350,
+          "chance_percent": 0.35,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 350
+            }
+          ]
+        },
+        {
+          "item_id": 8928,
+          "item_name": "obsidian truncheon",
+          "combined_chance": 170,
+          "chance_percent": 0.17,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 170
+            }
+          ]
+        },
+        {
+          "item_id": 33217,
+          "item_name": "falcon coif",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33220,
+          "item_name": "Item 33220",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33221,
+          "item_name": "falcon plate",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33222,
+          "item_name": "falcon greaves",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33223,
+          "item_name": "Item 33223",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33224,
+          "item_name": "Item 33224",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33225,
+          "item_name": "falcon longsword",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 33226,
+          "item_name": "falcon battleaxe",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 500,
+      "name": "Ferumbras Mortal Shell",
+      "hp": 85000,
+      "xp": 550000,
+      "gold": 110000,
+      "atk": 644,
+      "armor": 100,
+      "defense": 120,
+      "sprite": 229,
+      "sprite_query": "",
+      "race": "venom",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "poisoncondition",
+          "chance": 20,
+          "range": 1,
+          "radius": 6,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "poison"
+        },
+        {
+          "name": "manadrain",
+          "chance": 16,
+          "range": 1,
+          "radius": 6,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "redshimmer"
+        },
+        {
+          "name": "manadrain",
+          "chance": 20,
+          "range": 1,
+          "radius": 9,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "blueshimmer"
+        },
+        {
+          "name": "energy",
+          "chance": 21,
+          "range": 1,
+          "radius": 9,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "energy"
+        },
+        {
+          "name": "lifedrain",
+          "chance": 21,
+          "range": 1,
+          "radius": 6,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "poff"
+        },
+        {
+          "name": "lifedrain",
+          "chance": 17,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "greenspark"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "earth": 0.1739,
+        "physical": 0.6435,
+        "energy": 0.1826
+      },
+      "rec_level": 500,
+      "loot_pool": [
+        {
+          "id": 7895,
+          "chance": 800
+        },
+        {
+          "id": 8869,
+          "chance": 400
+        },
+        {
+          "id": 7416,
+          "chance": 800
+        },
+        {
+          "id": 7427,
+          "chance": 800
+        },
+        {
+          "id": 2466,
+          "chance": 800
+        },
+        {
+          "id": 8930,
+          "chance": 400
+        },
+        {
+          "id": 25429,
+          "chance": 800
+        },
+        {
+          "id": 7632,
+          "chance": 1000
+        },
+        {
+          "id": 8868,
+          "chance": 300
+        },
+        {
+          "id": 7423,
+          "chance": 300
+        },
+        {
+          "id": 25420,
+          "chance": 800
+        },
+        {
+          "id": 7422,
+          "chance": 800
+        },
+        {
+          "id": 7418,
+          "chance": 600
+        },
+        {
+          "id": 2539,
+          "chance": 800
+        },
+        {
+          "id": 2520,
+          "chance": 800
+        },
+        {
+          "id": 7896,
+          "chance": 800
+        },
+        {
+          "id": 2472,
+          "chance": 400
+        },
+        {
+          "id": 25414,
+          "chance": 100
+        },
+        {
+          "id": 7403,
+          "chance": 800
+        },
+        {
+          "id": 25522,
+          "chance": 500
+        },
+        {
+          "id": 8926,
+          "chance": 300
+        },
+        {
+          "id": 7410,
+          "chance": 800
+        },
+        {
+          "id": 8928,
+          "chance": 400
+        },
+        {
+          "id": 7414,
+          "chance": 800
+        },
+        {
+          "id": 5903,
+          "chance": 100
+        },
+        {
+          "id": 7382,
+          "chance": 800
+        },
+        {
+          "id": 2514,
+          "chance": 600
+        },
+        {
+          "id": 7435,
+          "chance": 800
+        },
+        {
+          "id": 25423,
+          "chance": 800
+        },
+        {
+          "id": 25523,
+          "chance": 500
+        },
+        {
+          "id": 8885,
+          "chance": 800
+        },
+        {
+          "id": 2415,
+          "chance": 700
+        },
+        {
+          "id": 2522,
+          "chance": 100
+        },
+        {
+          "id": 7894,
+          "chance": 800
+        },
+        {
+          "id": 7405,
+          "chance": 800
+        },
+        {
+          "id": 7411,
+          "chance": 400
+        }
+      ],
+      "unlock_level": 500,
+      "reward_level": 500,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "25172": 200,
+        "25379": 200,
+        "39486": 100,
+        "39492": 100,
+        "39494": 100,
+        "39503": 100,
+        "42050": 100,
+        "42057": 100,
+        "50100": 100,
+        "50102": 500
+      },
+      "combined_drops": [
+        {
+          "item_id": 7632,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 2466,
+          "item_name": "golden armor",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 2520,
+          "item_name": "demon shield",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 2539,
+          "item_name": "phoenix shield",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7382,
+          "item_name": "demonrage sword",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7403,
+          "item_name": "berserker",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7405,
+          "item_name": "havoc blade",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7410,
+          "item_name": "queen's sceptre",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7414,
+          "item_name": "abyss hammer",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7416,
+          "item_name": "bloody edge",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7422,
+          "item_name": "jade hammer",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7427,
+          "item_name": "chaos mace",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7435,
+          "item_name": "impaler",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7894,
+          "item_name": "magma legs",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7895,
+          "item_name": "lightning legs",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 7896,
+          "item_name": "glacier kilt",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 8885,
+          "item_name": "divine plate",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 25420,
+          "item_name": "Ferumbras' staff",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 25423,
+          "item_name": "Ferumbras' amulet",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 25429,
+          "item_name": "boots of homecoming",
+          "combined_chance": 800,
+          "chance_percent": 0.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 800
+            }
+          ]
+        },
+        {
+          "item_id": 2415,
+          "item_name": "great axe",
+          "combined_chance": 700,
+          "chance_percent": 0.7,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 700
+            }
+          ]
+        },
+        {
+          "item_id": 2514,
+          "item_name": "mastermind shield",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 7418,
+          "item_name": "nightmare blade",
+          "combined_chance": 600,
+          "chance_percent": 0.6,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 600
+            }
+          ]
+        },
+        {
+          "item_id": 25522,
+          "item_name": "rift bow",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 25523,
+          "item_name": "rift crossbow",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 50102,
+          "item_name": "Forge Orb",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 2472,
+          "item_name": "magic plate armor",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 7411,
+          "item_name": "ornamented axe",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 8869,
+          "item_name": "greenwood coat",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 8928,
+          "item_name": "obsidian truncheon",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 8930,
+          "item_name": "emerald sword",
+          "combined_chance": 400,
+          "chance_percent": 0.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 400
+            }
+          ]
+        },
+        {
+          "item_id": 7423,
+          "item_name": "skullcrusher",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 8868,
+          "item_name": "velvet mantle",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 8926,
+          "item_name": "demonwing axe",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 25172,
+          "item_name": "Item 25172",
+          "combined_chance": 200,
+          "chance_percent": 0.2,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 200
+            }
+          ]
+        },
+        {
+          "item_id": 25379,
+          "item_name": "Item 25379",
+          "combined_chance": 200,
+          "chance_percent": 0.2,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 200
+            }
+          ]
+        },
+        {
+          "item_id": 2522,
+          "item_name": "great shield",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 5903,
+          "item_name": "Ferumbras' hat",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 25414,
+          "item_name": "death gaze",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 39486,
+          "item_name": "soulcutter",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 39492,
+          "item_name": "soulbleeder",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 39494,
+          "item_name": "soultainter",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 39503,
+          "item_name": "soulbastion",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 42050,
+          "item_name": "eldritch shield",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 42057,
+          "item_name": "eldritch cuirass",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 50100,
+          "item_name": "Stamina Refil",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 3001,
+      "name": "Jaul",
+      "hp": 90000,
+      "xp": 250000,
+      "gold": 50000,
+      "atk": 1427,
+      "armor": 40,
+      "defense": 40,
+      "sprite": 444,
+      "sprite_query": "",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "fire",
+          "chance": 19,
+          "range": 7,
+          "radius": 7,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "fire",
+          "areaEffect": "firearea"
+        },
+        {
+          "name": "manadrain",
+          "chance": 32,
+          "range": 7,
+          "radius": 7,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "mortarea"
+        },
+        {
+          "name": "earth",
+          "chance": 27,
+          "range": 1,
+          "radius": 3,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "explosionarea"
+        },
+        {
+          "name": "death",
+          "chance": 6,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "mortarea"
+        },
+        {
+          "name": "fire",
+          "chance": 5,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "fire"
+        },
+        {
+          "name": "ice",
+          "chance": 5,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "icearea"
+        },
+        {
+          "name": "lifedrain",
+          "chance": 10,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 3,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "watersplash"
+        },
+        {
+          "name": "speed",
+          "chance": 14,
+          "range": 7,
+          "radius": 1,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": ""
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.6961,
+        "fire": 0.1176,
+        "earth": 0.1324,
+        "death": 0.0294,
+        "ice": 0.0245
+      },
+      "rec_level": 300,
+      "loot_pool": [
+        {
+          "id": 15404,
+          "chance": 25000
+        },
+        {
+          "id": 15406,
+          "chance": 25000
+        },
+        {
+          "id": 15407,
+          "chance": 20000
+        },
+        {
+          "id": 15408,
+          "chance": 33333
+        },
+        {
+          "id": 15410,
+          "chance": 14285
+        },
+        {
+          "id": 15412,
+          "chance": 7142
+        },
+        {
+          "id": 15413,
+          "chance": 50000
+        },
+        {
+          "id": 15414,
+          "chance": 14285
+        }
+      ],
+      "unlock_level": 300,
+      "reward_level": 300,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "30885": 40,
+        "33912": 40,
+        "35109": 40,
+        "36294": 40
+      },
+      "combined_drops": [
+        {
+          "item_id": 15413,
+          "item_name": "ornate shield",
+          "combined_chance": 50000,
+          "chance_percent": 50.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 50000
+            }
+          ]
+        },
+        {
+          "item_id": 15408,
+          "item_name": "depth galea",
+          "combined_chance": 33333,
+          "chance_percent": 33.333,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 33333
+            }
+          ]
+        },
+        {
+          "item_id": 15404,
+          "item_name": "deepling axe",
+          "combined_chance": 25000,
+          "chance_percent": 25.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 25000
+            }
+          ]
+        },
+        {
+          "item_id": 15406,
+          "item_name": "ornate chestplate",
+          "combined_chance": 25000,
+          "chance_percent": 25.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 25000
+            }
+          ]
+        },
+        {
+          "item_id": 15407,
+          "item_name": "depth lorica",
+          "combined_chance": 20000,
+          "chance_percent": 20.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 20000
+            }
+          ]
+        },
+        {
+          "item_id": 15410,
+          "item_name": "depth calcei",
+          "combined_chance": 14285,
+          "chance_percent": 14.285,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 14285
+            }
+          ]
+        },
+        {
+          "item_id": 15414,
+          "item_name": "ornate mace",
+          "combined_chance": 14285,
+          "chance_percent": 14.285,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 14285
+            }
+          ]
+        },
+        {
+          "item_id": 15412,
+          "item_name": "ornate legs",
+          "combined_chance": 7142,
+          "chance_percent": 7.142,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 7142
+            }
+          ]
+        },
+        {
+          "item_id": 30885,
+          "item_name": "gnome shield",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        },
+        {
+          "item_id": 33912,
+          "item_name": "resizer",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        },
+        {
+          "item_id": 35109,
+          "item_name": "cobra club",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        },
+        {
+          "item_id": 36294,
+          "item_name": "mortal mace",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 3201,
+      "name": "Urmahlullu the Immaculate",
+      "hp": 120000,
+      "xp": 265000,
+      "gold": 53000,
+      "atk": 1068,
+      "armor": 84,
+      "defense": 84,
+      "sprite": 1197,
+      "sprite_query": "&head=57&body=75&legs=38&feet=86",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "fire",
+          "chance": 20,
+          "range": 1,
+          "radius": 4,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "firearea"
+        },
+        {
+          "name": "fire",
+          "chance": 15,
+          "range": 1,
+          "radius": 3,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "firearea"
+        },
+        {
+          "name": "energy",
+          "chance": 20,
+          "range": 1,
+          "radius": 3,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "energyball",
+          "areaEffect": "energy"
+        },
+        {
+          "name": "urmahlulluring",
+          "chance": 18,
+          "range": 1,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": ""
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.6821,
+        "fire": 0.2023,
+        "energy": 0.1156
+      },
+      "rec_level": 320,
+      "loot_pool": [],
+      "unlock_level": 320,
+      "reward_level": 320,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "33915": 40,
+        "35110": 40,
+        "36296": 40,
+        "37342": 40
+      },
+      "combined_drops": [
+        {
+          "item_id": 33915,
+          "item_name": "winterblade",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        },
+        {
+          "item_id": 35110,
+          "item_name": "cobra axe",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        },
+        {
+          "item_id": 36296,
+          "item_name": "galea mortis",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        },
+        {
+          "item_id": 37342,
+          "item_name": "phantasmal axe",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 3501,
+      "name": "Grand Master Oberon",
+      "hp": 30000,
+      "xp": 285000,
+      "gold": 57000,
+      "atk": 1632,
+      "armor": 82,
+      "defense": 60,
+      "sprite": 1072,
+      "sprite_query": "&head=57&body=75&legs=38&feet=86&addons=1",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "holy",
+          "chance": 80,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "holyarea"
+        },
+        {
+          "name": "earth",
+          "chance": 20,
+          "range": 1,
+          "radius": 5,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "blackspark"
+        },
+        {
+          "name": "death",
+          "chance": 20,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "suddendeath",
+          "areaEffect": "mortarea"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.4545,
+        "holy": 0.3636,
+        "earth": 0.0909,
+        "death": 0.0909
+      },
+      "rec_level": 350,
+      "loot_pool": [
+        {
+          "id": 33226,
+          "chance": 10
+        },
+        {
+          "id": 33217,
+          "chance": 10
+        },
+        {
+          "id": 33225,
+          "chance": 10
+        },
+        {
+          "id": 33222,
+          "chance": 10
+        },
+        {
+          "id": 33221,
+          "chance": 10
+        }
+      ],
+      "unlock_level": 350,
+      "reward_level": 350,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "29057": 1000,
+        "33217": 30,
+        "33221": 30,
+        "33222": 30,
+        "33225": 30,
+        "33226": 30
+      },
+      "combined_drops": [
+        {
+          "item_id": 29057,
+          "item_name": "diamond arrow",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 33217,
+          "item_name": "falcon coif",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 10
+            }
+          ]
+        },
+        {
+          "item_id": 33221,
+          "item_name": "falcon plate",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 10
+            }
+          ]
+        },
+        {
+          "item_id": 33222,
+          "item_name": "falcon greaves",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 10
+            }
+          ]
+        },
+        {
+          "item_id": 33225,
+          "item_name": "falcon longsword",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 10
+            }
+          ]
+        },
+        {
+          "item_id": 33226,
+          "item_name": "falcon battleaxe",
+          "combined_chance": 40,
+          "chance_percent": 0.04,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 3801,
+      "name": "Scarlett Etzel",
+      "hp": 30000,
+      "xp": 310000,
+      "gold": 62000,
+      "atk": 607,
+      "armor": 88,
+      "defense": 88,
+      "sprite": 1201,
+      "sprite_query": "",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "sudden death",
+          "chance": 16,
+          "range": 1,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": ""
+        },
+        {
+          "name": "holy",
+          "chance": 13,
+          "range": 1,
+          "radius": 0,
+          "length": 7,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "holyarea"
+        },
+        {
+          "name": "earth",
+          "chance": 15,
+          "range": 1,
+          "radius": 5,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "explosion"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.6944,
+        "death": 0.1111,
+        "holy": 0.0903,
+        "earth": 0.1042
+      },
+      "rec_level": 380,
+      "loot_pool": [
+        {
+          "id": 7632,
+          "chance": 24000
+        },
+        {
+          "id": 7899,
+          "chance": 16600
+        },
+        {
+          "id": 2181,
+          "chance": 1100
+        },
+        {
+          "id": 7885,
+          "chance": 8500
+        },
+        {
+          "id": 7903,
+          "chance": 7400
+        },
+        {
+          "id": 7884,
+          "chance": 7250
+        },
+        {
+          "id": 7890,
+          "chance": 5500
+        },
+        {
+          "id": 7887,
+          "chance": 4800
+        },
+        {
+          "id": 7900,
+          "chance": 3700
+        },
+        {
+          "id": 35109,
+          "chance": 100
+        },
+        {
+          "id": 35110,
+          "chance": 100
+        },
+        {
+          "id": 35111,
+          "chance": 100
+        },
+        {
+          "id": 35112,
+          "chance": 100
+        }
+      ],
+      "unlock_level": 380,
+      "reward_level": 380,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "35109": 30,
+        "35110": 30,
+        "35111": 30,
+        "35112": 30
+      },
+      "combined_drops": [
+        {
+          "item_id": 7632,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 24000,
+          "chance_percent": 24.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 24000
+            }
+          ]
+        },
+        {
+          "item_id": 7899,
+          "item_name": "magma coat",
+          "combined_chance": 16600,
+          "chance_percent": 16.6,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 16600
+            }
+          ]
+        },
+        {
+          "item_id": 7885,
+          "item_name": "terra legs",
+          "combined_chance": 8500,
+          "chance_percent": 8.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 8500
+            }
+          ]
+        },
+        {
+          "item_id": 7903,
+          "item_name": "terra hood",
+          "combined_chance": 7400,
+          "chance_percent": 7.4,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 7400
+            }
+          ]
+        },
+        {
+          "item_id": 7884,
+          "item_name": "terra mantle",
+          "combined_chance": 7250,
+          "chance_percent": 7.25,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 7250
+            }
+          ]
+        },
+        {
+          "item_id": 7890,
+          "item_name": "magma amulet",
+          "combined_chance": 5500,
+          "chance_percent": 5.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5500
+            }
+          ]
+        },
+        {
+          "item_id": 7887,
+          "item_name": "terra amulet",
+          "combined_chance": 4800,
+          "chance_percent": 4.8,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4800
+            }
+          ]
+        },
+        {
+          "item_id": 7900,
+          "item_name": "magma monocle",
+          "combined_chance": 3700,
+          "chance_percent": 3.7,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3700
+            }
+          ]
+        },
+        {
+          "item_id": 2181,
+          "item_name": "terra rod",
+          "combined_chance": 1100,
+          "chance_percent": 1.1,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1100
+            }
+          ]
+        },
+        {
+          "item_id": 35109,
+          "item_name": "cobra club",
+          "combined_chance": 130,
+          "chance_percent": 0.13,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 35110,
+          "item_name": "cobra axe",
+          "combined_chance": 130,
+          "chance_percent": 0.13,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 35111,
+          "item_name": "cobra hood",
+          "combined_chance": 130,
+          "chance_percent": 0.13,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 35112,
+          "item_name": "cobra sword",
+          "combined_chance": 130,
+          "chance_percent": 0.13,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            },
+            {
+              "source": "loot_pool",
+              "chance": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 4001,
+      "name": "Goshnar's Megalomania",
+      "hp": 120000,
+      "xp": 350000,
+      "gold": 70000,
+      "atk": 2052,
+      "armor": 30,
+      "defense": 30,
+      "sprite": 1308,
+      "sprite_query": "",
+      "race": "fire",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "manadrain",
+          "chance": 10,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": ""
+        },
+        {
+          "name": "fire",
+          "chance": 20,
+          "range": 7,
+          "radius": 7,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "fire",
+          "areaEffect": "firearea"
+        },
+        {
+          "name": "firefield",
+          "chance": 10,
+          "range": 7,
+          "radius": 1,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "fire",
+          "areaEffect": ""
+        },
+        {
+          "name": "lifedrain",
+          "chance": 10,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "purpleenergy"
+        },
+        {
+          "name": "energy",
+          "chance": 10,
+          "range": 1,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "energy",
+          "areaEffect": ""
+        },
+        {
+          "name": "speed",
+          "chance": 15,
+          "range": 1,
+          "radius": 1,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "redshimmer"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.8,
+        "fire": 0.1333,
+        "energy": 0.0667
+      },
+      "rec_level": 400,
+      "loot_pool": [
+        {
+          "id": 7632,
+          "chance": 10000
+        }
+      ],
+      "unlock_level": 400,
+      "reward_level": 400,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "39486": 50,
+        "39487": 50,
+        "39488": 50,
+        "39489": 50,
+        "39490": 50,
+        "39491": 50,
+        "39492": 50,
+        "39493": 50,
+        "39494": 50,
+        "39495": 50,
+        "39496": 50,
+        "39497": 50,
+        "39498": 50,
+        "39499": 50,
+        "39500": 50,
+        "39501": 50,
+        "39502": 50,
+        "39503": 50,
+        "39554": 50,
+        "39555": 50,
+        "39556": 50,
+        "39557": 50,
+        "39558": 50,
+        "39559": 50,
+        "39560": 50,
+        "39561": 50,
+        "39562": 50,
+        "39656": 50,
+        "39657": 50
+      },
+      "combined_drops": [
+        {
+          "item_id": 7632,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 10000,
+          "chance_percent": 10.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 10000
+            }
+          ]
+        },
+        {
+          "item_id": 39486,
+          "item_name": "soulcutter",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39487,
+          "item_name": "soulshredder",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39488,
+          "item_name": "soulbiter",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39489,
+          "item_name": "souleater",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39490,
+          "item_name": "soulcrusher",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39491,
+          "item_name": "soulmaimer",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39492,
+          "item_name": "soulbleeder",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39493,
+          "item_name": "soulpiercer",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39494,
+          "item_name": "soultainter",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39495,
+          "item_name": "soulhexer",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39496,
+          "item_name": "soulshanks",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39497,
+          "item_name": "soulstrider",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39498,
+          "item_name": "soulshell",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39499,
+          "item_name": "soulmantle",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39500,
+          "item_name": "soulshroud",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39501,
+          "item_name": "pair of soulwalkers",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39502,
+          "item_name": "pair of soulstalkers",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39503,
+          "item_name": "soulbastion",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39554,
+          "item_name": "lion longbow",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39555,
+          "item_name": "lion rod",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39556,
+          "item_name": "lion wand",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39557,
+          "item_name": "lion spellbook",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39558,
+          "item_name": "lion shield",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39559,
+          "item_name": "lion longsword",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39560,
+          "item_name": "lion spangenhelm",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39561,
+          "item_name": "lion plate",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39562,
+          "item_name": "lion amulet",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39656,
+          "item_name": "lion axe",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 39657,
+          "item_name": "lion hammer",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 4501,
+      "name": "The False God",
+      "hp": 300000,
+      "xp": 500000,
+      "gold": 100000,
+      "atk": 417,
+      "armor": 30,
+      "defense": 30,
+      "sprite": 984,
+      "sprite_query": "",
+      "race": "blood",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "earth",
+          "chance": 20,
+          "range": 4,
+          "radius": 4,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "stones"
+        },
+        {
+          "name": "speed",
+          "chance": 20,
+          "range": 1,
+          "radius": 5,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "redshimmer"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.8333,
+        "earth": 0.1667
+      },
+      "rec_level": 450,
+      "loot_pool": [
+        {
+          "id": 7633,
+          "chance": 26900
+        },
+        {
+          "id": 23546,
+          "chance": 17620
+        },
+        {
+          "id": 8910,
+          "chance": 117270
+        },
+        {
+          "id": 2454,
+          "chance": 127270
+        },
+        {
+          "id": 20108,
+          "chance": 9510
+        },
+        {
+          "id": 23547,
+          "chance": 7890
+        },
+        {
+          "id": 25418,
+          "chance": 1890
+        },
+        {
+          "id": 15414,
+          "chance": 7890
+        },
+        {
+          "id": 8868,
+          "chance": 1890
+        },
+        {
+          "id": 2393,
+          "chance": 16892
+        }
+      ],
+      "unlock_level": 450,
+      "reward_level": 450,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "41400": 25,
+        "41401": 25,
+        "41402": 25,
+        "41403": 25,
+        "41404": 25,
+        "42050": 50,
+        "42051": 50,
+        "42052": 50,
+        "42053": 50,
+        "42054": 50,
+        "42056": 50,
+        "42057": 50,
+        "42059": 50,
+        "42061": 50,
+        "42062": 50,
+        "42064": 50,
+        "42065": 50
+      },
+      "combined_drops": [
+        {
+          "item_id": 2454,
+          "item_name": "war axe",
+          "combined_chance": 100000,
+          "chance_percent": 100.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 127270
+            }
+          ]
+        },
+        {
+          "item_id": 8910,
+          "item_name": "underworld rod",
+          "combined_chance": 100000,
+          "chance_percent": 100.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 117270
+            }
+          ]
+        },
+        {
+          "item_id": 7633,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 26900,
+          "chance_percent": 26.9,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 26900
+            }
+          ]
+        },
+        {
+          "item_id": 23546,
+          "item_name": "mino shield",
+          "combined_chance": 17620,
+          "chance_percent": 17.62,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 17620
+            }
+          ]
+        },
+        {
+          "item_id": 2393,
+          "item_name": "giant sword",
+          "combined_chance": 16892,
+          "chance_percent": 16.892,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 16892
+            }
+          ]
+        },
+        {
+          "item_id": 20108,
+          "item_name": "pair of iron fists",
+          "combined_chance": 9510,
+          "chance_percent": 9.51,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 9510
+            }
+          ]
+        },
+        {
+          "item_id": 15414,
+          "item_name": "ornate mace",
+          "combined_chance": 7890,
+          "chance_percent": 7.89,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 7890
+            }
+          ]
+        },
+        {
+          "item_id": 23547,
+          "item_name": "execowtioner axe",
+          "combined_chance": 7890,
+          "chance_percent": 7.89,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 7890
+            }
+          ]
+        },
+        {
+          "item_id": 8868,
+          "item_name": "velvet mantle",
+          "combined_chance": 1890,
+          "chance_percent": 1.89,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1890
+            }
+          ]
+        },
+        {
+          "item_id": 25418,
+          "item_name": "maimer",
+          "combined_chance": 1890,
+          "chance_percent": 1.89,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1890
+            }
+          ]
+        },
+        {
+          "item_id": 42050,
+          "item_name": "eldritch shield",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42051,
+          "item_name": "eldritch wand",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42052,
+          "item_name": "eldritch rod",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42053,
+          "item_name": "eldritch claymore",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42054,
+          "item_name": "eldritch greataxe",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42056,
+          "item_name": "eldritch quiver",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42057,
+          "item_name": "eldritch cuirass",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42059,
+          "item_name": "eldritch bow",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42061,
+          "item_name": "eldritch breeches",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42062,
+          "item_name": "eldritch tome",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42064,
+          "item_name": "eldritch cowl",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 42065,
+          "item_name": "eldritch hood",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 41400,
+          "item_name": "naga axe",
+          "combined_chance": 25,
+          "chance_percent": 0.025,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 25
+            }
+          ]
+        },
+        {
+          "item_id": 41401,
+          "item_name": "naga sword",
+          "combined_chance": 25,
+          "chance_percent": 0.025,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 25
+            }
+          ]
+        },
+        {
+          "item_id": 41402,
+          "item_name": "spiritthorn helmet",
+          "combined_chance": 25,
+          "chance_percent": 0.025,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 25
+            }
+          ]
+        },
+        {
+          "item_id": 41403,
+          "item_name": "spiritthorn armor",
+          "combined_chance": 25,
+          "chance_percent": 0.025,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 25
+            }
+          ]
+        },
+        {
+          "item_id": 41404,
+          "item_name": "frostflower boots",
+          "combined_chance": 25,
+          "chance_percent": 0.025,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 6001,
+      "name": "Gaz'haragoth",
+      "hp": 150000,
+      "xp": 1000000,
+      "gold": 200000,
+      "atk": 2906,
+      "armor": 55,
+      "defense": 65,
+      "sprite": 591,
+      "sprite_query": "&body=94&legs=79&feet=79",
+      "race": "undead",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "ice",
+          "chance": 35,
+          "range": 7,
+          "radius": 7,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "ice",
+          "areaEffect": "icearea"
+        },
+        {
+          "name": "fire",
+          "chance": 30,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "fire"
+        },
+        {
+          "name": "physical",
+          "chance": 20,
+          "range": 7,
+          "radius": 5,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "greenshimmer"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.7719,
+        "ice": 0.1228,
+        "fire": 0.1053
+      },
+      "rec_level": 600,
+      "loot_pool": [
+        {
+          "id": 2168,
+          "chance": 6000
+        },
+        {
+          "id": 2195,
+          "chance": 6000
+        },
+        {
+          "id": 5954,
+          "chance": 6000
+        },
+        {
+          "id": 6529,
+          "chance": 6000
+        },
+        {
+          "id": 7368,
+          "chance": 10000
+        },
+        {
+          "id": 7632,
+          "chance": 6000
+        },
+        {
+          "id": 7899,
+          "chance": 6000
+        },
+        {
+          "id": 22398,
+          "chance": 5000
+        },
+        {
+          "id": 22399,
+          "chance": 5000
+        },
+        {
+          "id": 22400,
+          "chance": 4000
+        },
+        {
+          "id": 22401,
+          "chance": 5000
+        },
+        {
+          "id": 22402,
+          "chance": 5000
+        },
+        {
+          "id": 22403,
+          "chance": 3000
+        },
+        {
+          "id": 22404,
+          "chance": 5000
+        },
+        {
+          "id": 22405,
+          "chance": 4000
+        },
+        {
+          "id": 22406,
+          "chance": 3000
+        },
+        {
+          "id": 22407,
+          "chance": 5000
+        },
+        {
+          "id": 22408,
+          "chance": 4000
+        },
+        {
+          "id": 22409,
+          "chance": 3000
+        },
+        {
+          "id": 22410,
+          "chance": 5000
+        },
+        {
+          "id": 22411,
+          "chance": 4000
+        },
+        {
+          "id": 22412,
+          "chance": 3000
+        },
+        {
+          "id": 22413,
+          "chance": 5000
+        },
+        {
+          "id": 22414,
+          "chance": 4000
+        },
+        {
+          "id": 22415,
+          "chance": 3000
+        },
+        {
+          "id": 22416,
+          "chance": 5000
+        },
+        {
+          "id": 22417,
+          "chance": 4000
+        },
+        {
+          "id": 22418,
+          "chance": 3000
+        },
+        {
+          "id": 22419,
+          "chance": 5000
+        },
+        {
+          "id": 22420,
+          "chance": 4000
+        },
+        {
+          "id": 22421,
+          "chance": 3000
+        },
+        {
+          "id": 22422,
+          "chance": 5000
+        },
+        {
+          "id": 22423,
+          "chance": 4000
+        },
+        {
+          "id": 22424,
+          "chance": 3000
+        },
+        {
+          "id": 22608,
+          "chance": 6000
+        }
+      ],
+      "unlock_level": 600,
+      "reward_level": 600,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "49267": 50,
+        "49268": 50,
+        "49269": 50,
+        "49270": 50,
+        "49271": 50,
+        "49272": 50,
+        "49273": 50,
+        "49274": 50,
+        "49275": 50,
+        "49276": 50,
+        "49277": 50,
+        "49278": 50,
+        "49279": 50,
+        "49280": 50,
+        "49281": 50,
+        "49282": 50,
+        "49283": 50,
+        "49284": 50,
+        "49285": 50,
+        "49286": 50,
+        "49287": 50,
+        "49288": 50,
+        "49289": 50,
+        "49290": 50,
+        "50100": 100,
+        "50102": 500
+      },
+      "combined_drops": [
+        {
+          "item_id": 7368,
+          "item_name": "assassin star",
+          "combined_chance": 10000,
+          "chance_percent": 10.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 10000
+            }
+          ]
+        },
+        {
+          "item_id": 2168,
+          "item_name": "life ring",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 2195,
+          "item_name": "boots of haste",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 5954,
+          "item_name": "demon horn",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 6529,
+          "item_name": "infernal bolt",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 7632,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 7899,
+          "item_name": "magma coat",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 22608,
+          "item_name": "nightmare horn",
+          "combined_chance": 6000,
+          "chance_percent": 6.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 6000
+            }
+          ]
+        },
+        {
+          "item_id": 22398,
+          "item_name": "crude umbral blade",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22399,
+          "item_name": "umbral blade",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22401,
+          "item_name": "crude umbral slayer",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22402,
+          "item_name": "umbral slayer",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22404,
+          "item_name": "crude umbral axe",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22407,
+          "item_name": "crude umbral chopper",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22410,
+          "item_name": "crude umbral mace",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22413,
+          "item_name": "crude umbral hammer",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22416,
+          "item_name": "crude umbral bow",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22419,
+          "item_name": "crude umbral crossbow",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22422,
+          "item_name": "crude umbral spellbook",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 22400,
+          "item_name": "umbral masterblade",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22405,
+          "item_name": "umbral axe",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22408,
+          "item_name": "umbral chopper",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22411,
+          "item_name": "umbral mace",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22414,
+          "item_name": "umbral hammer",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22417,
+          "item_name": "umbral bow",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22420,
+          "item_name": "umbral crossbow",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22423,
+          "item_name": "umbral spellbook",
+          "combined_chance": 4000,
+          "chance_percent": 4.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 4000
+            }
+          ]
+        },
+        {
+          "item_id": 22403,
+          "item_name": "umbral master slayer",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22406,
+          "item_name": "umbral master axe",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22409,
+          "item_name": "umbral master chopper",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22412,
+          "item_name": "umbral master mace",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22415,
+          "item_name": "umbral master hammer",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22418,
+          "item_name": "umbral master bow",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22421,
+          "item_name": "umbral master crossbow",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 22424,
+          "item_name": "umbral master spellbook",
+          "combined_chance": 3000,
+          "chance_percent": 3.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 3000
+            }
+          ]
+        },
+        {
+          "item_id": 50102,
+          "item_name": "Forge Orb",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 50100,
+          "item_name": "Stamina Refil",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 49267,
+          "item_name": "sanguine blade",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49268,
+          "item_name": "grand sanguine blade",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49269,
+          "item_name": "sanguine cudgel",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49270,
+          "item_name": "grand sanguine cudgel",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49271,
+          "item_name": "sanguine hatchet",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49272,
+          "item_name": "grand sanguine hatchet",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49273,
+          "item_name": "sanguine razor",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49274,
+          "item_name": "grand sanguine razor",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49275,
+          "item_name": "sanguine bludgeon",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49276,
+          "item_name": "grand sanguine bludgeon",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49277,
+          "item_name": "sanguine battleaxe",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49278,
+          "item_name": "grand sanguine battleaxe",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49279,
+          "item_name": "sanguine legs",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49280,
+          "item_name": "sanguine bow",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49281,
+          "item_name": "grand sanguine bow",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49282,
+          "item_name": "sanguine crossbow",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49283,
+          "item_name": "grand sanguine crossbow",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49284,
+          "item_name": "sanguine greaves",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49285,
+          "item_name": "sanguine coil",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49286,
+          "item_name": "grand sanguine coil",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49287,
+          "item_name": "sanguine boots",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49288,
+          "item_name": "sanguine rod",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49289,
+          "item_name": "grand sanguine rod",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49290,
+          "item_name": "sanguine galoshes",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 8001,
+      "name": "Deathstrike",
+      "hp": 200000,
+      "xp": 1900000,
+      "gold": 380000,
+      "atk": 748,
+      "armor": 25,
+      "defense": 35,
+      "sprite": 500,
+      "sprite_query": "",
+      "race": "undead",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "speed",
+          "chance": 20,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "whirlwindaxe",
+          "areaEffect": ""
+        },
+        {
+          "name": "fire",
+          "chance": 100,
+          "range": 7,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "firearea"
+        },
+        {
+          "name": "energy",
+          "chance": 12,
+          "range": 3,
+          "radius": 0,
+          "length": 0,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "purpleenergy"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.4717,
+        "fire": 0.4717,
+        "energy": 0.0566
+      },
+      "rec_level": 800,
+      "loot_pool": [
+        {
+          "id": 18450,
+          "chance": 10480
+        },
+        {
+          "id": 18451,
+          "chance": 11430
+        },
+        {
+          "id": 18452,
+          "chance": 8570
+        },
+        {
+          "id": 18453,
+          "chance": 12380
+        },
+        {
+          "id": 18454,
+          "chance": 11430
+        },
+        {
+          "id": 18465,
+          "chance": 11430
+        }
+      ],
+      "unlock_level": 800,
+      "reward_level": 800,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "49291": 50,
+        "49292": 50,
+        "49293": 50,
+        "49294": 50,
+        "49295": 50,
+        "49296": 50,
+        "49297": 50,
+        "49298": 50,
+        "49299": 50,
+        "49300": 50,
+        "49301": 50,
+        "49302": 50,
+        "50100": 100,
+        "50102": 500
+      },
+      "combined_drops": [
+        {
+          "item_id": 18453,
+          "item_name": "crystal crossbow",
+          "combined_chance": 12380,
+          "chance_percent": 12.38,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 12380
+            }
+          ]
+        },
+        {
+          "item_id": 18451,
+          "item_name": "crystalline axe",
+          "combined_chance": 11430,
+          "chance_percent": 11.43,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 11430
+            }
+          ]
+        },
+        {
+          "item_id": 18454,
+          "item_name": "mycological bow",
+          "combined_chance": 11430,
+          "chance_percent": 11.43,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 11430
+            }
+          ]
+        },
+        {
+          "item_id": 18465,
+          "item_name": "shiny blade",
+          "combined_chance": 11430,
+          "chance_percent": 11.43,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 11430
+            }
+          ]
+        },
+        {
+          "item_id": 18450,
+          "item_name": "crystalline sword",
+          "combined_chance": 10480,
+          "chance_percent": 10.48,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 10480
+            }
+          ]
+        },
+        {
+          "item_id": 18452,
+          "item_name": "mycological mace",
+          "combined_chance": 8570,
+          "chance_percent": 8.57,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 8570
+            }
+          ]
+        },
+        {
+          "item_id": 50102,
+          "item_name": "Forge Orb",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 50100,
+          "item_name": "Stamina Refil",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 49291,
+          "item_name": "bone fiddle",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49292,
+          "item_name": "conch shell horn",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49293,
+          "item_name": "ink brush",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49294,
+          "item_name": "ink claw",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49295,
+          "item_name": "ink quill",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49296,
+          "item_name": "ink blade",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49297,
+          "item_name": "ink vine",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49298,
+          "item_name": "lit torch",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49299,
+          "item_name": "moon mirror",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49300,
+          "item_name": "scarab ocarina",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49301,
+          "item_name": "starlight vial",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        },
+        {
+          "item_id": 49302,
+          "item_name": "sun catcher",
+          "combined_chance": 50,
+          "chance_percent": 0.05,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 10001,
+      "name": "Prince Drazzak",
+      "hp": 330000,
+      "xp": 2800000,
+      "gold": 560000,
+      "atk": 3000,
+      "armor": 55,
+      "defense": 65,
+      "sprite": 12,
+      "sprite_query": "&head=77&body=78&legs=94&feet=97",
+      "race": "fire",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "death",
+          "chance": 18,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "mortarea"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "death": 1
+      },
+      "rec_level": 1000,
+      "loot_pool": [
+        {
+          "id": 5954,
+          "chance": 50000
+        },
+        {
+          "id": 22608,
+          "chance": 2500
+        },
+        {
+          "id": 5741,
+          "chance": 2500
+        },
+        {
+          "id": 7417,
+          "chance": 2500
+        },
+        {
+          "id": 7418,
+          "chance": 1000
+        },
+        {
+          "id": 7893,
+          "chance": 1000
+        },
+        {
+          "id": 7632,
+          "chance": 5000
+        },
+        {
+          "id": 7633,
+          "chance": 5000
+        }
+      ],
+      "unlock_level": 1000,
+      "reward_level": 1000,
+      "cooldown_seconds": 0,
+      "special_loot": {
+        "49303": 30,
+        "49304": 30,
+        "49305": 15,
+        "49306": 15,
+        "49307": 30,
+        "49308": 30,
+        "49309": 15,
+        "49310": 15,
+        "49311": 30,
+        "49312": 30,
+        "49313": 15,
+        "49314": 15,
+        "49315": 30,
+        "49316": 15,
+        "49317": 30,
+        "49318": 15,
+        "49319": 30,
+        "49320": 15,
+        "49321": 30,
+        "49322": 15,
+        "49323": 30,
+        "49324": 30,
+        "49325": 30,
+        "49326": 30,
+        "50100": 100,
+        "50102": 500
+      },
+      "combined_drops": [
+        {
+          "item_id": 5954,
+          "item_name": "demon horn",
+          "combined_chance": 50000,
+          "chance_percent": 50.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 50000
+            }
+          ]
+        },
+        {
+          "item_id": 7632,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 7633,
+          "item_name": "giant shimmering pearl",
+          "combined_chance": 5000,
+          "chance_percent": 5.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 5000
+            }
+          ]
+        },
+        {
+          "item_id": 5741,
+          "item_name": "skull helmet",
+          "combined_chance": 2500,
+          "chance_percent": 2.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 2500
+            }
+          ]
+        },
+        {
+          "item_id": 7417,
+          "item_name": "runed sword",
+          "combined_chance": 2500,
+          "chance_percent": 2.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 2500
+            }
+          ]
+        },
+        {
+          "item_id": 22608,
+          "item_name": "nightmare horn",
+          "combined_chance": 2500,
+          "chance_percent": 2.5,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 2500
+            }
+          ]
+        },
+        {
+          "item_id": 7418,
+          "item_name": "nightmare blade",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 7893,
+          "item_name": "lightning boots",
+          "combined_chance": 1000,
+          "chance_percent": 1.0,
+          "components": [
+            {
+              "source": "loot_pool",
+              "chance": 1000
+            }
+          ]
+        },
+        {
+          "item_id": 50102,
+          "item_name": "Forge Orb",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 50100,
+          "item_name": "Stamina Refil",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        },
+        {
+          "item_id": 49303,
+          "item_name": "moonsilver axe",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49304,
+          "item_name": "moonsilver chopper",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49307,
+          "item_name": "moonsilver crusher",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49308,
+          "item_name": "moonsilver mace",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49311,
+          "item_name": "moonsilver claymore",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49312,
+          "item_name": "moonsilver epee",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49315,
+          "item_name": "moonsilver sceptre",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49317,
+          "item_name": "moonsilver channeler",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49319,
+          "item_name": "moonsilver crossbow",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49321,
+          "item_name": "moonsilver bow",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49323,
+          "item_name": "moonsilver battle visor",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49324,
+          "item_name": "moonsilver nimbus hat",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49325,
+          "item_name": "moonsilver spirit mask",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49326,
+          "item_name": "moonsilver trail hood",
+          "combined_chance": 30,
+          "chance_percent": 0.03,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 30
+            }
+          ]
+        },
+        {
+          "item_id": 49305,
+          "item_name": "stellar moonsilver axe",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49306,
+          "item_name": "stellar moonsilver chopper",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49309,
+          "item_name": "stellar moonsilver crusher",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49310,
+          "item_name": "stellar moonsilver mace",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49313,
+          "item_name": "stellar moonsilver claymore",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49314,
+          "item_name": "stellar moonsilver epee",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49316,
+          "item_name": "stellar moonsilver sceptre",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49318,
+          "item_name": "stellar moonsilver channeler",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49320,
+          "item_name": "stellar moonsilver crossbow",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        },
+        {
+          "item_id": 49322,
+          "item_name": "stellar moonsilver bow",
+          "combined_chance": 15,
+          "chance_percent": 0.015,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boss_key": 20001,
+      "name": "Bakragore",
+      "hp": 1500000,
+      "xp": 7500000,
+      "gold": 1500000,
+      "atk": 5259,
+      "armor": 75,
+      "defense": 90,
+      "sprite": 1671,
+      "sprite_query": "&head=1671&body=1671&legs=23&feet=31&addons=3",
+      "race": "undead",
+      "visual_version": 12,
+      "attacks_visual": [
+        {
+          "name": "death",
+          "chance": 24,
+          "range": 1,
+          "radius": 0,
+          "length": 8,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "mortarea"
+        },
+        {
+          "name": "fire",
+          "chance": 18,
+          "range": 1,
+          "radius": 6,
+          "length": 0,
+          "spread": 0,
+          "target": 0,
+          "shootEffect": "",
+          "areaEffect": "firearea"
+        },
+        {
+          "name": "lifedrain",
+          "chance": 14,
+          "range": 1,
+          "radius": 0,
+          "length": 6,
+          "spread": 0,
+          "target": 1,
+          "shootEffect": "",
+          "areaEffect": "redshimmer"
+        }
+      ],
+      "elements": [],
+      "immunities": [],
+      "damage_elements": {
+        "physical": 0.7308,
+        "death": 0.1538,
+        "fire": 0.1154
+      },
+      "rec_level": 2000,
+      "loot_pool": [],
+      "unlock_level": 2000,
+      "reward_level": 2000,
+      "cooldown_seconds": 43200,
+      "special_loot": {
+        "50100": 100,
+        "50102": 500,
+        "50103": 300,
+        "50106": 300,
+        "50107": 300,
+        "50108": 300,
+        "50109": 300,
+        "50110": 300,
+        "50111": 300,
+        "50112": 300,
+        "50113": 300,
+        "50114": 300,
+        "50116": 300,
+        "50117": 300,
+        "50118": 300,
+        "50119": 300,
+        "50120": 300,
+        "50121": 300,
+        "50122": 300,
+        "50124": 300,
+        "50125": 300,
+        "50126": 300,
+        "50127": 300,
+        "50131": 300,
+        "50132": 300,
+        "50133": 300,
+        "50134": 300,
+        "50135": 300,
+        "50136": 300,
+        "50137": 300
+      },
+      "combined_drops": [
+        {
+          "item_id": 50102,
+          "item_name": "Forge Orb",
+          "combined_chance": 500,
+          "chance_percent": 0.5,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 500
+            }
+          ]
+        },
+        {
+          "item_id": 50103,
+          "item_name": "falconmark quiver",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50106,
+          "item_name": "falconmark signet",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50107,
+          "item_name": "falconmark pendant",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50108,
+          "item_name": "falconmark hood",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50109,
+          "item_name": "falconmark vest",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50110,
+          "item_name": "falconmark leggings",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50111,
+          "item_name": "falconmark striders",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50112,
+          "item_name": "grovewarden tome",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50113,
+          "item_name": "grovewarden signet",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50114,
+          "item_name": "grovewarden pendant",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50116,
+          "item_name": "grovewarden crown",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50117,
+          "item_name": "grovewarden mantle",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50118,
+          "item_name": "grovewarden leggings",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50119,
+          "item_name": "grovewarden sandals",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50120,
+          "item_name": "emberwake signet",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50121,
+          "item_name": "emberwake pendant",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50122,
+          "item_name": "emberwake grimoire",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50124,
+          "item_name": "emberwake crown",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50125,
+          "item_name": "emberwake robe",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50126,
+          "item_name": "emberwake leggings",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50127,
+          "item_name": "emberwake sandals",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50131,
+          "item_name": "ironwrath signet",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50132,
+          "item_name": "ironwrath torque",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50133,
+          "item_name": "ironwrath helm",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50134,
+          "item_name": "ironwrath greatplate",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50135,
+          "item_name": "ironwrath greaves",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50136,
+          "item_name": "ironwrath sabatons",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50137,
+          "item_name": "ironwrath bulwark",
+          "combined_chance": 300,
+          "chance_percent": 0.3,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 300
+            }
+          ]
+        },
+        {
+          "item_id": 50100,
+          "item_name": "Stamina Refil",
+          "combined_chance": 100,
+          "chance_percent": 0.1,
+          "components": [
+            {
+              "source": "special_loot",
+              "chance": 100
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prey_bonus_types": [
+    {
+      "key": "damage",
+      "short_label": "+20% dano",
+      "description": "+20% de dano causado",
+      "effect": {
+        "damage_dealt_multiplier": 1.2
+      }
+    },
+    {
+      "key": "defense",
+      "short_label": "-20% dano recebido",
+      "description": "-20% de dano recebido",
+      "effect": {
+        "damage_received_multiplier": 0.8
+      }
+    },
+    {
+      "key": "loot",
+      "short_label": "+20% loot",
+      "description": "+20% de loot",
+      "effect": {
+        "loot_multiplier": 1.2
+      }
+    },
+    {
+      "key": "bestiary",
+      "short_label": "2x bestiário",
+      "description": "2x kills de bestiário",
+      "effect": {
+        "bestiary_kill_multiplier": 2.0
+      }
+    }
+  ],
+  "conventions": {
+    "drop_chance": "100000 = 100%; 1000 = 1%. Chances combinadas replicam getBossLootRows e são limitadas a 100000."
+  },
+  "formula_sources": {
+    "getBestiaryThreshold": "function getBestiaryThreshold(recLevel) {\n                    recLevel = Math.max(1, parseInt(recLevel, 10) || 1);\n                    const brackets = [\n                        [10, 1000], [20, 1600], [30, 2400], [40, 3200], [50, 4000],\n                        [60, 5000], [70, 6000], [80, 7000], [90, 8000], [100, 9200],\n                        [110, 10400], [120, 12000]\n                    ];\n                    for (const [maxLevel, threshold] of brackets) {\n                        if (recLevel <= maxLevel) return threshold;\n                    }\n                    return 14000; // nível 121-2000\n                }",
+    "getBestiaryBonus": "function getBestiaryBonus(name) {\n                    const notCompleted = { completed: false, dmgMult: 1.0, lootMult: 1.0 };\n                    if (!name) return notCompleted;\n                    const recLevel = getRecLevelForMonsterName(name);\n                    if (recLevel === null) return notCompleted;\n                    const kills = (playerState.bestiaryKills && playerState.bestiaryKills[name]) || 0;\n                    const threshold = getBestiaryThreshold(recLevel);\n                    const completed = kills >= threshold;\n                    return {\n                        completed,\n                        dmgMult: completed ? 1.10 : 1.0,\n                        lootMult: completed ? 1.05 : 1.0\n                    };\n                }",
+    "getBestiaryGlobalBonusMult": "function getBestiaryGlobalBonusMult() {\n                    return 1.0 + (Math.max(0, bestiaryCompletedCount) * 0.0005);\n                }",
+    "getBossiaryBonusForTier": "function getBossiaryBonusForTier(tier) {\n                    const kills = getBossiaryKillsForTier(tier);\n                    const complete = kills >= bossiaryThreshold;\n                    const dmgPct = (complete ? 5 : 0) + (bossiaryCompletedCount * 0.25);\n                    const bonusItemPct = (complete ? 5 : 0) + (bossiaryCompletedCount * 0.25);\n                    return {\n                        kills,\n                        complete,\n                        dmgMult: 1 + (dmgPct / 100),\n                        dmgPct,\n                        bonusItemPct\n                    };\n                }",
+    "getBossLootRows": "function getBossLootRows(bossKey) {\n                    if (!bossDb || !bossDb[bossKey]) return [];\n                    const boss = bossDb[bossKey];\n                    const rowsById = {};\n\n                    if (boss.special_loot && typeof boss.special_loot === 'object') {\n                        Object.entries(boss.special_loot).forEach(([itemId, chance]) => {\n                            const id = parseInt(itemId, 10) || 0;\n                            if (id > 0) {\n                                rowsById[id] = { id: id, chance: parseInt(chance, 10) || 0 };\n                            }\n                        });\n                    }\n\n                    if (Array.isArray(boss.loot_pool)) {\n                        boss.loot_pool.forEach(entry => {\n                            const id = parseInt(entry.id || 0, 10) || 0;\n                            if (id > 0) {\n                                if (!rowsById[id]) rowsById[id] = { id: id, chance: 0 };\n                                rowsById[id].chance = Math.min(100000, rowsById[id].chance + (parseInt(entry.chance || 0, 10) || 0));\n                            }\n                        });\n                    }\n\n                    return Object.values(rowsById).sort((a, b) => b.chance - a.chance || a.id - b.id);\n                }",
+    "preyBonusLabel": "function preyBonusLabel(bonus, short) {\n                    if (bonus === 'defense') return short ? '-20% dano recebido' : '-20% de dano recebido';\n                    if (bonus === 'loot') return short ? '+20% loot' : '+20% de loot';\n                    if (bonus === 'bestiary') return short ? '2x bestiário' : '2x kills de bestiário';\n                    return short ? '+20% dano' : '+20% de dano causado';\n                }"
+  }
+}

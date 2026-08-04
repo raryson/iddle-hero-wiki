@@ -95,6 +95,91 @@ footer small { color: #777481; font: 600 10px 'Barlow Condensed'; letter-spacing
 .modal-title-row h2 { margin-right: auto; }
 .modal-title-row .copy-hunt { margin-top: 7px; }
 
+.main-nav { overflow-y: auto; scrollbar-width: thin; }
+.nav-icon { font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif; font-size: 16px; line-height: 1; }
+.knowledge-page { padding-top: 45px; }
+.knowledge-hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; padding-bottom: 28px; }
+.knowledge-hero h1 { margin: 13px 0 8px; font-size: 42px; line-height: 1; }
+.knowledge-hero p { margin: 0; color: var(--muted); font-size: 16px; }
+.knowledge-mark { color: var(--gold2); font: 600 48px 'Barlow Condensed'; text-shadow: 0 0 18px #d4a85255; }
+.knowledge-search { display: flex; align-items: center; gap: 8px; height: 40px; margin-bottom: 14px; padding: 0 12px; background: #111119; border: 1px solid #2d2c37; border-radius: 3px; }
+.knowledge-search span { color: var(--gold); font-size: 23px; }
+.knowledge-search input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--text); font: 14px Rajdhani; }
+.knowledge-stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-bottom: 18px; border: 1px solid var(--line); background: linear-gradient(90deg,#12121b,#0e0e14); }
+.knowledge-stat { padding: 15px 18px; border-right: 1px solid var(--line); }
+.knowledge-stat:last-child { border-right: 0; }
+.knowledge-stat strong { display: block; color: var(--gold2); font: 600 25px 'Barlow Condensed'; }
+.knowledge-stat span, .card-eyebrow { color: #777481; font: 600 10px 'Barlow Condensed'; letter-spacing: 1.3px; }
+.knowledge-panel { margin-bottom: 18px; background: var(--panel); border: 1px solid var(--line); box-shadow: 0 10px 35px #0003; }
+.knowledge-panel-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 19px; border-bottom: 1px solid var(--line); }
+.knowledge-panel-heading h2 { margin: 0; font-size: 21px; }
+.knowledge-panel-heading span { color: #777481; font: 600 10px 'Barlow Condensed'; letter-spacing: 1px; }
+.knowledge-table-scroll { overflow-x: auto; }
+.knowledge-table-scroll table { min-width: 680px; }
+.knowledge-table-scroll td, .knowledge-table-scroll th { white-space: nowrap; }
+.knowledge-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 12px; }
+.knowledge-card { min-width: 0; padding: 15px; border: 1px solid #292834; background: #15151e; }
+.knowledge-card h3 { margin: 7px 0 7px; color: #e4e1e8; font: 600 20px 'Barlow Condensed'; }
+.knowledge-card p { margin: 0; color: #9b98a3; font-size: 13px; line-height: 1.4; overflow-wrap: anywhere; }
+.knowledge-card small { display: block; margin-bottom: 8px; color: var(--gold); font: 600 10px 'Barlow Condensed'; letter-spacing: .7px; }
+.mini-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin: 12px 0; }
+.mini-stats span { padding: 7px; color: #85818e; background: #1b1a24; font-size: 11px; }
+.mini-stats b { display: block; color: var(--text); font: 600 16px 'Barlow Condensed'; }
+.promotion-label { display: inline-block; margin: 0 0 7px; padding: 4px 6px; border: 1px solid #51452d; background: #211d16; color: var(--gold2); font: 600 10px 'Barlow Condensed'; letter-spacing: .5px; }
+.manifesto-copy { margin-bottom: 20px; padding: 20px; border: 1px solid var(--line); background: var(--panel); }
+.manifesto-copy p { max-width: 800px; margin: 12px 0 0; color: #aaa7b2; line-height: 1.6; }
+.imbuement-guide { margin-bottom: 18px; background: var(--panel); border: 1px solid var(--line); }
+.imbuement-guide > .knowledge-panel-heading p { margin: 7px 0 0; color: #9996a1; }
+.imbuement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 12px; }
+.imbuement-card { padding: 16px; border: 1px solid #39313e; background: #171720; }
+.imbuement-card.weapon { border-color: #51452d; }
+.imbuement-card h3 { margin: 8px 0 12px; color: var(--gold2); font: 600 24px 'Barlow Condensed'; }
+.imbuement-card p { margin: 12px 0 0; color: #aaa7b2; font-size: 13px; line-height: 1.45; }
+.imbuement-values { display: flex; flex-wrap: wrap; gap: 6px; }
+.imbuement-values span { padding: 7px 8px; background: #211e28; color: #85818e; font: 600 10px 'Barlow Condensed'; letter-spacing: .4px; }
+.imbuement-values b { display: block; color: #e1dfe6; font-size: 15px; }
+.element-picker { padding: 0 15px 15px; }
+.element-picker > div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.element-choice { padding: 7px 9px; border: 1px solid #3f3545; background: #211e29; color: #d2c6dc; font: 600 12px Rajdhani; }
+.imbuement-note { display: grid; gap: 4px; padding: 13px 15px; border-top: 1px solid var(--line); background: #13131b; color: #9996a1; font-size: 12px; line-height: 1.4; }
+.imbuement-note strong { color: var(--gold); font: 600 11px 'Barlow Condensed'; letter-spacing: 1px; }
+.wheel-overview { margin-bottom: 18px; background: var(--panel); border: 1px solid var(--line); }
+.wheel-overview > .knowledge-panel-heading { align-items: flex-start; }
+.wheel-overview > .knowledge-panel-heading p { max-width: 760px; margin: 8px 0 0; color: #9996a1; line-height: 1.4; }
+.wheel-path-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 12px; }
+.wheel-path { min-width: 0; border: 1px solid #38313e; background: #15151e; }
+.wheel-path > header { display: flex; justify-content: space-between; gap: 12px; padding: 15px; border-bottom: 1px solid #302c38; }
+.wheel-path > header h3 { margin: 5px 0 0; color: #aaa7b2; font-size: 13px; font-weight: 500; }
+.wheel-path > header > strong { color: var(--gold2); font: 600 12px 'Barlow Condensed'; white-space: nowrap; }
+.path-label { display: inline-block; font: 700 13px 'Barlow Condensed'; letter-spacing: 1.5px; }
+.wheel-furia .path-label { color: #e77b7b; }
+.wheel-arcano .path-label { color: #b085e0; }
+.wheel-protecao .path-label { color: #6ab0e8; }
+.wheel-precisao .path-label { color: #6ae0a0; }
+.wheel-node-list { display: grid; gap: 6px; padding: 10px; }
+.wheel-node { padding: 10px; border: 1px solid #292834; background: #1a1922; }
+.wheel-node-top { display: flex; justify-content: space-between; color: #777481; font: 600 10px 'Barlow Condensed'; letter-spacing: .8px; }
+.wheel-node-top b { color: var(--gold); }
+.wheel-node h4 { margin: 6px 0 7px; color: #e4e1e8; font: 600 17px Rajdhani; }
+.wheel-effects { display: flex; flex-wrap: wrap; gap: 4px; }
+.wheel-effects span { padding: 4px 5px; border: 1px solid #3e3542; background: #211e29; color: #bba9cb; font: 600 10px 'Barlow Condensed'; }
+.wheel-node > small { display: block; margin-top: 8px; color: #777481; font-size: 10px; }
+.wheel-rules { margin-bottom: 18px; }
+.wheel-rule-note { padding: 12px 18px; border-top: 1px solid var(--line); color: #908d98; font-size: 12px; }
+.forge-panel > .knowledge-panel-heading > div > span { display: block; margin-top: 4px; }
+.forge-recipe { display: grid; grid-template-columns: minmax(170px, .8fr) minmax(300px, 1.5fr) auto; gap: 20px; align-items: start; padding: 20px; border-bottom: 1px solid var(--line); }
+.forge-recipe:last-child { border-bottom: 0; }
+.forge-result h3 { margin: 8px 0 5px; color: var(--gold2); font: 600 24px 'Barlow Condensed'; }
+.forge-result p { margin: 0; color: #9996a1; font-size: 13px; }
+.forge-materials ul { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin: 8px 0 0; padding: 0; list-style: none; }
+.forge-materials li { display: flex; align-items: flex-start; gap: 8px; padding: 9px; background: #181821; border: 1px solid #292834; }
+.material-check { color: var(--green); font: 600 15px 'Barlow Condensed'; }
+.forge-materials strong { display: block; color: #ddd9e2; font-size: 13px; }
+.forge-materials small { display: block; margin-top: 2px; color: #777481; font-size: 10px; }
+.forge-costs { display: flex; flex-direction: column; gap: 7px; min-width: 100px; }
+.forge-costs span { color: #817e8a; font: 600 10px 'Barlow Condensed'; letter-spacing: .6px; white-space: nowrap; }
+.forge-costs b { color: var(--gold2); font-size: 16px; }
+
 @media (max-width: 720px) {
   .hunt-name-cell { gap: 5px; }
   .hunt-name-cell .copy-hunt { width: 23px; height: 23px; }
@@ -103,4 +188,25 @@ footer small { color: #777481; font: 600 10px 'Barlow Condensed'; letter-spacing
   .modal-title-row { padding-right: 18px; }
   .modal-title-row h2 { min-width: 0; }
   .copy-toast { right: 12px; bottom: 14px; max-width: calc(100vw - 24px); }
+  .knowledge-page { padding-top: 30px; }
+  .knowledge-hero { align-items: flex-start; }
+  .knowledge-hero h1 { font-size: 34px; }
+  .knowledge-hero p { font-size: 14px; line-height: 1.35; }
+  .knowledge-mark { display: none; }
+  .knowledge-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .knowledge-stat { border-bottom: 1px solid var(--line); }
+  .knowledge-stat:nth-child(even) { border-right: 0; }
+  .knowledge-card-grid { grid-template-columns: 1fr; }
+  .knowledge-panel-heading { padding: 14px 13px; }
+  .imbuement-grid { grid-template-columns: 1fr; padding: 8px; }
+  .imbuement-card { padding: 13px; }
+  .element-picker { padding: 0 13px 13px; }
+  .imbuement-note { padding: 12px 13px; }
+  .wheel-path-grid { grid-template-columns: 1fr; padding: 8px; }
+  .wheel-path > header { padding: 13px; }
+  .wheel-rule-note { padding: 12px 13px; line-height: 1.4; }
+  .forge-recipe { grid-template-columns: 1fr; gap: 16px; padding: 15px 13px; }
+  .forge-materials ul { grid-template-columns: 1fr; }
+  .forge-costs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+  .forge-costs span { white-space: normal; }
 }
