@@ -18,9 +18,9 @@ const itemAttack = (item) => Number(item.attack || item.base_attack || 0);
 const itemElementAttack = (item) => Number(item.element_attack || 0);
 const itemPhysicalAttack = (item) => Math.max(0, itemAttack(item) - itemElementAttack(item));
 const itemAttackText = (item) => itemElementAttack(item) ? `${itemPhysicalAttack(item)} físico + ${itemElementAttack(item)} ${ELEMENT_LABELS[item.element_type] || item.element_type} = ${itemAttack(item)} total` : `${itemAttack(item)} físico`;
-const VOCATION_RULES = { knight: { label: 'Knight / Elite Knight', elements: null }, druid: { label: 'Druid', elements: ['terra', 'gelo'] }, sorcerer: { label: 'Sorcerer', elements: ['energia', 'fogo', 'morte'] }, paladin: { label: 'Paladin', elements: ['fisico', 'sagrado'] } };
+const VOCATION_RULES = { knight: { label: 'Knight / Elite Knight', elements: null }, druid: { label: 'Druid', elements: ['earth', 'ice'] }, sorcerer: { label: 'Sorcerer', elements: ['energy', 'fire', 'death'] }, paladin: { label: 'Paladin', elements: ['physical', 'holy'] } };
 const normalizeRouteElement = (element) => String(element || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-const routesForVocation = (routes, vocation) => { const rule = VOCATION_RULES[vocation]; return !rule || !rule.elements ? routes : routes.filter((route) => rule.elements.includes(normalizeRouteElement(route.element))); };
+const routesForVocation = (routes, vocation, hunts = []) => { const rule = VOCATION_RULES[vocation]; if (!rule || !rule.elements) return routes; return routes.filter((route) => { const hunt = hunts.find((candidate) => candidate.name?.toLowerCase() === route.name.toLowerCase()); if (!hunt) return true; const elements = hunt.elements || {}; const matchingElements = rule.elements.filter((element) => Object.prototype.hasOwnProperty.call(elements, element)); return matchingElements.length > 0 && matchingElements.every((element) => Number(elements[element]) <= 0); }); };
 
 function App() {
   const [payload, setPayload] = useState(null);
@@ -77,14 +77,14 @@ function App() {
   const recommendations = useMemo(() => {
     if (!level) return null;
     const getRoutes = (routes, selectedVocation) => {
-      const compatible = routesForVocation(routes, selectedVocation);
+      const compatible = routesForVocation(routes, selectedVocation, payload.hunts);
       return routesAroundLevel(compatible.length ? compatible : routes, Number(level));
     };
     return {
       all: { xp: getRoutes(XP_ROUTES, ''), gold: getRoutes(GOLD_ROUTES, '') },
       vocation: vocation ? { xp: getRoutes(XP_ROUTES, vocation), gold: getRoutes(GOLD_ROUTES, vocation) } : null,
     };
-  }, [level, vocation]);
+  }, [level, vocation, payload]);
 
   function saveLevel(event) {
     event.preventDefault();
@@ -140,7 +140,7 @@ function HuntModal({ hunt, onClose }) { return <div className="modal-backdrop" o
 function Detail({ label, value }) { return <div className="detail"><span>{label}</span><strong>{value}</strong></div>; }
 function RecommendationPanelsSection({ recommendations, vocation, onOpen }) {
   const vocationRule = vocation ? VOCATION_RULES[vocation] : null;
-  const classRoutes = recommendations.vocation || recommendations.all;
+  const classRoutes = recommendations.vocation || { xp: [], gold: [] };
   return <section className="recommendations"><div className="recommendation-heading"><div><div className="section-kicker"><span /> RECOMENDACOES POR LEVEL</div><h2>Rotas sugeridas para voce</h2><p>Veja lado a lado a recomendacao geral e a recomendacao adaptada a classe escolhida.</p></div><span className="recommendation-note">LEVEL CONFIGURADO</span></div><div className="recommendation-panel class-panel"><div className="recommendation-panel-heading"><div><strong>Para {vocationRule ? vocationRule.label : 'qualquer um'}</strong><span>{vocationRule?.elements ? `Elementos: ${vocationRule.elements.map((element) => ELEMENT_LABELS[element] || element).join(', ')}` : vocationRule ? 'Sem restricao elemental' : 'Selecione uma classe'}</span></div><small>{vocationRule ? 'Sugestao filtrada pela classe.' : 'Escolha uma classe para filtrar por elemento.'}</small></div><div className="recommendation-columns"><RecommendationGroup title="RUSH DE XP" accent="xp" routes={classRoutes.xp} onOpen={onOpen} /><RecommendationGroup title="PROFIT POR LEVEL" accent="gold" routes={classRoutes.gold} onOpen={onOpen} /></div></div><div className="recommendation-panel"><div className="recommendation-panel-heading"><div><strong>Para qualquer um</strong><span>Todas as vocacoes</span></div><small>Rotas gerais, sem filtro elemental.</small></div><div className="recommendation-columns"><RecommendationGroup title="RUSH DE XP" accent="xp" routes={recommendations.all.xp} onOpen={onOpen} /><RecommendationGroup title="PROFIT POR LEVEL" accent="gold" routes={recommendations.all.gold} onOpen={onOpen} /></div></div></section>;
 }
 

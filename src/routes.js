@@ -7,8 +7,14 @@ export const GOLD_ROUTES = [
 ].map(([start,end,stage,name,element,multiplier,goldPerHour,goldPerKill]) => ({ start, end, stage, name, element, multiplier, goldPerHour, goldPerKill }));
 
 export function routesAroundLevel(routes, level) {
+  if (!routes.length) return [];
   const currentIndex = routes.findIndex((route) => level >= route.start && level <= route.end);
-  const index = currentIndex === -1 ? (level < routes[0].start ? 0 : routes.length - 1) : currentIndex;
+  const index = currentIndex === -1 ? routes.reduce((closestIndex, route, routeIndex) => {
+    const closest = routes[closestIndex];
+    const routeDistance = level < route.start ? route.start - level : level - route.end;
+    const closestDistance = level < closest.start ? closest.start - level : level - closest.end;
+    return routeDistance < closestDistance ? routeIndex : closestIndex;
+  }, 0) : currentIndex;
   return [index - 1, index, index + 1].filter((routeIndex) => routeIndex >= 0 && routeIndex < routes.length).map((routeIndex) => ({
     route: routes[routeIndex],
     relation: routeIndex < index ? 'ANTERIOR' : routeIndex > index ? 'PRÓXIMA' : 'SEU LEVEL',
