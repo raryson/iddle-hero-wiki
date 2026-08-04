@@ -1,0 +1,48 @@
+# Dependências
+node_modules/
+
+# Builds e cache do Vite
+dist/
+.vite/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Arquivos de ambiente locais
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+
+# Saídas locais do Codex
+work/
+outputs/
+
+# Cópia auxiliar local do payload; o app usa public/data/hunts.json
+data/
+
+# O payload usado em produção deve ser versionado mesmo se houver regra global para public/
+!public/
+!public/data/
+!public/data/hunts.json
