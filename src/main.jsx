@@ -18,11 +18,13 @@ const itemAttack = (item) => Number(item.attack || item.base_attack || 0);
 const itemElementAttack = (item) => Number(item.element_attack || 0);
 const itemPhysicalAttack = (item) => Math.max(0, itemAttack(item) - itemElementAttack(item));
 const itemAttackText = (item) => itemElementAttack(item) ? `${itemPhysicalAttack(item)} físico + ${itemElementAttack(item)} ${ELEMENT_LABELS[item.element_type] || item.element_type} = ${itemAttack(item)} total` : `${itemAttack(item)} físico`;
-const VOCATION_RULES = { knight: { label: 'Knight / Elite Knight', elements: null }, druid: { label: 'Druid', elements: ['earth', 'ice'] }, sorcerer: { label: 'Sorcerer', elements: ['energy', 'fire', 'death'] }, paladin: { label: 'Paladin', elements: ['physical', 'holy'] } };
+const VOCATION_RULES = { knight: { label: 'Knight / Elite Knight', elements: null }, druid: { label: 'Druid', elements: ['ice', 'earth'], weights: { ice: 0.55, earth: 0.45 } }, sorcerer: { label: 'Sorcerer', elements: ['fire', 'energy', 'death'], weights: { fire: 0.5, energy: 0.35, death: 0.15 } }, paladin: { label: 'Paladin', elements: ['physical', 'holy'], weights: { physical: 0.7, holy: 0.3 } } };
 const SPELL_VOCATION_TABS = [{ key: 'sorcerer', label: 'Sorcerer', names: ['Sorcerer', 'Master Sorcerer'] }, { key: 'druid', label: 'Druid', names: ['Druid', 'Elder Druid'] }, { key: 'paladin', label: 'Paladin', names: ['Paladin', 'Royal Paladin'] }, { key: 'knight', label: 'Knight', names: ['Knight', 'Elite Knight'] }];
 const cooldownText = (value) => { const cooldown = Number(value); if (!Number.isFinite(cooldown)) return '—'; const seconds = cooldown >= 1000 ? cooldown / 1000 : cooldown; return `${seconds.toLocaleString('pt-BR', { maximumFractionDigits: 2 })}s`; };
 const normalizeRouteElement = (element) => String(element || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-const routesForVocation = (routes, vocation, hunts = []) => { const rule = VOCATION_RULES[vocation]; if (!rule || !rule.elements) return routes; return routes.filter((route) => { const hunt = hunts.find((candidate) => candidate.name?.toLowerCase() === route.name.toLowerCase()); if (!hunt) return true; const elements = hunt.elements || {}; const matchingElements = rule.elements.filter((element) => Object.prototype.hasOwnProperty.call(elements, element)); return matchingElements.length > 0 && matchingElements.every((element) => Number(elements[element]) <= 0); }); };
+const routeCompositeScore = (route, vocation, hunts = []) => { const rule = VOCATION_RULES[vocation]; if (!rule?.elements) return { score: 0, hasData: true }; const hunt = hunts.find((candidate) => candidate.name?.toLowerCase() === route.name.toLowerCase()); if (!hunt) return { score: 0, hasData: false }; const elements = hunt.elements || {}; const matchingElements = rule.elements.filter((element) => Object.prototype.hasOwnProperty.call(elements, element)); if (!matchingElements.length) return { score: 0, hasData: false }; const score = matchingElements.reduce((total, element) => total - Number(elements[element]) * (rule.weights?.[element] || 0), 0); return { score, hasData: true }; };
+const routeWeaknessScore = (route, vocation, hunts = []) => routeCompositeScore(route, vocation, hunts).score;
+const routesForVocation = (routes, vocation, hunts = []) => { const rule = VOCATION_RULES[vocation]; if (!rule || !rule.elements) return routes; return routes.filter((route) => { const result = routeCompositeScore(route, vocation, hunts); return result.hasData && result.score > 0; }); };
 
 function App() {
   const [payload, setPayload] = useState(null);
@@ -80,7 +82,8 @@ function App() {
     if (!level) return null;
     const getRoutes = (routes, selectedVocation) => {
       const compatible = routesForVocation(routes, selectedVocation, payload.hunts);
-      return routesAroundLevel(compatible.length ? compatible : routes, Number(level));
+      const nearby = routesAroundLevel(selectedVocation ? compatible : routes, Number(level));
+      return selectedVocation ? nearby.sort((a, b) => routeWeaknessScore(b.route, selectedVocation, payload.hunts) - routeWeaknessScore(a.route, selectedVocation, payload.hunts)) : nearby;
     };
     return {
       all: { xp: getRoutes(XP_ROUTES, ''), gold: getRoutes(GOLD_ROUTES, '') },
